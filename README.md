@@ -3,7 +3,7 @@
 * [GitHub](https://github.com/taroyabuki)
 * [Twitter](https://twitter.com/yabuki)
 * [Facebook](//www.facebook.com/taro.yabuki)
-* [Works](http://www.unfindable.net/works.html)
+* [Works](https://github.com/taroyabuki/taroyabuki.github.io/blob/master/works.md)
 * [Books](https://www.amazon.co.jp/-/e/B004LVG6JI)
   * [C++ Book](https://github.com/taroyabuki/cppbook2)
   * [Web Book](https://taroyabuki.github.io/webbook2/)
