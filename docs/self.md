@@ -61,7 +61,7 @@ Hold[Function[{x}, x[Hold[x]]]][Hold[Hold[Function[{x}, x[Hold[x]]]]]]
   (eval b))
 ```
 
-<p>`` ` ``を使うともう少し簡単になる。</p>
+<p>「`」を使うともう少し簡単になる。</p>
 
 ```lisp
 (progn (setq b '`(progn (setq b ',b) (eval b))) (eval b))
@@ -93,7 +93,7 @@ print "\neval \$prog;\n";
 eval $prog;
 ```
 
-<h3>C++での実装 [self.cpp](self.cpp)</h3>
+<h3>C++での実装</h3>
 <p>1-4行目が&lt;A&gt;、5行目が&lt;B&gt;である。<span style='color:#cc0000;'>赤字</span>の部分が&lt;A&gt;の中に書かれた&lt;B&gt;である。</p>
 <p>エスケープ文字の扱いに注意しなければならない。上のアイディアをコーディングするときに、エスケープ文字を含んだ文字列をそのまま出力しようとするとうまくいかない。命令中の文字列は表示したい文字列よりも長くなってしまうからである。関数chによって文字列中のエスケープ文字を普通の文字（コーディングに使える文字）に変換することでこの問題を回避できる（このコードの中で使っているエスケープ文字は\n(10),'(34),\\(92)の3種類である）。</p>
 <p>5行目を見ると、&lt;A&gt;の中の&lt;B&gt;を得るためにAの実行結果（`string s`）が利用されていることがわかる。</p>
@@ -128,9 +128,9 @@ main(a){printf(a,34,a=&quot;main(a){printf(a,34,a=%c%s%c,34);}&quot;,34);}
 <h2>参考</h2>
 <ul>
   <li>冒頭で引用したKnuthの講演は、<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320024877/inquisitor-22">『ACMチューリング賞講演集』（共立出版, 1989）</a>や<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320025466/inquisitor-22">『クヌース先生のプログラム論』（共立出版, 1991）</a>、<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4756101909/inquisitor-22">『文芸的プログラミング』（ASCII, 1994）</a>に収録されている。</li>
-  <li><a href="http://www.nyx.net/~gthompso/quine.htm">The Quine Page</a></li>
+  <li><a href="https://www.nyx.net/~gthompso/quine.htm">The Quine Page</a></li>
   <li><a href="https://www.amazon.co.jp/exec/obidos/ASIN/475614084X/inquisitor-22">『ハッカーズ大辞典』（ASCII, 2002）</a>のback doorの項。<a href="http://www.catb.org/~esr/jargon/html/B/back-door.html">Online version</a></li>
-  <li><a href="http://scholar.google.com/scholar?hl=ja&lr=&safe=off&client=firefox&cluster=10496698117017821140">Ken Thompson. Reflections on Trusting Trust. (ACM Turing Award Lecture)</a> （<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320024877/inquisitor-22">『ACMチューリング賞講演集』</a>に日本語訳「信用を信用することができるだろうか」が収録されている。）</li>
+  <li><a href="https://dl.acm.org/citation.cfm?id=358210">Ken Thompson. Reflections on Trusting Trust. (ACM Turing Award Lecture)</a> （<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320024877/inquisitor-22">『ACMチューリング賞講演集』</a>に日本語訳「信用を信用することができるだろうか」が収録されている。）</li>
   <li><a href="https://www.amazon.co.jp/exec/obidos/ASIN/443420159X/inquisitor-22">ヘンリー・S. ウォーレン『ハッカーのたのしみ』（エスアイビーアクセス, 2004）</a></li>
   <li><a href="https://www.ipsj.or.jp/07editj/promenade/4703.pdf">尾上能之. 自分自身を出力するプログラム. 情報処理, Vol.47, No. 3, pp. 301&ndash;309, 2006.</a></li>
   <li><a href='http://blog.unfindable.net/archives/561'>codepadの遊び方</a></li>
