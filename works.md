@@ -30,7 +30,7 @@ consisting of trees. In Leandro Nunes de Castro and Fernando J. Von Zuben, edito
 
 ## Commentary
 
-* [<img src="https://github.com/taroyabuki/taroyabuki.github.io/raw/master/paper/simulation200409s.jpg" style="height:100px;">](paper/simulation200409.jpg) 矢吹太朗, 伊庭斉志. Swarmによる複雑系のシミュレーション. シミュレーション, Vol. 23, No. 3, pp.7&ndash;12, 9月 2004.
+* [<img src="https://github.com/taroyabuki/taroyabuki.github.io/raw/master/paper/simulation200409s.png" />](paper/simulation200409.jpg) 矢吹太朗, 伊庭斉志. Swarmによる複雑系のシミュレーション. シミュレーション, Vol. 23, No. 3, pp.7&ndash;12, 9月 2004.
 * 矢吹太朗, 伊庭斉志. 量子コンピュータってどんなもの？ 映像情報メディア学会誌, Vol.55, No. 8/9, pp. 1113&ndash;1114, 2001.
 
 ## Translation
