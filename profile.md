@@ -20,7 +20,7 @@ Information, Computation, Evolution
 
 ## History
 
-| | |
+|Year| |
 |-|-|
 |2012|Associate Professor (Chiba Institute of Technology)|
 |2007|Assistant Professor (Aoyama Gakuin University)|
@@ -57,7 +57,7 @@ Information, Computation, Evolution
 
 ## 経歴
 
-| | | |
+|西暦|和暦| |
 |-|-|-|
 |2012|平成24|千葉工業大学准教授|
 |2007|平成19|青山学院大学助教|
