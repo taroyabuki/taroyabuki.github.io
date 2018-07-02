@@ -15,68 +15,108 @@
 <p>（参考：<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320029488/inquisitor-22">「Michael Sipser著, 渡辺治ほか訳. 計算理論の基礎. 共立出版, 2000</a>」の第6章）</p>
 <h2>実装</h2>
 <h3>Mathematicaでの実装</h3>
-<pre><code>&gt; b=Hold[b=#;b[b]]&amp;;b[b]
-Hold[b = Hold[b = #1; b[b]] &amp;; b[b]]
-&gt; ReleaseHold[%]
-Hold[b = Hold[b = #1; b[b]] &amp;; b[b]]</code></pre>
+
+```mathematica
+> b=Hold[b=#;b[b]]&;b[b]
+Hold[b = Hold[b = #1; b[b]] &; b[b]]
+> ReleaseHold[%]
+Hold[b = Hold[b = #1; b[b]] &; b[b]]
+```
+
 <p>別の方法：</p>
-<pre><code>&gt; f=#[Hold[#]]&amp;;
-&gt; f[f]
+
+```mathematica
+> f=#[Hold[#]]&;
+> f[f]
 Hold[Function[{x}, x[Hold[x]]]][Hold[Hold[Function[{x}, x[Hold[x]]]]]]
-&gt; ReleaseHold[f[f]]
-Hold[Function[{x}, x[Hold[x]]]][Hold[Hold[Function[{x}, x[Hold[x]]]]]]</code></pre>
+> ReleaseHold[f[f]]
+Hold[Function[{x}, x[Hold[x]]]][Hold[Hold[Function[{x}, x[Hold[x]]]]]]
+```
+
 <h3>Lispでの実装</h3>
 <p>Common Lispの場合は次のような関数を定義しておくか、fsetの部分を書き換えること。</p>
-<pre><code>(defun fset (a b) (setf (symbol-function a) b))</code></pre>
+
+```lisp
+(defun fset (a b) (setf (symbol-function a) b))
+```
+
 <p>Emacs Lispならそのまま動く。</p>
-<pre><code>&gt; (progn
+
+```lisp
+> (progn
     (setq b (lambda (x) `(progn
                            (setq b ,x)
                            (fset 'b b)
                            (b b))))
     (fset 'b b)
     (b b))
-(progn (setq b (lambda (x) (\` (progn (setq b (\, x)) (fset (quote b) b) (b b))))) (fset (quote b) b) (b b))</code></pre>
+(progn (setq b (lambda (x) (\` (progn (setq b (\, x)) (fset (quote b) b) (b b))))) (fset (quote b) b) (b b))
+```
+
 <p>別の方法もある。（KAMIOさんの改良）</p>
-<pre><code>(progn
+
+```lisp
+(progn
   (setq b '(list 'progn (list 'setq 'b (list 'quote b)) '(eval b)))
-  (eval b))</code></pre>
+  (eval b))
+```
+
 <p>`を使うともう少し簡単になる。</p>
-<pre><code>(progn (setq b '`(progn (setq b ',b) (eval b))) (eval b))</code></pre>
+
+```lisp
+(progn (setq b '`(progn (setq b ',b) (eval b))) (eval b))
+```
+
 <p>さらに別の方法：</p>
-<pre><code>&gt; (setq f '(lambda (x) `(,x ',x)))
+
+```lisp
+> (setq f '(lambda (x) `(,x ',x)))
 (LAMBDA (X) `(,X ',X))
-&gt; (fset 'f f)
+> (fset 'f f)
 (LAMBDA (X) `(,X ',X))
-&gt; (f 'x)
+> (f 'x)
 (X 'X)
-&gt; (f f)
+> (f f)
 ((LAMBDA (X) `(,X ',X)) '(LAMBDA (X) `(,X ',X)))
-&gt; (eval (f f))
-((LAMBDA (X) `(,X ',X)) '(LAMBDA (X) `(,X ',X)))</code></pre>
+> (eval (f f))
+((LAMBDA (X) `(,X ',X)) '(LAMBDA (X) `(,X ',X)))
+```
+
 <h3>Perlでの実装（KAMIOさんによる）</h3>
-<pre><code>$prog=q(
+
+```perl
+$prog=q(
 $prog=&quot;\$prog=q(&quot;.$prog.&quot;);&quot;;
 print $prog;
 print &quot;\neval \$prog;\n&quot;;
 );
-eval $prog;</code></pre>
+eval $prog;
+```
+
 <h3>C++での実装</h3>
-<p>1-4行目が&lt;A&gt;、5行目が&lt;B&gt;である。<span style='color=#cc0000;'>赤字</span>の部分が&lt;A&gt;の中に書かれた&lt;B&gt;である。</p>
-<p>エスケープ文字の扱いに注意しなければならない。上のアイディアをコーディングするときに、エスケープ文字を含んだ文字列をそのまま出力しようとするとうまくいかない。命令中の文字列は表示したい文字列よりも長くなってしまうからである。関数chによって文字列中のエスケープ文字を普通の文字（コーディングに使える文字）に変換することでこの問題を回避できる（このコードの中で使っているエスケープ文字は\n(10),\&quot;(34),\\(92)の3種類である）。</p><p>5行目を見ると、&lt;A&gt;の中の&lt;B&gt;を得るためにAの実行結果(string s)が利用されていることがわかる。</p>
+<p>1-4行目が&lt;A&gt;、5行目が&lt;B&gt;である。<span style='color:#cc0000;'>赤字</span>の部分が&lt;A&gt;の中に書かれた&lt;B&gt;である。</p>
+<p>エスケープ文字の扱いに注意しなければならない。上のアイディアをコーディングするときに、エスケープ文字を含んだ文字列をそのまま出力しようとするとうまくいかない。命令中の文字列は表示したい文字列よりも長くなってしまうからである。関数chによって文字列中のエスケープ文字を普通の文字（コーディングに使える文字）に変換することでこの問題を回避できる（このコードの中で使っているエスケープ文字は\n(10),'(34),\\(92)の3種類である）。</p><p>5行目を見ると、&lt;A&gt;の中の&lt;B&gt;を得るためにAの実行結果(string s)が利用されていることがわかる。</p>
 <ol>
   <li><code>#include&lt;iostream&gt;</code></li>
   <li><code>#include&lt;string&gt;</code></li>
   <li><code>using namespace std;string ch(string s){string p;char t;t=34;p+=t;for(unsigned int i=0;i&lt;s.length();++i){if(s[i]==10){t=92;p+=t;t=110;p+=t;}else if(s[i]==34){t=92;p+=t;t=34;p+=t;}else if(s[i]==92){t=92;p+=t;p+=t;}else p+=s[i];}t=34;p+=t;return p;}</code></li>
-  <li><code>int main(){string s=&quot;<span style='color=#cc0000;'>string p=\&quot;#include&lt;iostream&gt;\\n#include&lt;string&gt;\\nusing namespace std;string ch(string s){string p;char t;t=34;p+=t;for(unsigned int i=0;i&lt;s.length();++i){if(s[i]==10){t=92;p+=t;t=110;p+=t;}else if(s[i]==34){t=92;p+=t;t=34;p+=t;}else if(s[i]==92){t=92;p+=t;p+=t;}else p+=s[i];}t=34;p+=t;return p;}\\nint main(){string s=\&quot;;p+=ch(s);cout&lt;&lt;p&lt;&lt;\&quot;;\&quot;&lt;&lt;\&quot;\\n\&quot;&lt;&lt;s;}\n</span>&quot;;</code></li>
+  <li><code>int main(){string s=&quot;<span style='color:#cc0000;'>string p=\&quot;#include&lt;iostream&gt;\\n#include&lt;string&gt;\\nusing namespace std;string ch(string s){string p;char t;t=34;p+=t;for(unsigned int i=0;i&lt;s.length();++i){if(s[i]==10){t=92;p+=t;t=110;p+=t;}else if(s[i]==34){t=92;p+=t;t=34;p+=t;}else if(s[i]==92){t=92;p+=t;p+=t;}else p+=s[i];}t=34;p+=t;return p;}\\nint main(){string s=\&quot;;p+=ch(s);cout&lt;&lt;p&lt;&lt;\&quot;;\&quot;&lt;&lt;\&quot;\\n\&quot;&lt;&lt;s;}\n</span>&quot;;</code></li>
   <li><code>string p=&quot;#include&lt;iostream&gt;\n#include&lt;string&gt;\nusing namespace std;string ch(string s){string p;char t;t=34;p+=t;for(unsigned int i=0;i&lt;s.length();++i){if(s[i]==10){t=92;p+=t;t=110;p+=t;}else if(s[i]==34){t=92;p+=t;t=34;p+=t;}else if(s[i]==92){t=92;p+=t;p+=t;}else p+=s[i];}t=34;p+=t;return p;}\nint main(){string s=&quot;;<span style='text-decoration:underline;'>p+=ch(s);cout&lt;&lt;p&lt;&lt;&quot;;&quot;&lt;&lt;&quot;\n&quot;&lt;&lt;s;</span>}</code></li>
 </ol>
 <p>このコードはindentを使っても読み易くはならない。</p>
-<p>Vlad Taeerov &amp; Rashit Fakheyevによる次の実装はみごと（標準的な記法ではないがこのままコンパイルできる。gcc3.4.2で確認済み）</p>
-<pre><code>main(a){printf(a,34,a=&quot;main(a){printf(a,34,a=%c%s%c,34);}&quot;,34);}</code></pre>
+<p>Vlad Taeerov & Rashit Fakheyevによる次の実装はみごと（標準的な記法ではないがこのままコンパイルできる。gcc3.4.2で確認済み）</p>
+
+```c
+main(a){printf(a,34,a=&quot;main(a){printf(a,34,a=%c%s%c,34);}&quot;,34);}
+```
+
 <h3>BASICでの実装</h3>
 <p>何のインスピレーションも得られないかもしれないけれど。</p>
-<pre><code>10 LIST</code></pre>
+
+```
+10 LIST
+```
+
 <h2>発展</h2>
 <p>UNIXの開発者であるKen Thompsonはこのアイディアを発展させ、次のようなCコンパイラ（のバイナリ。つまりソースには証拠が残らない）を実装したという</p>
 <ol>
@@ -86,11 +126,11 @@ eval $prog;</code></pre>
 <p>なんとこのことは1983年のチューリング賞受賞講演で暴露されたのである。</p>
 <h2>参考</h2>
 <ul>
-  <li>冒頭で引用したKnuthの講演は、<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320024877/inquisitor-22">「ACMチューリング賞講演集. 共立出版, 1989」</a>や<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320025466/inquisitor-22">「有澤誠編. クヌース先生のプログラム論. 共立出版, 1991」</a>、<a href="https://www.amazon.co.jp/exec/obidos/ASIN/0937073806/inquisitor-22">Donald E. Knuth. <em>Literate Programming.</em> Stanford Univ. Center for the Study, 1992</a> （<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4756101909/inquisitor-22">有澤誠訳. 文芸的プログラミング. アスキー, 1994</a>）に収録されている。</li>
+  <li>冒頭で引用したKnuthの講演は、<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320024877/inquisitor-22">『ACMチューリング賞講演集』（共立出版, 1989）</a>や<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320025466/inquisitor-22">『クヌース先生のプログラム論』（共立出版, 1991）</a>、<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4756101909/inquisitor-22">『文芸的プログラミング』（ASCII, 1994）</a>に収録されている。</li>
   <li><a href="http://www.nyx.net/~gthompso/quine.htm">The Quine Page</a></li>
-  <li><a href="https://www.amazon.co.jp/exec/obidos/ASIN/0262680920/inquisitor-22">Eric S. Raymond. <i>The New Hacker's Dictionary,</i> MIT Press, 1996.</a> (back door)（<a href="https://www.amazon.co.jp/exec/obidos/ASIN/475614084X/inquisitor-22">「福崎俊博訳. ハッカーズ大辞典. アスキー, 改訂新版, 2002」</a>のback doorの項。Online version: <a href="http://www.catb.org/~esr/jargon/html/B/back-door.html">Jargon File Resources</a>）</li>
-  <li><a href="http://scholar.google.com/scholar?hl=ja&amp;lr=&amp;safe=off&amp;client=firefox&amp;cluster=10496698117017821140">Ken Thompson. Reflections on Trusting Trust. (ACM Turing Award Lecture)</a> （有澤誠訳. 信用を信用することができるだろうか. <a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320024877/inquisitor-22">ACMチューリング賞講演集. 共立出版, 1989.</a>）</li>
-  <li><a href="https://www.amazon.co.jp/exec/obidos/ASIN/0201914654/inquisitor-22">Henry S. Warren, Jr. <em>Hacker's Delight.</em> Addison-Wesley Pub., 2002.</a> （<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320024877/inquisitor-22">滝沢徹ほか訳. ハッカーのたのしみ. SiB access, 2004.</a>）</li>
-  <li><a href="http://www.ipsj.or.jp/07editj/promenade/4703.pdf">尾上能之. 自分自身を出力するプログラム. 情報処理, Vol.47, No. 3, pp. 301&ndash;309, 2006.</a></li>
-  <li><a href='http://www.unfindable.net/~yabuki/blog/2008/03/codepad.html'>codepadの遊び方</a></li>
+  <li><a href="https://www.amazon.co.jp/exec/obidos/ASIN/475614084X/inquisitor-22">『ハッカーズ大辞典』（ASCII, 2002）</a>のback doorの項。<a href="http://www.catb.org/~esr/jargon/html/B/back-door.html">Online version</a></li>
+  <li><a href="http://scholar.google.com/scholar?hl=ja&lr=&safe=off&client=firefox&cluster=10496698117017821140">Ken Thompson. Reflections on Trusting Trust. (ACM Turing Award Lecture)</a> （<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4320024877/inquisitor-22">『ACMチューリング賞講演集』</a>に日本語訳「信用を信用することができるだろうか」が収録されている。）</li>
+  <li><a href="https://www.amazon.co.jp/exec/obidos/ASIN/443420159X/inquisitor-22">ヘンリー・S. ウォーレン『ハッカーのたのしみ』（エスアイビーアクセス, 2004）</a></li>
+  <li><a href="https://www.ipsj.or.jp/07editj/promenade/4703.pdf">尾上能之. 自分自身を出力するプログラム. 情報処理, Vol.47, No. 3, pp. 301&ndash;309, 2006.</a></li>
+  <li><a href='http://blog.unfindable.net/archives/561'>codepadの遊び方</a></li>
 </ul>
