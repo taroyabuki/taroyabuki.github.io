@@ -45,9 +45,9 @@ consisting of trees. In Leandro Nunes de Castro and Fernando J. Von Zuben, edito
 * [PCとスパコンの無理矢理な比較. *CodeZine,* 2007.](https://web.archive.org/web/20080430221304/http://codezine.jp:80/a/article/aid/1910.aspx)
 * [ペンローズ『皇帝の新しい心』の万能テューリング機械](https://github.com/taroyabuki/penrose_utm)
 * [バベルのコンピューター](http://blog.unfindable.net/archives/268)
-* [No Free Lunch Theorem&mdash;理想の＊＊の探し方](docs/no_free_lunch.pdf)
+* [No Free Lunch Theorem&mdash;理想の＊＊の探し方](https://taroyabuki.github.io/docs/no_free_lunch.pdf)
 * [なぜ Lisp なのか](docs/why_lisp.md)
-* [自分のコードを出力するプログラム](docs/self.md)
+* [自分のコードを出力するプログラム](https://taroyabuki.github.io/docs/self.html)
 * [不完全性定理のLisp, Mathematicaによる記述](https://taroyabuki.github.io/docs/unknowable/)
 
 ### Sudoku
