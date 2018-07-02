@@ -1,5 +1,3 @@
-# YABUKI Taro's Home Page
-
 * [Profile](http://www.unfindable.net/profile.html)
 * [Blog](http://blog.unfindable.net/)
 * [Twitter](https://twitter.com/yabuki)
