@@ -1,4 +1,4 @@
-* [Profile](profile.md)
+* [Profile](profile.html)
 * [Blog](http://blog.unfindable.net/)
 * [GitHub](https://github.com/taroyabuki)
 * [Twitter](https://twitter.com/yabuki)
