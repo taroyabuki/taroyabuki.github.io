@@ -1,0 +1,181 @@
+<HTML>
+<BODY BGCOLOR="white">
+<PRE>
+<FONT color="green">001</FONT>    import swarm.*;<a name="line.1"></a>
+<FONT color="green">002</FONT>    import swarm.activity.*;<a name="line.2"></a>
+<FONT color="green">003</FONT>    import swarm.defobj.*;<a name="line.3"></a>
+<FONT color="green">004</FONT>    import swarm.objectbase.*;<a name="line.4"></a>
+<FONT color="green">005</FONT>    import swarm.space.*;<a name="line.5"></a>
+<FONT color="green">006</FONT>    import swarm.collections.*;<a name="line.6"></a>
+<FONT color="green">007</FONT>    <a name="line.7"></a>
+<FONT color="green">008</FONT>    /**<a name="line.8"></a>
+<FONT color="green">009</FONT>     * 複数のBugをシミュレートするようにモデルを拡張する。&lt;BR><a name="line.9"></a>
+<FONT color="green">010</FONT>     * &lt;BR><a name="line.10"></a>
+<FONT color="green">011</FONT>     * そのためにまず、<a name="line.11"></a>
+<FONT color="green">012</FONT>     * 1. Bugが動き回るworldを作る（Grid2d）。&lt;BR><a name="line.12"></a>
+<FONT color="green">013</FONT>     * 2. BugのコレクションListを作る。&lt;BR><a name="line.13"></a>
+<FONT color="green">014</FONT>     * &lt;BR><a name="line.14"></a>
+<FONT color="green">015</FONT>     * Grid2dはSwarm ライブラリの一部で、オブジェクトを格納する格子である。<a name="line.15"></a>
+<FONT color="green">016</FONT>     * Bugがいない場合、セルの値はnullである。<a name="line.16"></a>
+<FONT color="green">017</FONT>     * Bugがいる場合には、セルにBugの参照が格納される。&lt;BR><a name="line.17"></a>
+<FONT color="green">018</FONT>     * &lt;BR><a name="line.18"></a>
+<FONT color="green">019</FONT>     * 複数のBugのうち、1匹だけを特別にreportBugとする。<a name="line.19"></a>
+<FONT color="green">020</FONT>     * reportBugは餌を見つけるとそれを報告する。<a name="line.20"></a>
+<FONT color="green">021</FONT>     * クラス図ではreportBugはBugの継承のように描いているが、そうではなく、単純な区別をしているだけである。&lt;BR><a name="line.21"></a>
+<FONT color="green">022</FONT>     * &lt;BR><a name="line.22"></a>
+<FONT color="green">023</FONT>     * モデルのスケジュールは一つのActionGroup（アクションの集合）からなる。<a name="line.23"></a>
+<FONT color="green">024</FONT>     * ActionGroupはbugList内の各オブジェクトのメソッドstepを呼ぶことと、<a name="line.24"></a>
+<FONT color="green">025</FONT>     * reportBugのメソッドreportを呼ぶことから構成される。<a name="line.25"></a>
+<FONT color="green">026</FONT>     * そして、このスケジュールは時間0に開始され、時間間隔1で繰り返される。<a name="line.26"></a>
+<FONT color="green">027</FONT>     */<a name="line.27"></a>
+<FONT color="green">028</FONT>    public class ModelSwarm extends SwarmImpl{<a name="line.28"></a>
+<FONT color="green">029</FONT>            int worldXSize, worldYSize;<a name="line.29"></a>
+<FONT color="green">030</FONT>            double seedProb;<a name="line.30"></a>
+<FONT color="green">031</FONT>            double bugDensity;<a name="line.31"></a>
+<FONT color="green">032</FONT>            <a name="line.32"></a>
+<FONT color="green">033</FONT>            FoodSpace food;<a name="line.33"></a>
+<FONT color="green">034</FONT>            Grid2d world;<a name="line.34"></a>
+<FONT color="green">035</FONT>            Bug reportBug;<a name="line.35"></a>
+<FONT color="green">036</FONT>            <a name="line.36"></a>
+<FONT color="green">037</FONT>            List bugList;<a name="line.37"></a>
+<FONT color="green">038</FONT>            ActionGroup modelActions;<a name="line.38"></a>
+<FONT color="green">039</FONT>            Schedule modelSchedule;<a name="line.39"></a>
+<FONT color="green">040</FONT>            <a name="line.40"></a>
+<FONT color="green">041</FONT>            public ModelSwarm(Zone aZone){<a name="line.41"></a>
+<FONT color="green">042</FONT>                    super(aZone);<a name="line.42"></a>
+<FONT color="green">043</FONT>                    <a name="line.43"></a>
+<FONT color="green">044</FONT>                    worldXSize = 80;<a name="line.44"></a>
+<FONT color="green">045</FONT>                    worldYSize = 80;<a name="line.45"></a>
+<FONT color="green">046</FONT>                    seedProb = 0.8;<a name="line.46"></a>
+<FONT color="green">047</FONT>                    bugDensity=0.1;<a name="line.47"></a>
+<FONT color="green">048</FONT>            }<a name="line.48"></a>
+<FONT color="green">049</FONT>            <a name="line.49"></a>
+<FONT color="green">050</FONT>            public Object buildObjects(){<a name="line.50"></a>
+<FONT color="green">051</FONT>                    Bug aBug;<a name="line.51"></a>
+<FONT color="green">052</FONT>                    int x,y;<a name="line.52"></a>
+<FONT color="green">053</FONT>                    <a name="line.53"></a>
+<FONT color="green">054</FONT>                    food=new FoodSpace(this,worldXSize,worldYSize);<a name="line.54"></a>
+<FONT color="green">055</FONT>                    food.seedFoodWithProb(seedProb);<a name="line.55"></a>
+<FONT color="green">056</FONT>                    <a name="line.56"></a>
+<FONT color="green">057</FONT>                    // Now set up the grid used to represent agent position<a name="line.57"></a>
+<FONT color="green">058</FONT>                    world=new Grid2dImpl(this,worldXSize,worldYSize);<a name="line.58"></a>
+<FONT color="green">059</FONT>                    world.fillWithObject(null);<a name="line.59"></a>
+<FONT color="green">060</FONT>                    <a name="line.60"></a>
+<FONT color="green">061</FONT>                    // Now, create a bunch of bugs to live in the world<a name="line.61"></a>
+<FONT color="green">062</FONT>                    <a name="line.62"></a>
+<FONT color="green">063</FONT>                    // First, we create a List object to manage the bugs<a name="line.63"></a>
+<FONT color="green">064</FONT>                    // for us.<a name="line.64"></a>
+<FONT color="green">065</FONT>                    <a name="line.65"></a>
+<FONT color="green">066</FONT>                    bugList=new ListImpl(this);<a name="line.66"></a>
+<FONT color="green">067</FONT>                    <a name="line.67"></a>
+<FONT color="green">068</FONT>                    // Then, we iterate over the possible sites in the world,<a name="line.68"></a>
+<FONT color="green">069</FONT>                    // with a certain probability of creating a bug at <a name="line.69"></a>
+<FONT color="green">070</FONT>                    // each site.<a name="line.70"></a>
+<FONT color="green">071</FONT>                    <a name="line.71"></a>
+<FONT color="green">072</FONT>                    for (y = 0; y &lt; worldYSize; y++){<a name="line.72"></a>
+<FONT color="green">073</FONT>                            for (x = 0; x &lt; worldXSize; x++){<a name="line.73"></a>
+<FONT color="green">074</FONT>                                    if (Globals.env.uniformDblRand.getDoubleWithMin$withMax(0.0,1.0) &lt; bugDensity){<a name="line.74"></a>
+<FONT color="green">075</FONT>                                            aBug=new Bug(this);<a name="line.75"></a>
+<FONT color="green">076</FONT>                                            aBug.setWorld$Food(world,food);<a name="line.76"></a>
+<FONT color="green">077</FONT>                                            aBug.setX$Y(x,y);<a name="line.77"></a>
+<FONT color="green">078</FONT>                                            bugList.addLast(aBug);<a name="line.78"></a>
+<FONT color="green">079</FONT>                                    }<a name="line.79"></a>
+<FONT color="green">080</FONT>                            }<a name="line.80"></a>
+<FONT color="green">081</FONT>                    }<a name="line.81"></a>
+<FONT color="green">082</FONT>                    <a name="line.82"></a>
+<FONT color="green">083</FONT>                    // enlist a "reporter" bug to let us know how things are going<a name="line.83"></a>
+<FONT color="green">084</FONT>                    // We just pop the first bug we created and then return it<a name="line.84"></a>
+<FONT color="green">085</FONT>                    reportBug=(Bug)bugList.removeFirst();<a name="line.85"></a>
+<FONT color="green">086</FONT>                    bugList.addFirst(reportBug);<a name="line.86"></a>
+<FONT color="green">087</FONT>                    <a name="line.87"></a>
+<FONT color="green">088</FONT>                    return this;<a name="line.88"></a>
+<FONT color="green">089</FONT>            }<a name="line.89"></a>
+<FONT color="green">090</FONT>            <a name="line.90"></a>
+<FONT color="green">091</FONT>            public Object buildActions(){<a name="line.91"></a>
+<FONT color="green">092</FONT>                    // Create an ActionGroup to hold the messages over the bugs<a name="line.92"></a>
+<FONT color="green">093</FONT>                    modelActions=new ActionGroupImpl(this);<a name="line.93"></a>
+<FONT color="green">094</FONT>                    try{<a name="line.94"></a>
+<FONT color="green">095</FONT>                            modelActions.createActionForEach$message(bugList,<a name="line.95"></a>
+<FONT color="green">096</FONT>                                    new Selector(Class.forName("Bug"),"step",false));<a name="line.96"></a>
+<FONT color="green">097</FONT>                            modelActions.createActionTo$message(reportBug,<a name="line.97"></a>
+<FONT color="green">098</FONT>                                    new Selector(Class.forName("Bug"),"report",false));<a name="line.98"></a>
+<FONT color="green">099</FONT>                    } catch (Exception e) {<a name="line.99"></a>
+<FONT color="green">100</FONT>                            System.out.println ("Exception: " + e.getMessage ());<a name="line.100"></a>
+<FONT color="green">101</FONT>                            System.exit(1);<a name="line.101"></a>
+<FONT color="green">102</FONT>                    }<a name="line.102"></a>
+<FONT color="green">103</FONT>                    <a name="line.103"></a>
+<FONT color="green">104</FONT>                    // Make a schedule and insert the ActionGroup as the only action<a name="line.104"></a>
+<FONT color="green">105</FONT>                    modelSchedule=new ScheduleImpl(this,1);<a name="line.105"></a>
+<FONT color="green">106</FONT>                    modelSchedule.at$createAction(0,modelActions);<a name="line.106"></a>
+<FONT color="green">107</FONT>                    return this;<a name="line.107"></a>
+<FONT color="green">108</FONT>            }<a name="line.108"></a>
+<FONT color="green">109</FONT>            <a name="line.109"></a>
+<FONT color="green">110</FONT>            public Activity activateIn(Swarm context){<a name="line.110"></a>
+<FONT color="green">111</FONT>            super.activateIn (context);<a name="line.111"></a>
+<FONT color="green">112</FONT>            modelSchedule.activateIn(this);<a name="line.112"></a>
+<FONT color="green">113</FONT>                    return getActivity();<a name="line.113"></a>
+<FONT color="green">114</FONT>            }<a name="line.114"></a>
+<FONT color="green">115</FONT>    }<a name="line.115"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY>
+</HTML>

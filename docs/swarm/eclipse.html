@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="swarm,eclipse" />
+<title>EclipseでのSwarm開発</title>
+</head>
+<body>
+<p style="text-align:right;"><a href=".">Swarmについてのメモ</a></p>
+<h1>EclipseでのSwarm開発</h1>
+<p>テキストエディタがあればSwarmの開発をすることはできる。しかしながら、統合開発環境にはフィールド名・メソッド名の補完機能など便利な機能が多い。そのため、ここで統合開発環境の使い方を簡単に説明する。ここではeclipseを用いるが、eclipseについての詳細は<a href="http://www.eclipse.org/">eclipse.org</a>ほかの情報源にあたってほしい。</p>
+<h2>swarm.jarの登録</h2>
+<p>外部jarとしてswarm.jarを登録すれば、Eclipseでコードを編集できるようになる。</p>
+<p>新規→プロジェクト→Javaプロジェクトでプロジェクトを作成する（プロジェクト内容ではソースがあるフォルダを指定する）</p>
+<p><img src="new_project.png" alt="プロジェクト生成画面" /></p>
+<p>その際、ライブラリー・タブ→外部JARの追加→C:\cygwin\Swarm-2.2\share\swarm\swarm.jarとする</p>
+<p><img src="swarm_jar.png" alt="外部ライブラリ設定画面" /></p>
+<p>以上で次のような統合開発環境を使えるようになる（クリックで拡大）</p>
+<p><a href="eclipse.png"><img src="eclipse_th.png" alt="Eclipseの画面" /></a></p>
+<h2>Antの利用</h2>
+<p>シェルからgcjswarmで行っていたコンパイル作業は、ビルド・ツールAntで次のようなビルドファイルbuild.xml（Makefileに相当する）を用いればEclipse上から行うことができる（現時点で筆者の環境ではEclipse上でデバッグなどができないため、コンパイルだけできることの実用性は不明だが）。ビルドファイルの書き方は<a href="http://members.at.infoseek.co.jp/pokopensjant/j/docs/manual/usinglist.html">「Apache Ant ユーザマニュアル」</a>を参照してほしい</p>
+<pre>&lt;?xml version='1.0' encoding='Windows-31J'?&gt;
+
+&lt;project name=&quot;simpleObserverBug&quot; default=&quot;compile&quot; basedir=&quot;.&quot;&gt;
+
+  &lt;target name=&quot;compile&quot;&gt;
+        &lt;exec executable=&quot;bash&quot; &gt;
+          &lt;arg line=&quot;c:\cygwin\Swarm-2.2\bin\gcjswarm simpleObserverBug.java&quot; /&gt;
+        &lt;/exec&gt;
+  &lt;/target&gt;
+  
+  &lt;target name=&quot;clean&quot;&gt;
+    &lt;delete&gt;
+      &lt;fileset dir=&quot;.&quot; includes=&quot;*.class&quot;/&gt;
+      &lt;fileset dir=&quot;.&quot; includes=&quot;*.exe&quot;/&gt;
+    &lt;/delete&gt;
+  &lt;/target&gt;
+  
+&lt;/project&gt;</pre>
+<p>パッケージ・エクスプローラ上でbuild.xmlを右クリックし、「Antの実行」を選択すればよい</p>
+</body>
+</html>

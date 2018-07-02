@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="swarm,install,インストール" />
+<title>Swarm開発環境のインストール</title>
+</head>
+<body>
+<p style="text-align:right;"><a href=".">Swarmについてのメモ</a></p>
+<h1>Swarm開発環境のインストール</h1>
+<ol>
+  <li><a name="TOC7" href="#SEC1">Cygwin</a></li>
+  <li><a name="TOC8" href="#SEC2">Swarm</a></li>
+  <li><a name="TOC9" href="#SEC3">動作確認 (Objective-C)</a></li>
+  <li><a name="TOC10" href="#SEC4">Java</a></li>
+  <li><a name="TOC11" href="#SEC5">動作確認 (Java)</a></li>
+</ol>
+<p>統合開発環境を使いたい場合は<a href="eclipse.html">こちら</a>も参照</p>
+<p>ここで用いるソフトウェアは以下のとおりである。</p>
+<ul>
+  <li>WindowsXP Professional （2004.5までの重要な更新を適用した状態。Unixなど他のプラットフォームでも動作するが、ここではWindowsXPのみを扱う。）</li>
+  <li>Cygwin (<a href="http://www.cygwin.com/">Cygwin Information and Installation</a> Windows上で動くUnixの開発環境)</li>
+  <li>Swarm-2.2-pretest-13 (<a href="ftp://ftp.swarm.org/pub/swarm/binaries/old/w32/latest/">ftp://ftp.swarm.org/pub/swarm/binaries/old/w32/latest/</a>)</li>
+  <li>Java 2 SDK, Enterprise Edition 1.4.2_04 (<a href="http://java.sun.com/j2se/1.4.2/ja/download.html">J2EE 1.4 SDK - Download</a> Objective-Cで開発する場合は必要ない。)</li>
+  <li>eclipse 2.1.3 (<a href="http://www.eclipse.org/">eclipse.org</a> 他の統合開発環境も使える。統合開発環境はSwarmでの開発のために必須のものではない。)</li>
+</ul>
+<h2><a href="#TOC7" name="SEC1">Cygwin</a></h2>
+<p>まず、ホーム・ディレクトリを設定する（ここではc:\swarmとする）。マイ コンピュータのプロパティで環境変数HOMEをc:\swarmに設定すればよい。</p>
+<p>次に、Cygwinのサイトからセットアップ・プログラムをダウンロードし、実行する。Select
+packagesのところで、DevelとLibsをインストールするようにすること（デフォルトではインストールされない）。セットアップが完了したら、Cygwin
+Bash Shellを起動し、各種コマンドが正しく動くことを確認する（たとえば、pwdの結果は/cygdrive/c/swarmのはずである。このように、WindowsとCygwinではディレクトリの呼び方が違っている。このことはmountで確認できる）。</p>
+<p><ins>Libsの中にあるtcltkのバージョンは、2005.7.11現在の最新版20030901-1ではなく、20030214-1にしたほうがよい</ins></p>
+<h2><a href="#TOC8" name="SEC2">Swarm</a></h2>
+<p>Swarmのインストールのためにはまず、<a href="ftp://ftp.swarm.org/pub/swarm/binaries/w32/latest/">FTPサイト</a>から<a href="ftp://ftp.swarm.org/pub/swarm/binaries/w32/latest/Swarm-2.2-pretest-13.tar.gz">Swarm-2.2-pretest-13.tar.gz</a>（2004.6.1の時点での最新版）をダウンロードし（ホームに置いたとする）、/に展開する。</p>
+<pre>$ cd /
+$ tar zxf ~/Swarm-2.2-pretest-13.tar.gz</pre>
+<p>次に、~/.bash_profileに以下の環境変数設定を追加する（ファイルがない場合、ホーム・ディレクトリが適切に設定されていない。このファイルはメモ帳では編集しにくいため、別のエディタを使うといい）。</p>
+<pre>export SWARMHOME=/Swarm-2.2
+export SWARMDIR=$SWARMHOME
+export PATH=$SWARMHOME/bin:$PATH
+export TMPDIR=/tmp</pre>
+<h2><a href="#TOC9" name="SEC3">動作確認 (Objective-C)</a></h2>
+<p>動作確認のために、<a href="http://wiki.swarm.org/wiki/Swarm:_applications">Swarm:_applications - SwarmWiki</a>から<a href="ftp://ftp.swarm.org/pub/swarm/apps/objc/sdg/swarmapps-2.1.1.tar.gz">swarmapps-2.1.1.tar.gz</a>（サンプル）をダウンロードし、展開する。ここではサンプル中のHeadbugsをビルドする（このファイルにはtemplate,
+heatbugs, mousetrap, market, tutorial, hello-worldが含まれているが、すべてObjective-Cで書かれたものである）。</p>
+<pre>$ tar zxf swarmapps-2.1.1.tar.gz
+$ cd swarmapps-2.1.1/headbugs/
+$ make
+$ ./heatbugs.exe</pre>
+<p>Startをクリックしたときに図（クリックで拡大）のようになれば成功である。</p>
+<p><a href="heatbugs.png"><img src="heatbugs_t.png" alt="実行画面" /></a></p>
+<h2><a href="#TOC10" name="SEC4">Java</a></h2>
+<p>まず、<a href="http://java.sun.com/j2ee/1.4/download-sdk.html">J2EE 1.4 SDK - Download</a>からダウンロードしてインストールする。インストール先はc:\j2sdkとする。次に、~/.bash_profileを次のように追加・修正する（PATHは修正。修正したらsource
+~/.bash_profileとして変更を反映させる）。</p>
+<pre>export JAVA_HOME=/cygdrive/c/j2sdk
+export LTDL_LIBRARY_PATH=/Swarm-2.2/lib
+export PATH=$SWARMHOME/bin:$JAVA_HOME/bin:$PATH
+alias javadocswarm='CLASSPATH=&quot;c:\cygwin\Swarm-2.2\share\swarm\swarm.jar&quot; javadoc'</pre>
+<p>さらに、コンパイルのためのスクリプト/Swarm-2.2/bin/javacswarmの一部を次のように修正する（実行用のスクリプトjavaswarmにも同様の修正を施すべきなのだが、修正しても筆者の環境では正しく動作しなかった）。</p>
+<pre>23: _JAVACLASSES='$JAVA_HOME/jre/lib/rt.jar'
+50: jdkdir=$JAVA_HOME
+51: JAVAC=javac</pre>
+<p>ビルドのためのスクリプトgcjswarmを/Swarm-2.2/binにおく。内容は次のとおり（環境変数の設定はeclipseから呼び出す場合のため）。</p>
+<pre>#!sh
+SWARMHOME=/Swarm-2.2
+SWARMDIR=$SWARMHOME
+JAVA_HOME=/cygdrive/c/j2sdk
+PATH=$SWARMHOME/bin:$JAVA_HOME/bin:$PATH
+TMPDIR=/tmp
+javacswarm $1
+if [ $? -eq 0 ]
+then
+  CLASSPATH=/Swarm-2.2/share/swarm/swarm.jar gcj --main=${1%.java} *.class /Swarm-2.2/lib/gcj*.o -L/Swarm-2.2/lib -o ${1%.java}
+fi</pre>
+<h2><a href="#TOC11" name="SEC5">動作確認 (Java)</a></h2>
+<p>動作確認のために、<a href="ftp://ftp.swarm.org/pub/swarm/src/testing/">ftp://ftp.swarm.org/pub/swarm/src/testing/</a>から<a href="ftp://ftp.swarm.org/pub/swarm/src/testing/jheatbugs-2001-03-28.tar.gz">jheatbugs-2001-03-28.tar.gz</a>をダウンロードし、展開・ビルド・実行する。実行した結果が図のようになればインストールは完了である。</p>
+<pre>$ tar zxf jheatbugs-2001-03-28.tar.gz
+$ cd jheatbugs-2001-03-28
+$ gcjswarm StartHeatbugs.java
+$ ./StartHeatbugs</pre>
+<p>もう一つの例であるjmousetrapをビルドする場合は、上記サイトから<a href="ftp://ftp.swarm.org/pub/swarm/src/testing/jmousetrap-2001-09-13.tar.gz">jmousetrap-2001-09-13.tar.gz</a>をダウンロードし、展開・ビルド・実行する。</p>
+<p>うまくビルドできなくなったら、rm *.classとしてはじめからやってみるといい（上で示したスクリプトにも問題がある）。</p>
+</body>
+</html>

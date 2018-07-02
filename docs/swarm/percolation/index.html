@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="swarm,percolation" />
+<title>パーコレーションの視覚化</title>
+</head>
+<body>
+<p style="text-align:right;"><a href="../">Swarmについてのメモ</a></p>
+<h1>パーコレーションの視覚化</h1>
+<h2>概要</h2>
+<p>2次元正方格子にランダムに点を置いていく。となりあう点はつながっているとみなす。点が増えていくと、つながった点による大きなクラスタができる。</p>
+<p>空間が無限に大きい場合、点がある密度を超えると、クラスタのサイズも無限に大きくなることが知られている。この臨界点において、任意に選んだ格子点が無限に大きなクラスタの一部になっている確率を浸透確率という。これは、最大クラスターに含まれる点の数と、全格子点の数の比である。</p>
+<p>ここでは空間が有限の場合のシミュレーションで、浸透確率を調べる。</p>
+<p>参考 小田垣孝「つながりの科学」・「パーコレーションの科学」</p>
+<h2>実装</h2>
+<p>クラス図・<a href="doc/index.html">Javadoc</a></p>
+<p><img src="percolation.png" alt="" /></p>
+<h3>ObserverSwarm</h3>
+<p><img src="observerSwarm.png" alt="" /></p>
+<p>2つのスケジュールを用いる。ひとつは点の追加、 もうひとつはクラスタリングの計算を行う。
+クラスタリングの計算は重いことが予想されるため、 graphIntervalの間隔で行う（初期値は10だが、Probeから変更できる）。</p>
+
+<p>グラフの描画のために、浸透確率をObserverSwarmのgetPercolationProbに問い合わせる（PatternSpaceがない場合のため）。このメソッドが改めてPatternSpaceに問い合わせる。クラスタに関する統計についても同様である。</p>
+
+<p>シミュレーションが終了したかどうかは、checkToStopがModelSwarmに問い合わせることで調べる。</p>
+<h4>ModelSwarm</h4>
+<p><img src="modelSwarm.png" alt="" /></p>
+<p>空間の幅と高さはファイルpercolation.scmで定義しているが、シミュレーションが始まる前ならば、Probeからも変更できる。</p>
+<p>シミュレーションの終了は、checkToStopがPatternSpaceに格子が残っているかどうかを問い合わせる()ことで調べる。</p>
+
+<h3>PatternSpace</h3>
+<p><img src="pattern.png" alt="" /></p>
+<p>メソッドupdateによって、空いている格子点にランダムに点が置かれる。</p>
+<p>最大クラスタ・サイズの問い合わせgetLargestClusterSizeは、内部でtraceを呼んでクラスタリングを行う。traceの主要部はtraceClusterで、同じクラスタに属する点をすべて拾い出す。</p>
+<p>最大クラスタに属する点を赤で表示する（同じ大きさのクラスタが複数ある場合は、はじめに見つけたものを表示）。</p>
+<h3>EZGraph</h3>
+<p>点の数pointsに対して浸透確率P(points)をプロットする。計算が重いため、確率値の更新はgraphIntervalごとである。</p>
+<h3>EZBin</h3>
+<p>クラスタ・サイズのヒストグラムの作成にEZBinを用いている。クラスタが確定しないと作れないため、更新はEZGraphと同様graphIntervalごとである。</p>
+<p><img src="ezbin.png" alt="" /></p>
+<h2>結果</h2>
+<p>PatternSpaceを見ると、はじめのうちは小さい最大クラスタ（赤い部分）が、突然大きくなる時点があることが観察できる。</p>
+<p>浸透確率は下図のように変化する。浸透閾値（2次元正方格子の場合0.5927）までは非常に小さく（無限に広い場合は0）、それを越えると突然大きくなることがわかる。ここではクラスタ数の変遷も視覚化している（格子数の15%で割った値）。浸透確率が0より大きくなると急激に減少することがわかる。</p>
+<p><img src="ezgraph.png" alt="" /></p>
+<p>ちなみに、無限に広い場合には、浸透閾値において無限に大きいクラスタができるが、それにもかかわらず浸透確率が0なのは、空間のサイズが一辺の長さをnとして、n^2で増加するのに対し、最大クラスタのサイズはn^1.89程度でしか増加しないためである（つまり、このクラスタは1.89次元のフラクタル構造をなしている）。</p>
+<p>注意：このシミュレーションは、Swarmの使い方の例として作ったものであって、Swarmの利点を生かしたものではない。また、Swarmを用いて2次元正方格子上でのサイト過程のパーコレーションを簡単に視覚化できるのは、2次元正方格子のための表示ライブラリがすでに用意されているからである。他の格子や3次元の視覚化のためには、何らかの工夫が必要だろう（下図を参照）。</p>
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td>50x50</td>
+      <td>100x100</td>
+      <td>200x200</td>
+    </tr>
+    <tr>
+      <td><img src="2d_animation_050.gif" alt="" /></td>
+      <td><img src="2d_animation_100.gif" alt="" /></td>
+      <td><img src="2d_animation_200.gif" alt="" /></td>
+    </tr>
+    <tr>
+      <td><img src="2d_percolationProb050.png" alt="" /></td>
+      <td><img src="2d_percolationProb100.png" alt="" /></td>
+      <td><img src="2d_percolationProb200.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+<table border="1">
+  <tbody>
+    <tr>
+      <td>10x10x10</td>
+      <td>20x20x20</td>
+      <td>30x30x30</td>
+    </tr>
+    <tr>
+      <td><img src="3d_animation_10.gif" width="288" height="288" alt="" /></td>
+      <td><img src="3d_animation_20.gif" width="288" height="288" alt="" /></td>
+      <td><img src="3d_animation_30.gif" width="288" height="288" alt="" /></td>
+    </tr>
+    <tr>
+      <td><img src="3d-percolationProb10.png" width="289" height="178" alt="" /></td>
+      <td><img src="3d-percolationProb20.png" width="289" height="178" alt="" /></td>
+      <td><img src="3d-percolationProb30.png" width="289" height="178" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

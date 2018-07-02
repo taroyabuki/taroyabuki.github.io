@@ -1,0 +1,145 @@
+<HTML>
+<BODY BGCOLOR="white">
+<PRE>
+<FONT color="green">001</FONT>    import swarm.simtoolsgui.*;<a name="line.1"></a>
+<FONT color="green">002</FONT>    import swarm.gui.*;<a name="line.2"></a>
+<FONT color="green">003</FONT>    import swarm.space.*;<a name="line.3"></a>
+<FONT color="green">004</FONT>    import swarm.activity.*;<a name="line.4"></a>
+<FONT color="green">005</FONT>    import swarm.defobj.*;<a name="line.5"></a>
+<FONT color="green">006</FONT>    import swarm.objectbase.*;<a name="line.6"></a>
+<FONT color="green">007</FONT>    import swarm.*;<a name="line.7"></a>
+<FONT color="green">008</FONT>    <a name="line.8"></a>
+<FONT color="green">009</FONT>    public class ObserverSwarm extends GUISwarmImpl{<a name="line.9"></a>
+<FONT color="green">010</FONT>            ActionGroup displayActions;<a name="line.10"></a>
+<FONT color="green">011</FONT>            Schedule displaySchedule;<a name="line.11"></a>
+<FONT color="green">012</FONT>            ModelSwarm modelSwarm;<a name="line.12"></a>
+<FONT color="green">013</FONT>            Colormap colorMap;<a name="line.13"></a>
+<FONT color="green">014</FONT>            ZoomRaster patternRaster;<a name="line.14"></a>
+<FONT color="green">015</FONT>            Value2dDisplay patternDisplay;<a name="line.15"></a>
+<FONT color="green">016</FONT>            <a name="line.16"></a>
+<FONT color="green">017</FONT>            public ObserverSwarm(Zone aZone){<a name="line.17"></a>
+<FONT color="green">018</FONT>                    super(aZone);<a name="line.18"></a>
+<FONT color="green">019</FONT>            }<a name="line.19"></a>
+<FONT color="green">020</FONT>            <a name="line.20"></a>
+<FONT color="green">021</FONT>            public Object buildObjects(){<a name="line.21"></a>
+<FONT color="green">022</FONT>                    super.buildObjects();<a name="line.22"></a>
+<FONT color="green">023</FONT>                    modelSwarm = (ModelSwarm)<a name="line.23"></a>
+<FONT color="green">024</FONT>                            Globals.env.lispAppArchiver.getWithZone$key(Globals.env.globalZone,"modelSwarm");<a name="line.24"></a>
+<FONT color="green">025</FONT>                    Globals.env.createArchivedProbeDisplay (modelSwarm,"modelSwarm");<a name="line.25"></a>
+<FONT color="green">026</FONT>                    getControlPanel().setStateStopped();<a name="line.26"></a>
+<FONT color="green">027</FONT>    <a name="line.27"></a>
+<FONT color="green">028</FONT>                    modelSwarm.buildObjects();<a name="line.28"></a>
+<FONT color="green">029</FONT>                    <a name="line.29"></a>
+<FONT color="green">030</FONT>                    colorMap=new ColormapImpl(this);<a name="line.30"></a>
+<FONT color="green">031</FONT>                    colorMap.setColor$ToName((byte)0,"white");<a name="line.31"></a>
+<FONT color="green">032</FONT>                    colorMap.setColor$ToName((byte)1,"black");<a name="line.32"></a>
+<FONT color="green">033</FONT>                    <a name="line.33"></a>
+<FONT color="green">034</FONT>                    patternRaster=new ZoomRasterImpl(this);<a name="line.34"></a>
+<FONT color="green">035</FONT>                    patternRaster.setColormap(colorMap);<a name="line.35"></a>
+<FONT color="green">036</FONT>                    patternRaster.setZoomFactor(1);<a name="line.36"></a>
+<FONT color="green">037</FONT>                    patternRaster.setWidth$Height(<a name="line.37"></a>
+<FONT color="green">038</FONT>                            modelSwarm.getWidth(),<a name="line.38"></a>
+<FONT color="green">039</FONT>                            modelSwarm.getHistory());<a name="line.39"></a>
+<FONT color="green">040</FONT>                    patternRaster.setWindowTitle("Generated Pattern");<a name="line.40"></a>
+<FONT color="green">041</FONT>                    patternRaster.pack();<a name="line.41"></a>
+<FONT color="green">042</FONT>                    <a name="line.42"></a>
+<FONT color="green">043</FONT>                    patternDisplay=new Value2dDisplayImpl(<a name="line.43"></a>
+<FONT color="green">044</FONT>                            this,patternRaster,colorMap,modelSwarm.getPattern());<a name="line.44"></a>
+<FONT color="green">045</FONT>                    <a name="line.45"></a>
+<FONT color="green">046</FONT>                    return this;<a name="line.46"></a>
+<FONT color="green">047</FONT>            }<a name="line.47"></a>
+<FONT color="green">048</FONT>            <a name="line.48"></a>
+<FONT color="green">049</FONT>            public Object buildActions(){<a name="line.49"></a>
+<FONT color="green">050</FONT>                    super.buildActions();<a name="line.50"></a>
+<FONT color="green">051</FONT>                    modelSwarm.buildActions();<a name="line.51"></a>
+<FONT color="green">052</FONT>                    displayActions=new ActionGroupImpl(this);<a name="line.52"></a>
+<FONT color="green">053</FONT>                    <a name="line.53"></a>
+<FONT color="green">054</FONT>                    try {<a name="line.54"></a>
+<FONT color="green">055</FONT>                            displayActions.createActionTo$message(patternDisplay,<a name="line.55"></a>
+<FONT color="green">056</FONT>                                    new Selector(patternDisplay.getClass(),"display",false));<a name="line.56"></a>
+<FONT color="green">057</FONT>                            displayActions.createActionTo$message(patternRaster,<a name="line.57"></a>
+<FONT color="green">058</FONT>                                    new Selector(patternRaster.getClass(),"drawSelf",false));<a name="line.58"></a>
+<FONT color="green">059</FONT>                            displayActions.createActionTo$message(<a name="line.59"></a>
+<FONT color="green">060</FONT>                                    getActionCache(),<a name="line.60"></a>
+<FONT color="green">061</FONT>                                    new Selector(getActionCache().getClass(),"doTkEvents",true));<a name="line.61"></a>
+<FONT color="green">062</FONT>                    } catch (Exception e) {<a name="line.62"></a>
+<FONT color="green">063</FONT>                            System.out.println ("Exception: " + e.getMessage ());<a name="line.63"></a>
+<FONT color="green">064</FONT>                            System.exit(1);<a name="line.64"></a>
+<FONT color="green">065</FONT>                    }<a name="line.65"></a>
+<FONT color="green">066</FONT>                    <a name="line.66"></a>
+<FONT color="green">067</FONT>                    displaySchedule = new ScheduleImpl(this,1);<a name="line.67"></a>
+<FONT color="green">068</FONT>                    displaySchedule.at$createAction(0,displayActions);<a name="line.68"></a>
+<FONT color="green">069</FONT>                    <a name="line.69"></a>
+<FONT color="green">070</FONT>                    return this;<a name="line.70"></a>
+<FONT color="green">071</FONT>        }<a name="line.71"></a>
+<FONT color="green">072</FONT>            <a name="line.72"></a>
+<FONT color="green">073</FONT>            public Activity activateIn(Swarm context){<a name="line.73"></a>
+<FONT color="green">074</FONT>            super.activateIn(context);<a name="line.74"></a>
+<FONT color="green">075</FONT>                    modelSwarm.activateIn(this);<a name="line.75"></a>
+<FONT color="green">076</FONT>                    displaySchedule.activateIn(this);<a name="line.76"></a>
+<FONT color="green">077</FONT>                    return getActivity();<a name="line.77"></a>
+<FONT color="green">078</FONT>            }<a name="line.78"></a>
+<FONT color="green">079</FONT>    }<a name="line.79"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY>
+</HTML>
