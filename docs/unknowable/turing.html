@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+<meta name="keywords" content="不完全性定理,チューリング,停止性,lisp,mathematica,パラドックス,Chaitin,チャイティン" />
+<title>停止問題の解決不可能性についてのチューリングの証明</title>
+</head>
+<body>
+<h1>停止問題の解決不可能性についてのチューリングの証明</h1>
+<p><a href="./">Up: 不完全性定理のLisp, Mathematicaによる記述</a></p>
+<p>G. J. Chaitin <a href="https://web.archive.org/web/20110806065908/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch4.html">Turing's Proof of the Unsolvability of the Halting 
+Problem</a> の例をMathematicaとCommon Lispで書き直した</p>
+<ul>
+  <li><a name="TOC1" href="#SEC1">Lispの場合</a></li>
+  <li><a name="TOC2" href="#SEC2">Mathematicaの場合</a></li>
+</ul>
+<p><strong>ラッセルのパラドックス：自分の髭を剃らない村中すべての男の髭を剃る床屋</strong></p>
+<p><strong>チューリングの定理：任意のプログラムが停止するかどうかを判断できるようなアルゴリズムは存在しない</strong></p>
+<hr />
+
+<h2><a href="#TOC1" name="SEC1">Lispの場合</a></h2>
+<p>ElispにあるfsetをCommon Lispでも定義しておく（その都度(setf (symbol-function
+'a) b)と書いてもいい）。</p>
+<pre>(defun fset (a b) (setf (symbol-function a) b))</pre>
+<p>第2章に「letを使わなければ、与えられた値、たとえばLISPプログラム計算量を持つ、最小式のサイズが、環境に左右されない」とある。よくわからないがそのとおりにした。</p>
+<p>与えられた式が値を持つかどうかによってtまたはnilを返すような関数(haltQ)があるとする。</p>
+<p>関数turingはまず入力xに対しz=(x 'x)をつくる（xを展開してからquoteがつくことに注意）。そしてzが停止するなら停止しない、zが停止しないなら停止する。turingにturing自身を作用させると、止まらない時に限り止る関数を作れる。まずは止まらないとした場合（ifの条件がnilになっている）、</p>
+<pre>&gt; (setq turing
+      '(lambda (x)
+         ((lambda (haltsQ)
+           ((lambda (z) (if (funcall haltsQ z) (eval z) nil))
+            (print `(,x ',x))))
+          '(lambda (sExp) nil))))
+(LAMBDA (X) ((LAMBDA (HALTSQ) ((LAMBDA # #) (PRINT `#))) '(LAMBDA (SEXP) NIL)))
+&gt; (fset 'turing turing)
+(LAMBDA (X) ((LAMBDA (HALTSQ) ((LAMBDA # #) (PRINT `#))) '(LAMBDA (SEXP) NIL)))
+&gt; (turing turing)
+
+((LAMBDA (X)
+   ((LAMBDA (HALTSQ)
+      ((LAMBDA (Z) (IF (FUNCALL HALTSQ Z) (EVAL Z) NIL)) (PRINT `(,X ',X))))
+    '(LAMBDA (SEXP) NIL)))
+ '(LAMBDA (X)
+    ((LAMBDA (HALTSQ)
+       ((LAMBDA (Z) (IF (FUNCALL HALTSQ Z) (EVAL Z) NIL)) (PRINT `(,X ',X))))
+     '(LAMBDA (SEXP) NIL)))) 
+NIL</pre>
+<p>次に止まるとした場合（ifの条件がtになっている。大量に出力してしまうからprintは使えない）、</p>
+<pre>&gt; (setq turing
+      '(lambda (x)
+         ((lambda (haltsQ)
+           ((lambda (z) (if (funcall haltsQ z) (eval z) nil))
+            `(,x ',x)))
+          '(lambda (sExp) t))))
+(LAMBDA (X) ((LAMBDA (HALTSQ) ((LAMBDA # #) `(,X ',X))) '(LAMBDA (SEXP) T)))
+&gt; (fset 'turing turing)
+(LAMBDA (X) ((LAMBDA (HALTSQ) ((LAMBDA # #) `(,X ',X))) '(LAMBDA (SEXP) T)))
+&gt; (turing turing)
+Error: An allocation request for 128 bytes caused a need for 3407872
+       more bytes of heap. This request cannot be satisfied because you
+       have hit the Allegro CL Trial heap limit.  If you wish to
+       purchase Allegro CL please contact Franz Inc. at sales@franz.com
+       or by calling (510) 548-3600.
+[condition type: STORAGE-CONDITION]</pre>
+<p>次のように書けば自己限定的</p>
+<pre>((LAMBDA (X)
+   ((LAMBDA (HALTSQ)
+      ((LAMBDA (Z) (IF (FUNCALL HALTSQ Z) (EVAL Z) NIL)) (PRINT `(,X ',X))))
+    '(LAMBDA (SEXP) NIL)))
+ '(LAMBDA (X)
+    ((LAMBDA (HALTSQ)
+       ((LAMBDA (Z) (IF (FUNCALL HALTSQ Z) (EVAL Z) NIL)) (PRINT `(,X ',X))))
+     '(LAMBDA (SEXP) NIL))))</pre>
+<hr />
+
+<h2><a href="#TOC2" name="SEC2">Mathematicaの場合</a></h2>
+<pre>&gt; turing =
+    Function[{x},
+      Function[{haltsQ},
+          Function[{z}, If[haltsQ[z], ReleaseHold[z], False]]
+            [Print[x[Hold[x]]]]]
+        [Function[{sExp}, False]]];
+&gt; turing[turing]
+Hold[Function[{x}, 
+      Function[{haltsQ}, 
+          Function[{z}, If[haltsQ[z], ReleaseHold[z], False]][
+            Print[x[Hold[x]]]]][Function[{sExp}, False]]]][
+  Hold[Hold[
+      Function[{x}, 
+        Function[{haltsQ}, 
+            Function[{z}, If[haltsQ[z], ReleaseHold[z], False]][
+              Print[x[Hold[x]]]]][Function[{sExp}, False]]]]]]
+False</pre>
+<pre>&gt; turing =
+    Function[{x},
+      Function[{haltsQ},
+          Function[{z}, If[haltsQ[z], ReleaseHold[z], False]]
+            [x[Hold[x]]]]
+        [Function[{sExp}, True]]];
+&gt; turing[turing]
+- $IterationLimit::&quot;itlim&quot;: &quot;Iteration limit of \!\(4096\) exceeded.&quot;
+- $IterationLimit::&quot;itlim&quot;: &quot;Iteration limit of \!\(4096\) exceeded.&quot;
+Hold[Function[{z$}, If[Function[{sExp}, True][z$], ReleaseHold[z$], False]][
+    Hold[Function[{x}, 
+          Function[{haltsQ}, 
+              Function[{z}, If[haltsQ[z], ReleaseHold[z], False]][
+                x[Hold[x]]]][Function[{sExp}, True]]]][
+      Hold[Hold[
+          Function[{x}, 
+            Function[{haltsQ}, 
+                Function[{z}, If[haltsQ[z], ReleaseHold[z], False]][
+                  x[Hold[x]]]][Function[{sExp}, True]]]]]]]]</pre>
+<hr />
+<p><a href="./">Up: 不完全性定理のLisp, Mathematicaによる記述</a></p>
+</body>
+</html>

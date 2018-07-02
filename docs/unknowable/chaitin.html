@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+<meta name="keywords" content="不完全性定理,lisp,mathematica,パラドックス,Chaitin,チャイティン" />
+<title>LISP式がエレガントであることを証明できないというチャイティンの証明</title>
+</head>
+<body>
+<h1>LISP式がエレガントであることを証明できないというチャイティンの証明</h1>
+<p><a href="./">Up: 不完全性定理のLisp, Mathematicaによる記述</a></p>
+<p>G. J. Chaitin <a href="https://web.archive.org/web/20131212225205/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch5.html">My Proof that You Can't Show that a LISP Expression is Elegant</a> の例をMathematicaとCommon Lispで書き直した</p>
+<ul>
+  <li><a name="TOC1" href="#SEC1">Lispの場合</a></li>
+  <li><a name="TOC2" href="#SEC2">Mathematicaの場合</a></li>
+</ul>
+<p><strong>ベリーのパラドックス（ラッセル版）：20文字以下で記述できない最初の自然数（19字）</strong></p>
+<p><strong>チャイティンの定理：公理の計算量+Nよりも大きい計算量を持つLispの式のエレガント性は証明できない</strong></p>
+<hr />
+
+
+<h2><a href="#TOC1" name="SEC1">Lispの場合</a></h2>
+<p>ElispにあるfsetをCommon Lispでも定義しておく（その都度(setf (symbol-function
+'a) b)と書いてもいい）。</p>
+<pre>(defun fset (a b) (setf (symbol-function a) b))</pre>
+<p>S式のサイズを返す関数sizeを次のように定義する。</p>
+<pre>(defun size (s) (length (prin1-to-string s)))</pre>
+<p>はじめ考えたのはこんなに複雑だった。</p>
+<pre>(defun size (s)
+  (let ((out (make-string-output-stream)))
+    (progn
+      (prin1 s out)
+      (length (get-output-stream-string out)))))</pre>
+<p>すべての可能な証明が番号の付けられたリストになっているとする。N番目の証明が正しければそれが証明する定理を返し、そうでなければnilを返すような形式公理系(fas
+N)も実装されているとする。</p>
+<p><i>（これが無限のときに以下の話が続けられるのかどうかよくわからない）</i></p>
+<p>正しい証明が(is-elegant XXX)の形をしていて、かつそのサイズが処理系のサイズ(size
+expression)よりも大きければ、それが証明する定理を返すような関数expressionを作ることができる（チャイティンの本では(size
+(+ 356 fas))などとなっているが、なぜ分けなければいけないのかはよくわからない。以下には(size
+ex)と書いてしまっているが、これはexにアクセスできなければ得られないから、それを避けるためには手で数字を書き込んでおけばよい）。これはベリーのパラドックスである。矛盾を避けるための結論は、Aが不健全だということか、Aではexのサイズより長いLISP式がエレガントだとは証明できないということである。</p>
+<h3>#1</h3>
+<p>この段階では何も問題はない。妥当な証明(is-elegant X)の定理Xはこのシステムよりも小さい。</p>
+<pre>(setq ex '(lambda ()
+  (progn
+    (setq fas '(lambda (n)
+                 (cond ((= n 1) '(is-elegant x))
+                       ((= n 2) nil)
+                       ((= n 3) '(is-elegant yyy))
+                       (t 'stop))))
+    (fset 'fas fas)
+    (defun repeat (n)
+     (let ((theorem (print (fas n))))
+       (progn
+         (if (equal nil theorem) (repeat (+ n 1))
+           (if (equal theorem 'stop) 'fas-has-stopped
+             (if (equal (car theorem) 'is-elegant)
+                 (if (&gt; (print (size (cadr theorem))) (print (size ex)))
+                     (eval (cadr theorem))
+                   (repeat (+ n 1)))
+               (repeat (+ n 1))))))))
+    (repeat 1))))</pre>
+<pre>&gt; (funcall ex)
+
+
+(IS-ELEGANT X) 
+1 
+892 
+NIL 
+(IS-ELEGANT YYY) 
+3 
+892 
+STOP 
+FAS-HAS-STOPPED</pre>
+<p>以下はチャイティンの本にある書き方（elispではrepeatの中でrepeatを呼べるとが、Common
+Lispでは呼べない）</p>
+<pre>((lambda (fas)
+   ((lambda (repeat)
+      (funcall repeat 1))
+    '(lambda (n)
+       ((lambda (theorem)
+          (if (equal nil theorem)
+             (funcall repeat (+ n 1))
+           (if (equal 'stop theorem)
+               'fas-has-stopped
+             (if (equal 'is-elegant (car theorem))
+                 (if (&gt; (print (size (cadr theorem)))
+                        (print (+ 422 (size fas))))
+                     (eval (cadr theorem))
+                   (funcall repeat (+ n 1)))
+               (funcall repeat (+ n 1))))))
+          (print (funcall fas n))))))
+ '(lambda (n)
+    (cond ((= n 1) '(is-elegant x))
+          ((= n 2) nil)
+          ((= n 3) '(is-elegant yyy))
+          (t 'stop))))
+
+(is-elegant x)
+
+1
+
+540
+
+nil
+
+(is-elegant yyy)
+
+3
+
+540
+
+stop
+fas-has-stopped</pre>
+<h3>#2</h3>
+<p>ここでパラドックスが生じる。(is-elegant 100...0)の定理100...0（サイズ930）は、より短いプログラム（つまりex）によって表示することができる。準備としてまず、1の後に0がn個続くような文字列を作る関数long-stringを定義しておく（もちろん後述のexの定義の中に書いてもいい）。</p>
+<pre>(defun long-string (n) (concatenate 'string (string #\1) (make-string n :initial-element #\0)))　（Common Lisp）</pre>
+<pre>(defun long-string (n) (concat (string ?1) (make-string n ?0)))　（Emacs Lisp）</pre>
+<p>さらに、ｘｙｚｚｙにはmake-stringがないため、定義しておく。</p>
+<pre>(defun make-string (n &amp;key (initial-element #\0))
+  (if (= n 0)
+      (string initial-element)
+    (concatenate 'string
+                 (make-string (- n 1) :initial-element initial-element)
+                 (string initial-element))))</pre>
+<p>チャイティンの本にあるように多倍長整数を利用するなら((= n 4) (cons 'is-elegant
+(cons (expt 10 995) nil)))などとすればよい（elispやｘｙｚｚｙは多倍長整数をサポートしていない）。long-stringの引数は、Allegro
+CLなら1029、xyzzyなら511、elispなら575にするとちょうど良い。</p>
+<pre>(setq ex '(lambda ()
+  (progn
+    (setq fas '(lambda (n)
+                 (cond ((= n 1) '(is-elegant x))
+                       ((= n 2) nil)
+                       ((= n 3) '(is-elegant yyy))
+                       ((= n 4) (cons 'is-elegant (cons (long-string 1029) nil)))
+                       (t 'stop))))
+    (fset 'fas fas)
+    (defun repeat (n)
+     (let ((theorem (print (fas n))))
+       (progn
+         (if (equal nil theorem) (repeat (+ n 1))
+           (if (equal theorem 'stop) 'fas-has-stopped
+             (if (equal (car theorem) 'is-elegant)
+                 (if (&gt; (print (size (cadr theorem))) (print (size ex)))
+                     (eval (cadr theorem))
+                   (repeat (+ n 1)))
+               (repeat (+ n 1))))))))
+    (repeat 1))))</pre>
+<p>（printの動作がCommon Lisp（前に改行）とelisp（前後に改行）では異なるため、elispでは出力結果がはなり違う。）</p>
+<pre>&gt; (funcall ex)
+
+(is-elegant x) 
+1 
+514 
+nil 
+(is-elegant yyy) 
+3 
+514 
+(is-elegant &quot;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&quot;) 
+515 
+514 
+&quot;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&quot;</pre>
+<hr />
+
+
+<h2><a href="#TOC2" name="SEC2">Mathematicaの場合</a></h2>
+<h3>#1</h3>
+<pre>In[1]:=
+print = Function[{x}, Print[x]; x];
+
+In[2]:=
+size[x_] := StringLength[ToString[x]]
+
+In[52]:=
+ex = Function[{}, fas = Function[{n}, Switch[n,
+            1, Hold[isElegant[x]],
+            2, {},
+            3, Hold[isElegant[yyy]],
+            _, stop]];
+      repeat = 
+        Function[{n}, 
+          With[{theorem = print[ReleaseHold[fas[n]]]}, 
+            If[{} === theorem, repeat[n + 1], 
+              If[stop === theorem, fasHasStopped, 
+                If[isElegant === theorem[[0]], 
+                  If[print[size[theorem[[1]]]] &gt; print[size[ex]], 
+                    theorem[[1]], repeat[n + 1]], repeat[n + 1]]]]]];
+      repeat[1]];
+
+In[54]:=
+ex[]
+
+From In[54]:=
+isElegant[x]
+
+From In[54]:=
+1
+
+From In[54]:=
+386
+
+From In[54]:=
+{}
+
+From In[54]:=
+isElegant[yyy]
+
+From In[54]:=
+3
+
+From In[54]:=
+386
+
+From In[54]:=
+stop
+
+Out[54]=
+fasHasStopped</pre>
+<h3>#2</h3>
+<pre>In[50]:=
+ex = Function[{}, fas = Function[{n}, Switch[n,
+            1, Hold[isElegant[x]],
+            2, {},
+            3, Hold[isElegant[yyy]],
+            4, Hold[isElegant[10^535]],
+            _, stop]];
+      repeat = 
+        Function[{n}, 
+          With[{theorem = print[ReleaseHold[fas[n]]]}, 
+            If[{} === theorem, repeat[n + 1], 
+              If[stop === theorem, fasHasStopped, 
+                If[isElegant === theorem[[0]], 
+                  If[print[size[theorem[[1]]]] &gt; print[size[ex]], 
+                    theorem[[1]], repeat[n + 1]], repeat[n + 1]]]]]];
+      repeat[1]];
+
+In[51]:=
+ex[]
+
+From In[51]:=
+isElegant[x]
+
+From In[51]:=
+1
+
+From In[51]:=
+535
+
+From In[51]:=
+{}
+
+From In[51]:=
+isElegant[yyy]
+
+From In[51]:=
+3
+
+From In[51]:=
+535
+
+From In[51]:=
+isElegant[\
+100000000000000000000000000000000000000000000000000000000000000000000000000000\
+000000000000000000000000000000000000000000000000000000000000000000000000000000\
+000000000000000000000000000000000000000000000000000000000000000000000000000000\
+000000000000000000000000000000000000000000000000000000000000000000000000000000\
+000000000000000000000000000000000000000000000000000000000000000000000000000000\
+000000000000000000000000000000000000000000000000000000000000000000000000000000\
+00000000000000000000000000000000000000000000000000000000000000000000]
+
+From In[51]:=
+536
+
+From In[51]:=
+535
+
+Out[51]=
+100000000000000000000000000000000000000000000000000000000000000000000000000000\
+000000000000000000000000000000000000000000000000000000000000000000000000000000\
+000000000000000000000000000000000000000000000000000000000000000000000000000000\
+000000000000000000000000000000000000000000000000000000000000000000000000000000\
+000000000000000000000000000000000000000000000000000000000000000000000000000000\
+000000000000000000000000000000000000000000000000000000000000000000000000000000\
+00000000000000000000000000000000000000000000000000000000000000000000</pre>
+<hr />
+<p><a href="./">Up: 不完全性定理のLisp, Mathematicaによる記述</a></p>
+</body>
+</html>
