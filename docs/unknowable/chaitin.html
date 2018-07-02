@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -11,15 +11,15 @@
 <p><a href="./">Up: 不完全性定理のLisp, Mathematicaによる記述</a></p>
 <p>G. J. Chaitin <a href="https://web.archive.org/web/20131212225205/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch5.html">My Proof that You Can't Show that a LISP Expression is Elegant</a> の例をMathematicaとCommon Lispで書き直した</p>
 <ul>
-  <li><a name="TOC1" href="#SEC1">Lispの場合</a></li>
-  <li><a name="TOC2" href="#SEC2">Mathematicaの場合</a></li>
+  <li><a id="TOC1" href="#SEC1">Lispの場合</a></li>
+  <li><a id="TOC2" href="#SEC2">Mathematicaの場合</a></li>
 </ul>
 <p><strong>ベリーのパラドックス（ラッセル版）：20文字以下で記述できない最初の自然数（19字）</strong></p>
 <p><strong>チャイティンの定理：公理の計算量+Nよりも大きい計算量を持つLispの式のエレガント性は証明できない</strong></p>
 <hr />
 
 
-<h2><a href="#TOC1" name="SEC1">Lispの場合</a></h2>
+<h2><a href="#TOC1" id="SEC1">Lispの場合</a></h2>
 <p>ElispにあるfsetをCommon Lispでも定義しておく（その都度(setf (symbol-function
 'a) b)と書いてもいい）。</p>
 <pre>(defun fset (a b) (setf (symbol-function a) b))</pre>
@@ -162,7 +162,7 @@ nil
 <hr />
 
 
-<h2><a href="#TOC2" name="SEC2">Mathematicaの場合</a></h2>
+<h2><a href="#TOC2" id="SEC2">Mathematicaの場合</a></h2>
 <h3>#1</h3>
 <pre>In[1]:=
 print = Function[{x}, Print[x]; x];

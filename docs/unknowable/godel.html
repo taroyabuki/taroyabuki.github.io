@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -11,17 +11,17 @@
 <p><a href="./">Up: 不完全性定理のLisp, Mathematicaによる記述</a></p>
 <p>G. J. Chaitin <a href="https://web.archive.org/web/20110806065941/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch3.html">Godel's Proof of his Incompleteness Theorem</a> の例をMathematicaとCommon Lispで書き直した。<ins>これは「証明」というよりも「ゲーデルの定理の主張」を説明するための文書である</ins></p>
 <ul>
-  <li><a name="TOC9" href="#SEC1">準備運動</a>
+  <li><a id="TOC9" href="#SEC1">準備運動</a>
   <ul>
-    <li><a name="TOC10" href="#SEC2">Mathematicaの場合</a></li>
-    <li><a name="TOC11" href="#SEC3">Schemeの場合（MIT Scheme）</a></li>
-    <li><a name="TOC12" href="#SEC4">Common Lispの場合</a></li>
+    <li><a id="TOC10" href="#SEC2">Mathematicaの場合</a></li>
+    <li><a id="TOC11" href="#SEC3">Schemeの場合（MIT Scheme）</a></li>
+    <li><a id="TOC12" href="#SEC4">Common Lispの場合</a></li>
   </ul></li>
-  <li><a name="TOC13" href="#SEC5">ゲーデルの定理</a>
+  <li><a id="TOC13" href="#SEC5">ゲーデルの定理</a>
   <ul>
-    <li><a name="TOC14" href="#SEC6">Mathematicaの場合</a></li>
-    <li><a name="TOC15" href="#SEC7">Schemeの場合（MIT Scheme）</a></li>
-    <li><a name="TOC16" href="#SEC8">Lispの場合</a></li>
+    <li><a id="TOC14" href="#SEC6">Mathematicaの場合</a></li>
+    <li><a id="TOC15" href="#SEC7">Schemeの場合（MIT Scheme）</a></li>
+    <li><a id="TOC16" href="#SEC8">Lispの場合</a></li>
   </ul></li>
 </ul>
 <p><strong>うそつきのパラドックス：「この文はうそである」</strong></p>
@@ -30,9 +30,9 @@
 
 
 
-<h2><a href="#TOC9" name="SEC1">準備運動</a></h2>
+<h2><a href="#TOC9" id="SEC1">準備運動</a></h2>
 <p>これは<a href="../self.html">自分のコードを出力するプログラム</a>の例でもある</p>
-<h3><a href="#TOC10" name="SEC2">Mathematicaの場合</a></h3>
+<h3><a href="#TOC10" id="SEC2">Mathematicaの場合</a></h3>
 <p>Mathematicaで書くともっともわかりやすいだろう。まず x -&gt; x[x] となるような関数fを作る</p>
 <pre>&gt; f = Function[{x}, x[Hold[x]]];</pre>
 <p>次のように書いてもいい</p>
@@ -54,7 +54,7 @@ Hold[Function[{x}, x[Hold[x]]]][Hold[Hold[Function[{x}, x[Hold[x]]]]]]</pre>
 Hold[(#1[h[#1]] &amp;)[h[#1[h[#1]] &amp;]]]
 &gt; ReleaseHold[%]
 h[#1[h[#1]] &amp;][h[h[#1[h[#1]] &amp;]]]</pre>
-<h3><a href="#TOC11" name="SEC3">Schemeの場合（MIT Scheme）</a></h3>
+<h3><a href="#TOC11" id="SEC3">Schemeの場合（MIT Scheme）</a></h3>
 <pre>(define f (lambda (x) `(',x ',x)))
 ;Value: &quot;f --&gt; #[compound-procedure 2 f]&quot;</pre>
 <p>これは (define (f x) `(',x ',x)) と書いてもよい（あとで見るように、Common
@@ -70,7 +70,7 @@ Lispの場合は同じではない）</p>
 <p>#[compound-procedure 2 f] などは関数の実体を表している。f というシンボルは関数であるが、値を参照することもでき、その値は
 #[compound-procedure 2 f] だということである（ChaitinのSchemeならば値は
 (lambda (x) `(',x ',x)) となっていてわかりやすい）。MIT Schemeではこうなってしまうのだが、目的は果たせる</p>
-<h3><a href="#TOC12" name="SEC4">Common Lispの場合</a></h3>
+<h3><a href="#TOC12" id="SEC4">Common Lispの場合</a></h3>
 <p>Common LispではMathematicaやSchemeと違って、シンボルに値と関数が別々に格納される。関数
 describe が実装されている場合、このことを簡単に確認できる（関数 describe
 がない場合は、symbol-value や symbol-function を調べればよい）。Schemeをまねて、</p>
@@ -125,12 +125,12 @@ T</pre>
 
 
 
-<h2><a href="#TOC13" name="SEC5">ゲーデルの定理</a></h2>
+<h2><a href="#TOC13" id="SEC5">ゲーデルの定理</a></h2>
 <p>「文に数を対応させるが、文の中で数を扱うことができるためにレベルが縮退する」というのがゲーデルの方法の本質である。
 「表現に名前を対応させるが、表現の中で名前を扱うことができるためにレベルが縮退する」というのが以下の方法の本質である。
 （これが簡単に実現できるのは、ここで扱う言語では表現がfirst-classだからである。First-classについてはSICPを参照）</p>
 <p>表現に名前を対応させるのは簡単で、MathematicaならばHoldを、SchemeやLispならばquoteを使えばよい。名前が指す対象の表現 valueOf(x) を具体的に知りたいときは、MathematicaならばReleaseHoldを、SchemeやLispならばevalを使う</p>
-<h3><a href="#TOC14" name="SEC6">Mathematicaの場合</a></h3>
+<h3><a href="#TOC14" id="SEC6">Mathematicaの場合</a></h3>
 <p>xが妥当な証明でないならFalseを返し、妥当な証明なら証明された定理を返すような関数
 valid-proofQ があるとする（これは難しくないはず）。すべてのxについて valid-proofQ[x]
 がyと等しくないとき、yは証明不可能である。このことを主張する述語をis-unprovable
@@ -155,7 +155,7 @@ isUnprovable[
 <pre>&gt; g[g] === ReleaseHold[First[First[g[g]]]]
 True</pre>
 <p>g[g]は証明可能であろうか。証明可能だという結論はg[g]の主張と矛盾する。よってg[g]は証明可能ではない。しかしこれはg[g]の主張である。よって、g[g]は証明不可能だが真である</p>
-<h3><a href="#TOC15" name="SEC7">Schemeの場合（MIT Scheme）</a></h3>
+<h3><a href="#TOC15" id="SEC7">Schemeの場合（MIT Scheme）</a></h3>
 <pre>(define g (lambda (x) `(is-unprovable (value-of (',x ',x)))))
 ;Value: &quot;g --&gt; #[compound-procedure 3 g]&quot;
 (g 'x)
@@ -164,7 +164,7 @@ True</pre>
 ;Value: (is-unprovable (value-of ((quote #[compound-procedure 3 g]) (quote #[compound-procedure 3 g]))))
 (equal? (g g) (eval (cadr (cadr (g g))) nil))
 ;Value: #t</pre>
-<h3><a href="#TOC16" name="SEC8">Lispの場合</a></h3>
+<h3><a href="#TOC16" id="SEC8">Lispの場合</a></h3>
 <p>省略なしで見るために(let ((*print-level* 6)) (princ (g g)))などとする</p>
 <pre>&gt; (setq g '(lambda (x) `(is-unprovable (value-of (,x ',x)))))
 (LAMBDA (X) `(IS-UNPROVABLE (VALUE-OF (,X ',X))))

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -12,14 +12,14 @@
 <p>G. J. Chaitin <a href="https://web.archive.org/web/20110806065908/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch4.html">Turing's Proof of the Unsolvability of the Halting 
 Problem</a> の例をMathematicaとCommon Lispで書き直した</p>
 <ul>
-  <li><a name="TOC1" href="#SEC1">Lispの場合</a></li>
-  <li><a name="TOC2" href="#SEC2">Mathematicaの場合</a></li>
+  <li><a id="TOC1" href="#SEC1">Lispの場合</a></li>
+  <li><a id="TOC2" href="#SEC2">Mathematicaの場合</a></li>
 </ul>
 <p><strong>ラッセルのパラドックス：自分の髭を剃らない村中すべての男の髭を剃る床屋</strong></p>
 <p><strong>チューリングの定理：任意のプログラムが停止するかどうかを判断できるようなアルゴリズムは存在しない</strong></p>
 <hr />
 
-<h2><a href="#TOC1" name="SEC1">Lispの場合</a></h2>
+<h2><a href="#TOC1" id="SEC1">Lispの場合</a></h2>
 <p>ElispにあるfsetをCommon Lispでも定義しておく（その都度(setf (symbol-function
 'a) b)と書いてもいい）。</p>
 <pre>(defun fset (a b) (setf (symbol-function a) b))</pre>
@@ -74,7 +74,7 @@ Error: An allocation request for 128 bytes caused a need for 3407872
      '(LAMBDA (SEXP) NIL))))</pre>
 <hr />
 
-<h2><a href="#TOC2" name="SEC2">Mathematicaの場合</a></h2>
+<h2><a href="#TOC2" id="SEC2">Mathematicaの場合</a></h2>
 <pre>&gt; turing =
     Function[{x},
       Function[{haltsQ},
