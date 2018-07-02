@@ -46,7 +46,7 @@ consisting of trees. In Leandro Nunes de Castro and Fernando J. Von Zuben, edito
 * [ペンローズ『皇帝の新しい心』の万能テューリング機械](https://github.com/taroyabuki/penrose_utm)
 * [バベルのコンピューター](http://blog.unfindable.net/archives/268)
 * [No Free Lunch Theorem&mdash;理想の＊＊の探し方](docs/no_free_lunch.pdf)
-* [なぜ Lisp なのか](docs/whi_lisp.md)
+* [なぜ Lisp なのか](docs/why_lisp.md)
 * [自分のコードを出力するプログラム](docs/self.md)
 
 ### Sudoku
