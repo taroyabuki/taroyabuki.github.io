@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8" />
-<title>なぜ Lisp なのか</title>
-</head>
-<body>
-<h1>なぜ Lisp なのか</h1>
+# なぜ Lisp なのか
 
-<h2>Quote...Unquote</h2>
+## Quote...Unquote
 
 <ul>
   <li><a href="https://www.amazon.co.jp/exec/obidos/ASIN/4826901267/inquisitor-22/">ダグラス・R. ホフスタッター著, 竹内郁雄ほか訳『メタマジック・ゲーム』</a>
@@ -36,9 +29,9 @@
 
 
 
-<h2>処理系</h2>
+## 処理系
 
-<h3>Common Lisp</h3>
+### Common Lisp
 
 <ul>
  <li><a href="http://www.cons.org/cmucl/">CMUCL</a></li>
@@ -47,7 +40,7 @@
  <li><a href="http://jp.franz.com/">Allegro Common Lisp</a></li>
 </ul>
 
-<h3>Scheme</h3>
+### Scheme
 
 <ul>
  <li><a href='http://practical-scheme.net/gauche/index-j.html'>Gauche</a></li>
@@ -55,7 +48,7 @@
  <li><a href='http://groups.csail.mit.edu/mac/projects/scheme/'>MIT/GNU Scheme</a></li>
 </ul>
 
-<h3>Emacs Lisp</h3>
+### Emacs Lisp
 
 <ul>
  <li><a href='http://www.gnu.org/software/emacs/'>GNU Emacs</a></li>
@@ -66,7 +59,7 @@
 
 
 
-<h2>Reference</h2>
+## Reference
 
 <ul>
  <li><a href="http://www.lispworks.com/documentation/common-lisp.html">Common Lisp HyperSpec</a></li>
@@ -82,7 +75,7 @@
 
 
 
-<h2>SICP</h2>
+## SICP
 
 <p><a href="https://www.amazon.co.jp/exec/obidos/ASIN/489471163X/inquisitor-22"></a><a href="http://www.norvig.com/Lisp-retro.html">Peter Norvigによれば</a>、<q>コンピューター・サイエンスの最高の入門書</q>。</p>
 
@@ -97,9 +90,9 @@
 
 
 
-<h2>重要人物</h2>
+## 重要人物
 
-<h3><a href="https://www.amazon.co.jp/exec/obidos/ASIN/0262130114/inquisitor-22/"></a><a href="http://www-formal.stanford.edu/jmc/frames.html">John McCarthy</a></h3>
+### <a href="https://www.amazon.co.jp/exec/obidos/ASIN/0262130114/inquisitor-22/"></a><a href="http://www-formal.stanford.edu/jmc/frames.html">John McCarthy</a>
 
 <ul>
   <li><a href="http://www-formal.stanford.edu/jmc/recursive.html">Recursive Functions of Symbolic Expressions and their Computation by Machine (Part I). 1960.</a> 原典！</li>
@@ -111,7 +104,7 @@
 
 
 
-<h3>Peter Norvig</h3>
+### Peter Norvig
 
 <ul>
   <li><a href="https://www.amazon.co.jp/exec/obidos/ASIN/4798118907/inquisitor-22/"></a><a href="https://www.amazon.co.jp/exec/obidos/ASIN/1558601910/inquisitor-22"><em>Paradigms of Artificial Intelligence Programming: Case Studies in Common Lisp</em></a>（<a href="https://github.com/norvig/paip-lisp">GitHub</a>，<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4798118907/inquisitor-22/">日本語訳</a>）</li>
@@ -126,7 +119,7 @@
 
 
 
-<h3><a href="http://www.cs.auckland.ac.nz/CDMTCS/chaitin/index.html">Gregory. J. Chaitin</a></h3>
+### <a href="http://www.cs.auckland.ac.nz/CDMTCS/chaitin/index.html">Gregory. J. Chaitin</a>
 
 <ul>
   <li><a href="http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/index.html"><em>The Unknowable</em></a> （Lisp によるゲーデル・チューリング・チャイティンの不完全性定理の記述。<a href="https://www.amazon.co.jp/exec/obidos/ASIN/443401238X/inquisitor-22/">日本語訳</a>）</li>
@@ -137,10 +130,10 @@
 
 
 
-<h3><a href="http://www.paulgraham.com/paulgraham/index.html">Paul Graham</a></h3>
+### <a href="http://www.paulgraham.com/paulgraham/index.html">Paul Graham</a>
 <p><a href="http://www.norvig.com/Lisp-retro.html">Peter Norvig によれば</a>、Lisp の本の中では、<q>Paul Graham の <a href="http://www.paulgraham.com/paulgraham/onlisp.html"><em>On Lisp</em></a>（<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4274066371/inquisitor-22/">日本語訳</a>，<a href="http://www.komaba.utmc.or.jp/~flatline/">日本語の草稿</a>）と <a href="http://www.paulgraham.com/paulgraham/acl.html"><em>ANSI Common Lisp</em></a>（<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4894714337/inquisitor-22/">日本語訳</a>）がベスト</q>。</p>
 
-<h4><a href="http://www.paulgraham.com/paulgraham/hackpaint.html"><em>Hackers &amp; Painters</em></a>（<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4274065979/inquisitor-22">日本語訳</a>）</h4>
+#### <a href="http://www.paulgraham.com/paulgraham/hackpaint.html"><em>Hackers &amp; Painters</em></a>（<a href="https://www.amazon.co.jp/exec/obidos/ASIN/4274065979/inquisitor-22">日本語訳</a>）
 
 <p><a href="http://www.shiro.dreamhost.com/scheme/index-j.html">訳者のウェブサイト</a>で読めるものもある（本に収録されなかったエッセイも読める）。</p>
 
@@ -188,7 +181,7 @@
 
 
 
-<h2>その他</h2>
+## その他
 
 <ul>
   <li><a href="https://www.amazon.co.jp/exec/obidos/ASIN/4873113482/inquisitor-22/">Kahua プロジェクト『プログラミングGauche』</a><a href=''></a></li>
@@ -210,6 +203,3 @@
   <li><a href="https://www.amazon.co.jp/exec/obidos/ASIN/4434133632/inquisitor-22/">Doug Hoyte. <em>LET OVER LAMBDA Edition 1.0</em>（日本語訳）</a></li>
   <li><a href="unknowable/">拙文「不完全性定理の Lisp, Mathematica による記述」</a></li>
 </ul>
-
-</body>
-</html>
