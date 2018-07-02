@@ -61,7 +61,7 @@ Hold[Function[{x}, x[Hold[x]]]][Hold[Hold[Function[{x}, x[Hold[x]]]]]]
   (eval b))
 ```
 
-<p>`を使うともう少し簡単になる。</p>
+<p>`` ` ``を使うともう少し簡単になる。</p>
 
 ```lisp
 (progn (setq b '`(progn (setq b ',b) (eval b))) (eval b))
@@ -86,16 +86,17 @@ Hold[Function[{x}, x[Hold[x]]]][Hold[Hold[Function[{x}, x[Hold[x]]]]]]
 
 ```perl
 $prog=q(
-$prog=&quot;\$prog=q(&quot;.$prog.&quot;);&quot;;
+$prog="\$prog=q(".$prog.");";
 print $prog;
-print &quot;\neval \$prog;\n&quot;;
+print "\neval \$prog;\n";
 );
 eval $prog;
 ```
 
-<h3>C++での実装</h3>
+<h3>C++での実装 [self.cpp](self.cpp)</h3>
 <p>1-4行目が&lt;A&gt;、5行目が&lt;B&gt;である。<span style='color:#cc0000;'>赤字</span>の部分が&lt;A&gt;の中に書かれた&lt;B&gt;である。</p>
-<p>エスケープ文字の扱いに注意しなければならない。上のアイディアをコーディングするときに、エスケープ文字を含んだ文字列をそのまま出力しようとするとうまくいかない。命令中の文字列は表示したい文字列よりも長くなってしまうからである。関数chによって文字列中のエスケープ文字を普通の文字（コーディングに使える文字）に変換することでこの問題を回避できる（このコードの中で使っているエスケープ文字は\n(10),'(34),\\(92)の3種類である）。</p><p>5行目を見ると、&lt;A&gt;の中の&lt;B&gt;を得るためにAの実行結果(string s)が利用されていることがわかる。</p>
+<p>エスケープ文字の扱いに注意しなければならない。上のアイディアをコーディングするときに、エスケープ文字を含んだ文字列をそのまま出力しようとするとうまくいかない。命令中の文字列は表示したい文字列よりも長くなってしまうからである。関数chによって文字列中のエスケープ文字を普通の文字（コーディングに使える文字）に変換することでこの問題を回避できる（このコードの中で使っているエスケープ文字は\n(10),'(34),\\(92)の3種類である）。</p>
+<p>5行目を見ると、&lt;A&gt;の中の&lt;B&gt;を得るためにAの実行結果（`string s`）が利用されていることがわかる。</p>
 <ol>
   <li><code>#include&lt;iostream&gt;</code></li>
   <li><code>#include&lt;string&gt;</code></li>
