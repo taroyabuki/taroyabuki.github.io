@@ -48,6 +48,7 @@ consisting of trees. In Leandro Nunes de Castro and Fernando J. Von Zuben, edito
 * [No Free Lunch Theorem&mdash;理想の＊＊の探し方](docs/no_free_lunch.pdf)
 * [なぜ Lisp なのか](docs/why_lisp.md)
 * [自分のコードを出力するプログラム](docs/self.md)
+* [不完全性定理のLisp, Mathematicaによる記述](https://taroyabuki.github.io/docs/unknowable/)
 
 ### Sudoku
 

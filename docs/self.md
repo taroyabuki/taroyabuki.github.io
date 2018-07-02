@@ -134,4 +134,5 @@ main(a){printf(a,34,a=&quot;main(a){printf(a,34,a=%c%s%c,34);}&quot;,34);}
   <li><a href="https://www.amazon.co.jp/exec/obidos/ASIN/443420159X/inquisitor-22">ヘンリー・S. ウォーレン『ハッカーのたのしみ』（エスアイビーアクセス, 2004）</a></li>
   <li><a href="https://www.ipsj.or.jp/07editj/promenade/4703.pdf">尾上能之. 自分自身を出力するプログラム. 情報処理, Vol.47, No. 3, pp. 301&ndash;309, 2006.</a></li>
   <li><a href='http://blog.unfindable.net/archives/561'>codepadの遊び方</a></li>
+  <li><a href='https://taroyabuki.github.io/docs/unknowable/'>不完全性定理のLisp, Mathematicaによる記述</a></li>
 </ul>
