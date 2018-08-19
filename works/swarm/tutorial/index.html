@@ -1,0 +1,133 @@
+---
+layout: page
+---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="swarm,tutorial" />
+<title>Swarm tutorial</title>
+</head>
+<body>
+<p style="text-align:right;"><a href="../">Swarmについてのメモ</a></p>
+<h1>Swarm tutorial</h1>
+<p>Swarmの利用法を学ぶためのチュートリアルが用意されている。しかしこのチュートリアルはObjective-Cで書かれているため、Javaに翻訳したものをここに掲載する。順番に見ていけばSwarmの利用法がわかるだろう。</p>
+<ol>
+  <li><a id="TOC10" href="#SEC1">simpleCBug</a></li>
+  <li><a id="TOC11" href="#SEC2">simpleObjCBug</a></li>
+  <li><a id="TOC12" href="#SEC3">simpleObjCBug2</a></li>
+  <li><a id="TOC13" href="#SEC4">simpleSwarmBug</a></li>
+  <li><a id="TOC14" href="#SEC5">simpleSwarmBug2</a></li>
+  <li><a id="TOC15" href="#SEC6">simpleSwarmBug3</a></li>
+  <li><a id="TOC16" href="#SEC7">simpleObserverBug</a></li>
+  <li><a id="TOC17" href="#SEC8">simpleObserverBug2</a></li>
+  <li><a id="TOC18" href="#SEC9">simpleExperBug</a></li>
+</ol>
+<p><a href="tutorial_0.4.lzh">ソース・コード (ver. 0.4)</a></p>
+<h2><a href="#TOC10" id="SEC1">simpleCBug</a></h2>
+<p><b>1匹のbugが歩き回る。</b></p>
+<h3>クラス図・<a href="simpleCBug/doc/index.html">Javadoc</a></h3>
+<p><img src="simpleCBug/simpleCBug.png" alt="" /></p>
+<p>main methodを持つクラスがあるだけである。</p>
+<h3>実行方法</h3>
+<pre>$ gcjswarm simpleCBug.java でビルド
+$ ./simpleCBug で実行</pre>
+<p>gcjswarmについては<a href="../install.html#SEC4">インストール方法</a>を参照。</p>
+<h2><a href="#TOC11" id="SEC2">simpleObjCBug</a></h2>
+<p>1匹のbug<b>（オブジェクト）</b>が歩き回る。</p>
+<h3>クラス図・<a href="simpleObjCBug/doc/index.html">Javadoc</a></h3>
+<p><img src="simpleObjCBug/simpleObjCBug.png" alt="" /></p>
+<p>simpleObjCBugがオブジェクトBugを生成する。BugはSwarmの基本的なオブジェクト（<a href="http://www.santafe.edu/projects/swarm/swarmdocs/refbook-java/swarm/objectbase/SwarmObjectImpl.html">SwarmObjectImpl</a>）である。Bugの各メソッドは自分自身(this)を返すが、この記述は以後省略する。</p>
+<h2><a href="#TOC12" id="SEC3">simpleObjCBug2</a></h2>
+<p>1匹のbug（オブジェクト）が歩き回る。<br />
+<b>餌がfoodSpace（オブジェクト）にある。</b></p>
+<h3>クラス図・<a href="simpleObjCBug2/doc/index.html">Javadoc</a></h3>
+<p><img src="simpleObjCBug2/simpleObjCBug2.png" alt="" /></p>
+<p>Bugは餌がまかれた空間FoodSpaceの中を歩き回る。FoodSpaceはSwarmライブラリが提供する格子<a href="http://www.santafe.edu/projects/swarm/swarmdocs/refbook-java/swarm/space/Discrete2dImpl.html">Discrete2dImpl</a>である。</p>
+<h2><a href="#TOC13" id="SEC4">simpleSwarmBug</a></h2>
+<p><b>modelSwarm（オブジェクト）がfoodSpaceとbugを作る。</b><br />1匹のbugが歩き回る。</p>
+<p>BugとFoodSpaceはsimpleObjCBug2と同様である。</p>
+<h3>クラス図・<a href="simpleSwarmBug/doc/index.html">Javadoc</a></h3>
+<p><img src="simpleSwarmBug/simpleSwarmBug.png" alt="" /></p>
+<h3>処理の流れ</h3>
+<ol>
+  <li>simpleSwarmBugがModelSwarmを作る（ModelSwarmは<a href="http://www.santafe.edu/projects/swarm/swarmdocs/refbook-java/swarm/objectbase/SwarmImpl.html">SwarmImpl</a>である）</li>
+  <li>ModelSwarmのbuildObjectsがBugとFoodSpaceを作る</li>
+  <li>ModelSwarmのbuildActionsがスケジュール（Bugが時間間隔1でstepする）を作る</li>
+  <li>ModelSwarmのactivateInがスケジュールを確定する</li>
+  <li>simpleSwarmBugがトップレベル（ModelSwarm）のactivityをgetActivityで取得し、実行する（run）</li>
+</ol>
+<h4>シーケンス図</h4>
+<p>厳密にはrun()はModelSwarmのメソッドではない。</p>
+<p><img src="simpleSwarmBug/simpleSwarmBugSequence.png" alt="" /></p>
+<h2><a href="#TOC14" id="SEC5">simpleSwarmBug2</a></h2>
+<p>modelSwarmがfoodSpaceとbugs、<b>world（オブジェクト）</b>を作る。<br />
+<b>複数匹のbugs</b>が<b>worldの中を歩き回る</b>。</p>
+<h3>クラス図・<a href="simpleSwarmBug2/doc/index.html">Javadoc</a></h3>
+<p><img src="simpleSwarmBug2/simpleSwarmBug2.png" alt="" /></p>
+<p>コレクション・ライブラリ（List）を用いて、複数のBugを扱えるようにする。ただし、そのうちの1匹はreportBugとし、餌を見つけた場合にそのことを報告するようにする（図ではBugの継承のように描いているが実装はそうではない）。</p>
+<p>Bugたちは<a href="http://www.santafe.edu/projects/swarm/swarmdocs/refbook-java/swarm/space/Grid2dImpl.html">Grid2dImpl</a>を継承したworldの中に自分への参照を置き、ランダム・ウォークの際には、他のBugがいないことを確認してから移動する。</p>
+<h2><a href="#TOC15" id="SEC6">simpleSwarmBug3</a></h2>
+<p><b>ファイルbug.scmからパラメータを読み取り、modelSwarmを作る。</b><br />
+modelSwarmがfoodSpaceとbugsとworldを作る。<br />複数匹のbugsがworldの中を歩き回る。</p>
+<p>simpleSwarmBug3のメソッドmainで次のように書けば、ModelSwarmのインスタンスが生成される。</p>
+<pre>modelSwarm = (ModelSwarm)Globals.env.lispAppArchiver.getWithZone$key(Globals.env.globalZone,&quot;modelSwarm&quot;);</pre>
+<h3>パラメータ・ファイル：bug.scm</h3>
+<p>パラメータ・ファイルの内容は次のようなLispのS式である。</p>
+
+<pre>(list 
+ (cons 'modelSwarm
+       (make-instance 'ModelSwarm
+                      #:worldXSize 80
+                      #:worldYSize 80
+                      #:seedProb 0.9
+                      #:bugDensity 0.01)))</pre>
+<p>lispAppArchiverで設定できるフィールドは、publicなものに限られることに注意。よって、ModelSwarmは修正が必要である。他に必要な修正は、simpleSwarmBug3に、lispArchiverの呼び出しを加えることだけである。</p>
+<h3><a href="simpleSwarmBug3/doc/index.html">Javadoc</a></h3>
+<h2><a href="#TOC16" id="SEC7">simpleObserverBug</a></h2>
+<p><b>observerSwarm（オブジェクト）</b>がbug.scmからパラメータを読み取り、<b>worldRaster（worldとfoodSpaceを表示するためのオブジェクト）</b>とmodelSwarmを作る。<br />
+modelSwarmがfoodSpaceとbugsとworldを作る。<br />複数匹のbugsがworldの中を歩き回る。</p>
+
+<h3>クラス図・<a href="simpleObserverBug/doc/index.html">Javadoc</a></h3>
+<p><img src="simpleObserverBug/simpleObserverBug.png" alt="" /></p>
+<p>GUIとして、ControlPanelとZoomRasterが加わる。ControlPanelはシミュレーションの開始や停止のためのボタンを提供し、ZoomRasterはFoodSpaceおよびBugたちの様子を視覚化する。</p>
+<p>FoodSpaceを画面に表示するためには、ZoomRasterとFoodSpaceの間にValue2dDisplayを介在させればよい。同様に、bugListの表示のためには、Object2dDisplayを用いる。</p>
+<h2><a href="#TOC17" id="SEC8">simpleObserverBug2</a></h2>
+<p>obserSwarmがbug.scmからパラメータを読み取り、worldRasterとmodelSwarm、<b>メンバのためのprobeMap（オブジェクト）を作る。</b><br />
+modelSwarmはfoodSpaceとbugs、world、probeMapを作る。<br />複数匹のbugsがworldの中を歩き回る。</p>
+<h3>クラス図・<a href="simpleObserverBug2/doc/index.html">Javadoc</a></h3>
+<p><img src="simpleObserverBug2/simpleObserverBug2.png" alt="" /></p>
+<h3>Probe</h3>
+<p>Probeによって、ユーザーはリアルタイムにシミュレーターを操作することができる。ここでは、ModelSwarmとObserverSwarmのためのProbeを生成している。よって、起動時に現れるProbeは次の2つである。</p>
+<p><img src="probe4observer.png" alt="" /></p>
+<p>ObserverSwarmのProbeはデフォルトのProbeで、publicなフィールド（displayFrequencyのみ）を表示している。デフォルトのProbeのため、Globals.env.createArchivedProbeDisplayだけで作成することができる。</p>
+<p><img src="probe4model.png" alt="" /></p>
+<p>ModelSwarmのProbeはカスタマイズしてあり、publicなメソッドgetBuglistも呼び出せるようになっている（クリックで呼び出せるが、この場合参照が返るだけである）。</p>
+<p>カスタマイズするには、ProbeMapに欲しい要素を登録し（addProbe）、そのProbeMapをProbeLibraryに登録すればよい（setProbeMap$For）。この例では次の手順でModelSwarmのためのProbeを作成している。</p>
+<ol>
+  <li>ProbeMapにフィールドであるworldXSize, worldYSize, seedProb, bugDensityとメソッドであるgetBuglistを登録</li>
+  <li>このProbeMapがModelSwarmのProbeであることをProbeLibraryに登録</li>
+  <li>Globals.env.createArchivedProbeDisplay (modelSwarm, &quot;modelSwarm&quot;);</li>
+</ol>
+<p><strong>フィールドの値を変えるためには、新しい数値を入力して、Enterキーを押す。</strong>たとえば、worldXSizeを200worldYSizeを20にしてからStartボタンを押すと、シミュレーションは次のようになる。</p>
+<p><img src="foodspace200x20.png" alt="" /></p>
+<p>FoodSpace上のBugをクリックすることで、次のようにそのBugのProbeを生成できる（これまでxPos,yPosはprivateだったが、ここではProbeで操作できるようにpublicにしている）。</p>
+<p><img src="probe4bug.png" alt="" /></p>
+<p>これは、ZoomRasterのsetButton$Client$Messageによって、右クリックするとObject2dDisplayのmakeProbeAtX$Yが呼ばれるように設定されているからである。</p>
+<p>Probeにある青字のクラス名を右クリックすると、publicなフィールドとメソッドをすべて表示させることができる。たとえば、<span style='color:#0000ff;'>Bug</span>を右クリックすると、次のようになる。</p>
+<p><img src="probe4bug2.png" alt="" /></p>
+<p>さらに、右上にある<img src="super_button.png" alt="" />をクリックすると、スーパークラスのProbeが生成される。</p>
+<p><img src="probe4bug3.png" alt="" /></p>
+<h2><a href="#TOC18" id="SEC9">simpleExperBug</a></h2>
+<p>オブジェクトexperSwarmが、bug.comから<b>parameterManager（オブジェクト）</b>、<b>resultGraph（グラフ表示のためのオブジェクト）</b>、<b>複数のmodelSwarms</b>、modelSwarmのためのprobeMapを作る。<br />
+modelSwarmはfoodSpaceとbugs、worldを作る。<br />複数匹のbugsがworldの中を歩き回る。</p>
+<h3>クラス図・<a href="simpleExperBug/doc/index.html">Javadoc</a></h3>
+<p><img src="simpleExperBug/simpleExperBug.png" alt="" /></p>
+<p>ここではランダム・ウォークするBugたちによってFoodSpaceが食べ尽くされるまでの時間を調べている。Bugは餌を見つけるとFoodSpaceのメソッドbugAteを呼ぶ。bugAteが餌の数foodをデクリメントすることによって、餌の数を把握することができる。</p>
+<p>ModelSwarmはFoodSpaceの餌の数を調べ、0になったらシミュレーションを終了する。</p>
+<p>ExperSwarmはModelSwarmを監視し、シミュレーションが終わったら、新しいモデルを生成する。モデルのパラメータはParameterManagerによって設定する。</p>
+<p>餌が食べ尽くされるまでの時間はモデルのパラメータによって変わるが、その変化の様子をグラフで視覚化する。</p>
+<p>（プログラムのシーケンスは、ExperSwarmとModelSwarmのスケジュール（ActionGroupが一つ登録されている）をみればわかる。）</p>
+</body>
+</html>

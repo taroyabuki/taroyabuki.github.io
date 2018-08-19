@@ -1,1 +1,23 @@
 title: YABUKI Taro's Home Page
+author: YABUKI Taro
+email: taro.yabuki at unfindable dot net
+description: RSSのURLが変わりました。新しいURLは https://taroyabuki.github.io/feed.xml です。（2018/08/19）
+github_username: taroyabuki
+twitter_username: yabuki
+facebook_username: taro.yabuki
+instagram_username: taroyabuki
+rss: rss
+theme: minima
+permalink: /:year/:month/:day/:title/
+disqus:
+  shortname: taroyabuki
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      author: YABUKI Taro
+      comments: true
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

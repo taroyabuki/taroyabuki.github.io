@@ -1,0 +1,56 @@
+---
+layout: page
+---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="不完全性定理,lisp,mathematica,パラドックス,Chaitin,チャイティン" />
+<title>不完全性定理のLisp, Mathematicaによる記述</title>
+</head>
+<body>
+<h1>不完全性定理のLisp, Mathematicaによる記述</h1>
+<p><a href="unknowable.el">Lisp code</a> / <a href="unknowable.nb">Mathematica notebook</a></p>
+
+<p>プログラミング言語なんてどれも同じと思っている人は下の3つをJavaやC++で書いてみてほしい</p>
+<ul>
+  <li><a href="godel/">不完全性定理についてのゲーデルの証明の一部</a></li>
+  <li><a href="turing/">停止問題の解決不可能性についてのチューリングの証明</a></li>
+  <li><a href="chaitin/">LISP式がエレガントであることを証明できないというチャイティンの証明</a></li>
+</ul>
+<blockquote><p>ライプニッツ「役に立たないパラドックスは無い」（チャイティン「知の限界」）</p></blockquote>
+<blockquote><p>ミンスキー「ゲーデルはLispを思いついておくべきだった。もし彼がLispを思いついていたならば彼の不完全性定理の証明はもっと簡単なものになっただろう」（ホフスタッター「メタマジック・ゲーム」）</p></blockquote>
+<p>次の2冊の本はLispといってもSchemeのようなオリジナル言語が使われている。ここではCommon LispとEmacs Lisp、Mathematicaで書き直した（The Unknowableで扱われたものだけ）。Allegro CLとxyzzy、Emacs、Mathematicaで確認済み。</p>
+<ol>
+  <li><a href="https://www.amazon.co.jp/dp/443401238X?tag=inquisitor-22"><img src="https://images-fe.ssl-images-amazon.com/images/P/443401238X.09.jpg" alt="知の限界" style="float:right; border: none;" /></a>
+  G. J. Chaitin <a href="https://www.amazon.co.jp/dp/9814021725?tag=inquisitor-22"><em>The Unknowable.</em></a> （<a href="https://web.archive.org/web/20130813114915/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/index.html">オンライン版</a>。邦訳は<a href="https://www.amazon.co.jp/dp/443401238X?tag=inquisitor-22">黒川利明訳『知の限界』</a>）<br />
+  LISPを使って、うそつき・ラッセル・ベリーのパラドックスからゲーデル・チューリング・チャイティンの不完全性定理を導いている。数学が準経験的だという主張がよくわかる（P&ne;NPを仮定して研究を進めることがその例）。原書(The Unknowable)ならwebで読める。彼がElegant LISP Programsの中で言うには、最も強力な言語はMathematicaで、Lisp interpreterを300行で書ける。他にも興味深い話題が多い。
+  <ul>
+    <li><a href="https://web.archive.org/web/20130401035517/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch1.html">A Hundred Years of Controversy Regarding the Foundations 
+of Mathematics</a> (数学の基礎に関する百年論争)</li>
+    <li><a href="https://web.archive.org/web/20110806065613/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch2.html">LISP: A Formalism for Expressing Mathematical 
+Algorithms</a> (LISP: 数学アルゴリズムを表現する形式)</li>
+    <li><a href="https://web.archive.org/web/20110806065941/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch3.html">Godel's Proof of his Incompleteness Theorem</a> （不完全性定理についてのゲーデルの証明）</li>
+    <li><a href="https://web.archive.org/web/20110806065908/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch4.html">Turing's Proof of the Unsolvability of the Halting 
+Problem</a> （停止問題の解決不可能性についてのチューリングの証明）</li>
+    <li><a href="https://web.archive.org/web/20131212225205/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch5.html">My Proof that You Can't Show that a LISP Expression is 
+Elegant</a> （LISPがエレガントであることを証明できないという私の証明）</li>
+    <li><a href="https://web.archive.org/web/20131210121611/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch6.html">Information &amp; Randomness: A Survey of Algorithmic 
+Information Theory</a> （情報とランダムさ：アルゴリズム的情報論概観）</li>
+    <li><a href="https://web.archive.org/web/20131213025234/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unknowable/ch7.html">Mathematics in the Third Millennium?</a> （数学の第三千年紀）</li>
+  </ul></li>
+  <li><a href="https://www.amazon.co.jp/dp/4434011189?tag=inquisitor-22"><img src="https://images-fe.ssl-images-amazon.com/images/P/4434011189.09.jpg" alt="数学の限界" style="float:right; border: none;" /></a>
+  G. J. Chaitin <a href="https://www.amazon.co.jp/dp/1852336684?tag=inquisitor-22"><em>The Limits of Mathematics.</em></a> （<a href="https://web.archive.org/web/20131213010616/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/lm.html">オンライン版</a>。邦訳は<a href="https://www.amazon.co.jp/dp/4434011189?tag=inquisitor-22">黒川利明訳『数学の限界』）</a>
+  <ul>
+    <li><a href="https://web.archive.org/web/20131213010616/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/unm.html">Randomness in Arithmetic and the Decline &amp; Fall of Reductionism in Pure Mathematics</a>, 1992 （算術におけるランダム性と純粋数学における還元主義の衰退）</li>
+    <li><a href="https://web.archive.org/web/20131213010616/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/lisp.html">Elegant LISP Programs</a>, 1999 （エレガントなLISPプログラム）</li>
+    <li><a href="https://web.archive.org/web/20131213010616/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/inv.html">An Invitation to Algorithmic Information Theory</a>, 1997 （アルゴリズム的情報理論への招待）</li>
+    <li><a href="https://web.archive.org/web/20131213010616/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/rov.html">The Limits of Mathematics</a>, 1996 （数学の限界）</li>
+    <li><a href="https://web.archive.org/web/20131213010616/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/lisp.m">Appendix. LISP interpreter in Mathematica</a> （MathematicaによるLISPインタープリタ）</li>
+    <li><a href="https://web.archive.org/web/20131213010616/http://www.cs.auckland.ac.nz/CDMTCS/chaitin/omega2vb.r">More efficient version of omega2 suggested by Veronica Becher, Buenos Aires, May 1998</a></li>
+  </ul>
+  </li>
+</ol>
+</body>
+</html>

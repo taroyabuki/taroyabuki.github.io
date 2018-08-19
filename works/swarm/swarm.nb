@@ -1,0 +1,254 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      6141,        184]*)
+(*NotebookOutlinePosition[      6814,        207]*)
+(*  CellTagsIndexPosition[      6770,        203]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Swarm", "Title"],
+
+Cell[BoxData[
+    \(UninstallJava[]\)], "Input"],
+
+Cell[BoxData[{
+    \(\(SetDirectory@"\<d:/home/yabuki\>";\)\), "\[IndentingNewLine]", 
+    \(\(Needs["\<JLink`\>"];\)\), "\[IndentingNewLine]", 
+    \(\(InstallJava[\[IndentingNewLine]CommandLine \[Rule] \
+"\<c:/j2sdk/bin/java.exe\>", \[IndentingNewLine]ClassPath \[Rule] \
+"\<C:/cygwin/Swarm-2.2/share/swarm/swarm.jar\>"];\)\)}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(test = LoadJavaClass["\<swarm.defobj.FArgumentsImpl\>"]\)], "Input"],
+
+Cell[BoxData[
+    \(JavaClass["swarm.defobj.FArgumentsImpl", 0]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Constructors@test\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[GridBox[{
+          {"\<\"FArgumentsImpl(swarm.defobj.Zone, swarm.Selector)\"\>"},
+          {"\<\"FArgumentsImpl()\"\>"},
+          {"\<\"FArgumentsImpl(swarm.defobj.Zone)\"\>"}
+          },
+        RowSpacings->1,
+        ColumnSpacings->3,
+        RowAlignments->Baseline,
+        ColumnAlignments->{Left}],
+      TableForm[ {"FArgumentsImpl(swarm.defobj.Zone, swarm.Selector)", 
+        "FArgumentsImpl()", "FArgumentsImpl(swarm.defobj.Zone)"}]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(test = 
+      LoadJavaClass["\<swarm.random.UniformDoubleDistImpl\>"]\)], "Input"],
+
+Cell[BoxData[
+    \(JavaClass["swarm.random.UniformDoubleDistImpl", 3]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Constructors@test\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[GridBox[{
+          {"\<\"UniformDoubleDistImpl(swarm.defobj.Zone, \
+swarm.random.SplitRandomGenerator, int)\"\>"},
+          {"\<\"UniformDoubleDistImpl(swarm.defobj.Zone, \
+swarm.random.SimpleRandomGenerator)\"\>"},
+          {"\<\"UniformDoubleDistImpl(swarm.defobj.Zone, \
+swarm.random.SimpleRandomGenerator, double, double)\"\>"},
+          {"\<\"UniformDoubleDistImpl(swarm.defobj.Zone, \
+swarm.random.SplitRandomGenerator, int, double, double)\"\>"},
+          {"\<\"UniformDoubleDistImpl()\"\>"},
+          {"\<\"UniformDoubleDistImpl(swarm.defobj.Zone)\"\>"}
+          },
+        RowSpacings->1,
+        ColumnSpacings->3,
+        RowAlignments->Baseline,
+        ColumnAlignments->{Left}],
+      TableForm[ {
+        "UniformDoubleDistImpl(swarm.defobj.Zone, \
+swarm.random.SplitRandomGenerator, int)", 
+        "UniformDoubleDistImpl(swarm.defobj.Zone, \
+swarm.random.SimpleRandomGenerator)", 
+        "UniformDoubleDistImpl(swarm.defobj.Zone, \
+swarm.random.SimpleRandomGenerator, double, double)", 
+        "UniformDoubleDistImpl(swarm.defobj.Zone, \
+swarm.random.SplitRandomGenerator, int, double, double)", 
+        "UniformDoubleDistImpl()", 
+        "UniformDoubleDistImpl(swarm.defobj.Zone)"}]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(test = 
+      LoadJavaClass["\<swarm.random.UniformIntegerDistImpl\>"]\)], "Input"],
+
+Cell[BoxData[
+    \(JavaClass["swarm.random.UniformIntegerDistImpl", 4]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Constructors@test\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[GridBox[{
+          {"\<\"UniformIntegerDistImpl(swarm.defobj.Zone, \
+swarm.random.SplitRandomGenerator, int)\"\>"},
+          {"\<\"UniformIntegerDistImpl(swarm.defobj.Zone, \
+swarm.random.SimpleRandomGenerator)\"\>"},
+          {"\<\"UniformIntegerDistImpl(swarm.defobj.Zone, \
+swarm.random.SimpleRandomGenerator, int, int)\"\>"},
+          {"\<\"UniformIntegerDistImpl(swarm.defobj.Zone, \
+swarm.random.SplitRandomGenerator, int, int, int)\"\>"},
+          {"\<\"UniformIntegerDistImpl()\"\>"},
+          {"\<\"UniformIntegerDistImpl(swarm.defobj.Zone)\"\>"}
+          },
+        RowSpacings->1,
+        ColumnSpacings->3,
+        RowAlignments->Baseline,
+        ColumnAlignments->{Left}],
+      TableForm[ {
+        "UniformIntegerDistImpl(swarm.defobj.Zone, \
+swarm.random.SplitRandomGenerator, int)", 
+        "UniformIntegerDistImpl(swarm.defobj.Zone, \
+swarm.random.SimpleRandomGenerator)", 
+        "UniformIntegerDistImpl(swarm.defobj.Zone, \
+swarm.random.SimpleRandomGenerator, int, int)", 
+        "UniformIntegerDistImpl(swarm.defobj.Zone, \
+swarm.random.SplitRandomGenerator, int, int, int)", 
+        "UniformIntegerDistImpl()", 
+        "UniformIntegerDistImpl(swarm.defobj.Zone)"}]]], "Output"]
+}, Open  ]]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 1280}, {0, 909}},
+WindowToolbars->"EditBar",
+WindowSize->{823, 740},
+WindowMargins->{{128, Automatic}, {Automatic, -2}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 22, 0, 95, "Title"],
+Cell[1801, 55, 48, 1, 30, "Input"],
+Cell[1852, 58, 339, 5, 110, "Input"],
+
+Cell[CellGroupData[{
+Cell[2216, 67, 88, 1, 30, "Input"],
+Cell[2307, 70, 77, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2421, 76, 50, 1, 30, "Input"],
+Cell[2474, 79, 497, 11, 71, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3008, 95, 102, 2, 30, "Input"],
+Cell[3113, 99, 84, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3234, 105, 50, 1, 30, "Input"],
+Cell[3287, 108, 1260, 27, 119, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4584, 140, 103, 2, 30, "Input"],
+Cell[4690, 144, 85, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4812, 150, 50, 1, 30, "Input"],
+Cell[4865, 153, 1248, 27, 119, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+
