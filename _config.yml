@@ -1,3 +1,4 @@
+lang: ja
 title: YABUKI Taro's Home Page
 author: YABUKI Taro
 email: taro.yabuki at unfindable dot net
@@ -8,6 +9,8 @@ facebook_username: taro.yabuki
 instagram_username: taroyabuki
 rss: rss
 theme: minima
+paginate: 10
+paginate_path: "/blog/page:num/"
 permalink: /:year/:month/:day/:title/
 disqus:
   shortname: taroyabuki

@@ -11,4 +11,8 @@
 </script>
 <gcse:searchbox-only></gcse:searchbox-only>
 
-http://blog.unfindable.net/ からの移行作業中です。
+## [Works](works)
+## [Profile](profile)
+## [Blog](blog)
+
+[http://blog.unfindable.net/](http://blog.unfindable.net/) からの移行作業中です。
