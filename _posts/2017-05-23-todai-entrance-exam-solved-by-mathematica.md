@@ -5,7 +5,7 @@ title: 「大学への数学」2017年6月号掲載の拙稿「機械まかせ�
 
 [月刊誌「大学への数学」2017年6月号](https://www.amazon.co.jp/dp/B06XWF34YQ?tag=inquisitor-22)で，「機械まかせの数学」という記事を書きました。内容は副題「Mathematicaで解く東大入試数学」のとおりです。
 
-[![B06XWF34YQ](https://images-fe.ssl-images-amazon.com/images/P/B06XWF34YQ.09.jpg)](https://www.amazon.co.jp/dp/B06XWF34YQ?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/B06XWF34YQ.09.jpg)](https://www.amazon.co.jp/dp/B06XWF34YQ?tag=inquisitor-22)
 
 高校生向けの雑誌ですが，大学生，というか，「コンピュータと数学」ということに興味を持てるすべての人が想定読者です。高校数学の知識を前提にしていますが，大学入試問題を解く数学力は不要です。「Mathematicaでしょ，知ってる」という方も，Ver. 10以降のMathematicaを知らないなら，ちょっと驚くかもしれません。
 

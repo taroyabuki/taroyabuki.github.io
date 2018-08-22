@@ -78,7 +78,7 @@ Visual Studioの，デバッグ→パフォーマンス プロファイラーで
 
 ## Step 7：パフォーマンスチューニング
 
-[![4822298930](https://images-fe.ssl-images-amazon.com/images/P/4822298930.09.jpg)](https://www.amazon.co.jp/dp/4822298930?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4822298930.09.jpg)](https://www.amazon.co.jp/dp/4822298930?tag=inquisitor-22)
 
 [『C++の教科書』](https://www.amazon.co.jp/dp/4822298930?tag=inquisitor-22)の8.2.3項に，`endl`はバッファをフラッシュさせると書いてあります．100万件のデータの出力する際に，1件ごとにフラッシュするのはまずいでしょう．294行目の`std::endl`を`'\n'`に置き換えます．
 

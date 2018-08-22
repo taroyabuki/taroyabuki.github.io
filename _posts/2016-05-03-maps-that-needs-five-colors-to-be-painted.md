@@ -5,7 +5,7 @@ title: 塗り分けに五色必要な地図
 
 四色あれば，地図上の隣り合う領域の色が同じにならないように塗り分けられるという「四色定理」は，1800年代後半に予想され，1976年にコンピュータを使って「証明」された。
 
-[![4102184619](https://images-fe.ssl-images-amazon.com/images/P/4102184619.09.jpg)](http://www.amazon.co.jp/dp/4102184619?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4102184619.09.jpg)](http://www.amazon.co.jp/dp/4102184619?tag=inquisitor-22)
 
 定理が「証明」される前の1975年に，マーチン・ガードナーが塗り分けに五色必要だとして発表した次の絵が話題になったという。（参考：[Martin Gardner's April Fool's Map](http://mathforum.org/wagon/fall97/p840.html)）
 
@@ -15,7 +15,7 @@ title: 塗り分けに五色必要な地図
 
 この大人の塗り絵をやってみたい。
 
-[![0387753664](https://images-fe.ssl-images-amazon.com/images/P/0387753664.09.jpg)](http://www.amazon.co.jp/dp/0387753664?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/0387753664.09.jpg)](http://www.amazon.co.jp/dp/0387753664?tag=inquisitor-22)
 
 [_Mathematica in Action_](http://www.amazon.co.jp/dp/0387753664?tag=inquisitor-22) で，塗り分ける方法が紹介されているのだが，[http://extras.springer.com/](http://extras.springer.com/)からダウンロードできるコードは，最近のMathematicaでは動かない。（Mathematicaの言語仕様は後方互換性を保持しながら進化しているのだが，外部パッケージが本体に取り込まれた場合は，大抵うまくいかない。）
 

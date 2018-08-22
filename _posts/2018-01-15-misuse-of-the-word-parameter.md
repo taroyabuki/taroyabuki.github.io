@@ -36,7 +36,7 @@ title: 「母数」の誤用について
 
 母平均と母分散以外にも母数になるものはあるので3も怪しいのですが，4はダメです。（統計学の用語ではなく一般の用語として載せているというのであれば仕方ありません。）
 
-[![4000801317](https://images-fe.ssl-images-amazon.com/images/P/4000801317.09.jpg)](https://www.amazon.co.jp/dp/4000801317?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4000801317.09.jpg)](https://www.amazon.co.jp/dp/4000801317?tag=inquisitor-22)
 
 第2の誤用は，手元の辞書では唯一，[『広辞苑第7版』（紙版）](https://www.amazon.co.jp/dp/4000801317?tag=inquisitor-22)に掲載されていました。
  

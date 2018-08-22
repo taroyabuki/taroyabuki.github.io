@@ -5,7 +5,7 @@ title: 本を書きました。『C++の教科書』
 
 C++についての教科書を書きました。
 
-[![4822298930](https://images-fe.ssl-images-amazon.com/images/P/4822298930.09.jpg)『C++の教科書』（日経BP社）](https://www.amazon.co.jp/dp/4822298930?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4822298930.09.jpg)『C++の教科書』（日経BP社）](https://www.amazon.co.jp/dp/4822298930?tag=inquisitor-22)
 
 サンプルコードなどは以下にあります。
 

@@ -11,11 +11,11 @@ title: 機械より人間らしくなれるか？（祝ノーベル文学賞）
 
 チャットの一方の側には審判（人間）が，もう一方の側には人間またはコンピュータがいるわけですが，人間は，どちらの側に立つにしても，相当なプレッシャーになるでしょう。審判のときは，相手がコンピュータであることを見破れないと恥ずかしい，審判が相手のときは，コンピュータと見なされるのが恥ずかしい。
 
-[![4794220804](https://images-fe.ssl-images-amazon.com/images/P/4794220804.09.jpg)](https://www.amazon.co.jp/dp/4794220804?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4794220804.09.jpg)](https://www.amazon.co.jp/dp/4794220804?tag=inquisitor-22)
 
 この後者，つまり審判とチャットする立場に立った経験をもとに書かれたのが，[『機械より人間らしくなれるか？』](https://www.amazon.co.jp/dp/4794220804?tag=inquisitor-22)（文献リストあり・索引なし）で，出版されたのは今日の人工知能ブームの前ですが，今読んでも十分楽しめます。
 
-[![4151200517](https://images-fe.ssl-images-amazon.com/images/P/4151200517.09.jpg)](https://www.amazon.co.jp/dp/4151200517?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4151200517.09.jpg)](https://www.amazon.co.jp/dp/4151200517?tag=inquisitor-22)
 
 これに関連して，ノーベル文学賞作家カズオ・イシグロの[『わたしを離さないで』](https://www.amazon.co.jp/dp/4151200517?tag=inquisitor-22)を思い出します。これはすごい小説で，村上春樹さんも，[『夢を見るために毎朝僕は目覚めるのです』](https://www.amazon.co.jp/dp/4167502127?tag=inquisitor-22)の中で，「最近，深い感銘を受けた本はありますか？」という質問に応えて次のように言っています。
 

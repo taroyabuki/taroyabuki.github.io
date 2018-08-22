@@ -5,7 +5,7 @@ title: 岩波文庫の書誌として最も信頼できるのは何か
 
 [『岩波文庫解説総目録』](https://www.amazon.co.jp/dp/4000612093?tag=inquisitor-22)（以下，総目録）の新版（90年版 1927~2016）を堪能したので，これに関連した話を書いておこうと思います。
 
-[![4000612093](https://images-fe.ssl-images-amazon.com/images/P/4000612093.09.jpg)](https://www.amazon.co.jp/dp/4000612093?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4000612093.09.jpg)](https://www.amazon.co.jp/dp/4000612093?tag=inquisitor-22)
 
 [短い説明](https://github.com/taroyabuki/iwanamibunko)
 
@@ -74,7 +74,7 @@ ISBNの問題を別にすれば総目録は完璧なのかというと，そう�
 
 [ウェブサイト](https://www.iwanami.co.jp/search/?search_menu=keyword&tab=3&search_word=%E8%8D%89%E3%81%AE%E8%91%89)は直っていますが，こちらには，旧版（有島武郎選訳とは別）の情報が出てこないという問題があります。
 
-[![4003500210](https://images-fe.ssl-images-amazon.com/images/P/4003500210.09.jpg)](https://www.amazon.co.jp/dp/4003500210?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4003500210.09.jpg)](https://www.amazon.co.jp/dp/4003500210?tag=inquisitor-22)
 
 総目録では，旧版（上中下）の翻訳者は「杉木喬, 鍋島能弘, 酒本雅之」になっていますが，3人訳なのは上巻だけで，中と下の翻訳者は「鍋島能弘, 酒本雅之」だそうです。この点について，[『岩波文庫の80年』](https://www.amazon.co.jp/dp/4003500210?tag=inquisitor-22)は正しいです。総目録と『岩波文庫の80年』で統一のデータベースを使っているわけではないようです。『岩波文庫の80年』は単なる年表なので，書誌としては不十分なのですが，それでもとりあえず，『岩波文庫の90年』は出してほしいです。[CiNii Booksのデータ](http://ci.nii.ac.jp/ncid/BN01982175)は間違ってますね（本稿執筆時点）。
 
