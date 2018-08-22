@@ -17,7 +17,7 @@ title: 塗り分けに五色必要な地図
 
 [![0387753664](https://images-fe.ssl-images-amazon.com/images/P/0387753664.09.jpg)](http://www.amazon.co.jp/dp/0387753664?tag=inquisitor-22)
 
-[Mathematica in Action](http://www.amazon.co.jp/dp/0387753664?tag=inquisitor-22) で，塗り分ける方法が紹介されているのだが，[http://extras.springer.com/](http://extras.springer.com/)からダウンロードできるコードは，最近のMathematicaでは動かない。（Mathematicaの言語仕様は後方互換性を保持しながら進化しているのだが，外部パッケージが本体に取り込まれた場合は，大抵うまくいかない。）
+[_Mathematica in Action_](http://www.amazon.co.jp/dp/0387753664?tag=inquisitor-22) で，塗り分ける方法が紹介されているのだが，[http://extras.springer.com/](http://extras.springer.com/)からダウンロードできるコードは，最近のMathematicaでは動かない。（Mathematicaの言語仕様は後方互換性を保持しながら進化しているのだが，外部パッケージが本体に取り込まれた場合は，大抵うまくいかない。）
 
 そこで，簡易版を作る。領域の境界線が垂直または水平の2pxの黒い実線の場合にのみ対応するという意味で「簡易」である。
 
