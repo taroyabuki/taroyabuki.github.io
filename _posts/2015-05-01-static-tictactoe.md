@@ -19,7 +19,7 @@ title: HTMLとCSSだけで作るマルバツ
   </li>
 </ul>
 
-COMは[負けないマルバツ](http://blog.unfindable.net/archives/586)＋αのつもりです。
+COMは[負けないマルバツ](/2008/05/02/neverlose-tictactor/)＋αのつもりです。
 
 Manifold JSで別のプラットフォーム用に変換できます。
 
