@@ -13,7 +13,7 @@ title: マルバツの部屋
 
 [![後手版用](/tictactoe/graph/secondmove.png)](/tictactoe/graph/firstmove.pdf)
 
-同じ盤面に対応するノードが複数あるのは，手順をわかりやすくするためです。[HTMLとCSSだけで作るマルバツ](http://blog.unfindable.net/archives/8767)のページ数は，上の絵のノード数より少なくなっています。
+同じ盤面に対応するノードが複数あるのは，手順をわかりやすくするためです。[HTMLとCSSだけで作るマルバツ](/2015/05/01/static-tictactoe/)のページ数は，上の絵のノード数より少なくなっています。
 
 この絵の読み方を知ってさえいれば，マルバツの素人でもゲームに負けることはありません。
 
