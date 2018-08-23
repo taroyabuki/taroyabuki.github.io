@@ -5,19 +5,19 @@ title: 塗り分けに五色必要な地図
 
 四色あれば，地図上の隣り合う領域の色が同じにならないように塗り分けられるという「四色定理」は，1800年代後半に予想され，1976年にコンピュータを使って「証明」された。
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4102184619.09.jpg)](http://www.amazon.co.jp/dp/4102184619?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4102184619.09.jpg)](https://www.amazon.co.jp/dp/4102184619?tag=inquisitor-22)
 
 定理が「証明」される前の1975年に，マーチン・ガードナーが塗り分けに五色必要だとして発表した次の絵が話題になったという。（参考：[Martin Gardner's April Fool's Map](http://mathforum.org/wagon/fall97/p840.html)）
 
 ![](/images/2016-05-03-4color-1.png)
 
-これはエイプリルフールのネタだったのだが，四色で塗り分けたという手紙が数百通届いたらしい。（[ロビン・ウィルソン『四色問題』（新潮社, 2013）](http://www.amazon.co.jp/dp/4102184619?tag=inquisitor-22)p.38）
+これはエイプリルフールのネタだったのだが，四色で塗り分けたという手紙が数百通届いたらしい。（[ロビン・ウィルソン『四色問題』（新潮社, 2013）](https://www.amazon.co.jp/dp/4102184619?tag=inquisitor-22)p.38）
 
 この大人の塗り絵をやってみたい。
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/0387753664.09.jpg)](http://www.amazon.co.jp/dp/0387753664?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/0387753664.09.jpg)](https://www.amazon.co.jp/dp/0387753664?tag=inquisitor-22)
 
-[_Mathematica in Action_](http://www.amazon.co.jp/dp/0387753664?tag=inquisitor-22) で，塗り分ける方法が紹介されているのだが，[http://extras.springer.com/](http://extras.springer.com/)からダウンロードできるコードは，最近のMathematicaでは動かない。（Mathematicaの言語仕様は後方互換性を保持しながら進化しているのだが，外部パッケージが本体に取り込まれた場合は，大抵うまくいかない。）
+[_Mathematica in Action_](https://www.amazon.co.jp/dp/0387753664?tag=inquisitor-22) で，塗り分ける方法が紹介されているのだが，[http://extras.springer.com/2010/978-0-387-75366-9](http://extras.springer.com/2010/978-0-387-75366-9)からダウンロードできるコードは，最近のMathematicaでは動かない。（Mathematicaの言語仕様は後方互換性を保持しながら進化しているのだが，外部パッケージが本体に取り込まれた場合は，大抵うまくいかない。）
 
 そこで，簡易版を作る。領域の境界線が垂直または水平の2pxの黒い実線の場合にのみ対応するという意味で「簡易」である。
 

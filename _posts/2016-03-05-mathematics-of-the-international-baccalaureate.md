@@ -5,19 +5,19 @@ title: 馬場博史『国際バカロレアの数学 世界標準の高校数学
 
 多くの国で大学入学資格として認められている国際バカロレア（IB）資格。その取得に必要な能力のうちの数学について解説した一冊，馬場博史『国際バカロレアの数学 世界標準の高校数学とは』（松柏社, 2016）。本書によるとその特徴は，①学際的であること，②グラフ電卓が必要であること，③試験中に公式集を参照できること，であろう。
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4775402315.09.jpg)](http://www.amazon.co.jp/dp/4775402315?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4775402315.09.jpg)](https://www.amazon.co.jp/dp/4775402315?tag=inquisitor-22)
 
-①学際的であることは，第4章で紹介されている問題に，日本の大学入試ではあまり見ない応用数学の問題が多いことに表れている。必修要件の一つ，Theory of Knowledgeの参考書[『TOK(知の理論)を解読する』](http://www.amazon.co.jp/dp/4865310991?tag=inquisitor-22)にも学際性を感じる。
+①学際的であることは，第4章で紹介されている問題に，日本の大学入試ではあまり見ない応用数学の問題が多いことに表れている。必修要件の一つ，Theory of Knowledgeの参考書[『TOK(知の理論)を解読する』](https://www.amazon.co.jp/dp/4865310991?tag=inquisitor-22)にも学際性を感じる。
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4865310991.09.jpg)](http://www.amazon.co.jp/dp/4865310991?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4865310991.09.jpg)](https://www.amazon.co.jp/dp/4865310991?tag=inquisitor-22)
 
-②グラフ電卓に必要な機能と利用できる機種のリストは http://www.ibo.org/globalassets/publications/use-of-calculators-jp.pdf にある。数式処理システム（Computer Algebra System, CAS）の機能が不可というのはちょっと中途半端ではないだろうか（紙と鉛筆だけの日本を棚に上げて）。
+②[グラフ電卓に必要な機能と利用できる機種のリスト](https://www.ibo.org/globalassets/publications/use-of-calculators-jp.pdf)。数式処理システム（Computer Algebra System, CAS）の機能が不可というのはちょっと中途半端ではないだろうか（紙と鉛筆だけの日本を棚に上げて）。
 
 >今後，IB認定校になる学校の数学の教員は，グラフ電卓を自由に使いこなし，指導できるようになることが求められる。（p.195）
 
 このあたりは時代とともに変わるはずだから，日本の高校教師には，もっと先を行ってCASを自由に使いこなせるようになることを求めたい。
 
-③[公式集の日本語版](http://www.ibo.org/globalassets/publications/math-hl-formular-booklet-jp.pdf)を見ると，日本の高校数学よりも，少し範囲は広いようだが，そのあたりの詳細な比較があるとよかった。（日本の大学入試も，もう少し範囲を広くして，その分難易度を下げた方がいいと思う。）
+③[公式集の日本語版](https://www.ibo.org/globalassets/publications/math-hl-formular-booklet-jp.pdf)を見ると，日本の高校数学よりも，少し範囲は広いようだが，そのあたりの詳細な比較があるとよかった。（日本の大学入試も，もう少し範囲を広くして，その分難易度を下げた方がいいと思う。）
 
 細かいこと
 

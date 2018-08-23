@@ -5,7 +5,7 @@ title: 『30th ANNIVERSARY ドラゴンボール 超史集』
 
 古印体ではじまるマンガ『ドラゴンボール』，公式発売日前にジャンプを売ってくれる店を探して行くほど好きでした（インターネットのない時代）。
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4087925056.09.jpg)『30th ANNIVERSARY ドラゴンボール 超史集』](http://www.amazon.co.jp/dp/4087925056?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4087925056.09.jpg)『30th ANNIVERSARY ドラゴンボール 超史集』](https://www.amazon.co.jp/dp/4087925056?tag=inquisitor-22)
 
 高校入試の試験当日，真冬の早朝に，発売前のジャンプを家に持ってきてくれた友人の優しさは忘れませんが，肝心の内容はほとんど忘れました。フリーザを倒した後は特に。
 

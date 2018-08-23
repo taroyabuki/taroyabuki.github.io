@@ -11,7 +11,7 @@ C++についての教科書を書きました。
 
 * [サンプルコード（UTF-8）（GitHub）](https://github.com/taroyabuki/cppbook2)
 * [サンプルコード（Shift_JIS）（日経BP）](http://ec.nikkeibp.co.jp/nsp/dl/09893/index.shtml)
-* [正誤表（WINGS）](http://www.wings.msn.to/index.php/-/A-05/978-4-8222-9893-7/)
+* [正誤表（WINGS）](https://wings.msn.to/index.php/-/A-05/978-4-8222-9893-7/)
 * [直したいところ](https://github.com/taroyabuki/cppbook2/wiki/%E7%9B%B4%E3%81%97%E3%81%9F%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D)
 
 プログラミング言語なんて，Python一択になるんじゃないの？という向きは，[TensorFlowのコード](https://github.com/tensorflow/tensorflow)や，[世界コンピュータ将棋選手権の参加チームの使用言語](http://www2.computer-shogi.org/wcsc27/team.html)をご覧になるといいでしょう。[「どうしてJavaやC++よりも遅いPythonが機械学習で使われているの？」](https://www.quora.com/Knowing-that-Python-is-very-slow-compared-to-Java-and-C%2B%2B-why-do-they-mostly-use-Python-for-fast-algorithmic-procedures-like-machine-learning/answer/Paulina-Jonu%C5%A1ait%C4%97)などという話もあります。

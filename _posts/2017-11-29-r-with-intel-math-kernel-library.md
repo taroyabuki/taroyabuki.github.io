@@ -3,7 +3,7 @@ date: 2017-11-29 14:07:17+00:00
 title: RでIntel Math Kernel Libraryを使う方法
 ---
 
-Intel Math Kernel Library（以下MKL。フリーソフトウェアではないが無料）を使うようにRをビルドして高速化する方法です。[R benchmarks](http://r.research.att.com/benchmarks/)で公開されているR benchmark 2.5なら，3倍くらい速くなります。こんな手間をかけなくても，Microsoft R Openを入れるだけで同じ効果を得られるのですが，「`-O3 -march=native`」でビルドしたら速いのかな？などと思う方のためのメモです。
+Intel Math Kernel Library（以下MKL。フリーソフトウェアではないが無料）を使うようにRをビルドして高速化する方法です。[R benchmarks](https://r.research.att.com/benchmarks/)で公開されているR benchmark 2.5なら，3倍くらい速くなります。こんな手間をかけなくても，Microsoft R Openを入れるだけで同じ効果を得られるのですが，「`-O3 -march=native`」でビルドしたら速いのかな？などと思う方のためのメモです。
 
 [https://software.intel.com/en-us/mkl](https://software.intel.com/en-us/mkl)で「Free Download」をクリックします。サインアップあるいはサインインして，Intel Math Kernel Libraryをクリックすると，l_mkl_2018.1.163.tgzのようなファイルがダウンロードされます。
 
