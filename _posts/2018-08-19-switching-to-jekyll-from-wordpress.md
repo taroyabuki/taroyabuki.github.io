@@ -97,6 +97,11 @@ gem "github-pages", group: :jekyll_plugins
 EOS
 
 bundle update
+```
+
+このまま`docker exec -it jekyll jekyll serve`を実行してもいいのですが，一度終わらせます。
+
+```bash
 exit
 ```
 
