@@ -17,4 +17,4 @@ title: ザ・サークル
 
 >秘密は嘘，分かち合いは思いやり，プライバシーは盗み(p.323)
 
-追記：[映画化](http://wired.jp/2016/12/08/the-circle/)・[文庫化（2分冊）](https://www.amazon.co.jp/dp/4150414211?tag=inquisitor-22)
+追記：[映画化](https://wired.jp/2016/12/08/the-circle/)・[文庫化（2分冊）](https://www.amazon.co.jp/dp/4150414211?tag=inquisitor-22)
