@@ -1,7 +1,9 @@
 ---
 date: 2014-12-22 14:10:39+00:00
-title: ドラクエ1から学ぶこと（その5）
+title: ドラクエ1から学ぶこと
 ---
+
+その5
 
 1. ちょっとしたことで、![](/images/2014-12-22-learning-from-dorakue-1-part-5-1.png)
 2. GPS端末で監視され（それを すてるなんて とんでもない！）、![](/images/2014-12-22-learning-from-dorakue-1-part-5-2.png)
