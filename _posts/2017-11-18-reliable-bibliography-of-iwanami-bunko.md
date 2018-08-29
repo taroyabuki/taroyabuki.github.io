@@ -23,13 +23,13 @@ title: 岩波文庫の書誌として最も信頼できるのは何か
 
 総目録はこの問題の解決には役立ちません。原書が同じものはまとめられ，ISBNは変わったとしても最新のものしか載っていないからです。たとえば『インディアスの破壊についての簡潔な報告』は，[1976年版（ISBNは334271）](https://ci.nii.ac.jp/ncid/BN00931907)と[2013年版（ISBNは358001）](https://ci.nii.ac.jp/ncid/BB13217312)があります。訳者が同じなのにISBNが変わった（岩波文庫としては）珍しい例なのですが，総目録に載っているISBNは358001だけなので，総目録だけを見てもISBNが変わったかどうかはわかりません。（総目録に倣って，ISBN-13の先頭の978400と末尾の1桁，ISBN10の先頭の400と末尾の1桁は割愛しています。）
 
-ISBNが使い回されても，CiNii BooksのデータベースはNICDという独自のIDを振っているので，CiNii Booksで検索すれば，ISBNが変わったことがわかります。（ただし，CiNii BooksからGoogle BooksへのリンクにはISBNが使われているので，CiNii BooksからGoogle Booksに飛ぶときは注意が必要です。間違っているものが少なくとも60件はあります。）
+ISBNが使い回されても，[CiNii Books](https://ci.nii.ac.jp/books/)のデータベースはNICDという独自のIDを振っているので，CiNii Booksで検索すれば，ISBNが変わったことがわかります。ただし，CiNii BooksからGoogle BooksへのリンクにはISBNが使われているので，CiNii BooksからGoogle Booksに飛ぶときは注意が必要です。間違っているものが少なくとも60件はあります。
 
 CiNii BooksのAPIで，岩波文庫（[親書誌IDがBN00015783](https://ci.nii.ac.jp/ncid/BN00015783)であるもの）を検索し，ISBNは同じでもNICDは違うもの，つまりISBNが使い回されているものを挙げると，次のようになります。
 
 [ISBNを使い回している岩波文庫タイトル（機械的抽出）](https://github.com/taroyabuki/iwanamibunko/blob/master/isbnWithNicds.csv)
 
-旧字→新字のような，ISBNを使い回してもいいと思う人が多そうなものを除くと，次のようになります。
+旧字→新字のような，ISBNの使い回しが許容されそうなものを除くと，次のようになります。
 
 [ISBNを使い回している岩波文庫タイトル（深刻なもの）](https://github.com/taroyabuki/iwanamibunko/blob/master/isbnWithNicds2.csv)
 
@@ -39,13 +39,13 @@ CiNii BooksのAPIで，岩波文庫（[親書誌IDがBN00015783](https://ci.nii.
 
 ## ISBNのないタイトルの存在
 
-1927年に創刊された岩波文庫ですが，ISBNが使われるようになったのは1980年頃なので，その間に刊行されたものには，そもそもISBNが付いていません。
+1927年に創刊が始まった岩波文庫ですが，ISBNが使われるようになったのは1980年頃なので，その間に刊行されたものには，そもそもISBNが付いていません。
 
 CiNii Booksに登録されていて，ISBNがないものを挙げると，次のようになります。
 
 [ISBNのない岩波文庫タイトル](https://github.com/taroyabuki/iwanamibunko/blob/master/itemWithoutIsbn.csv)
 
-CiNii Booksが最も信頼できる情報源なのかというと，そういうわけではありません。
+ここまでは，CiNii Booksと照会しながら調べてきましたが，CiNii Booksが最も信頼できる情報源なのかというと，そういうわけではありません。
 
 第1に，このデータベースは大学図書館のデータベースなので，大学図書館が所蔵していないものは登録されていません。第2に，NICDという独自のIDを振っているとは言っても，ISBNがない時代のものには，かなりの混乱がありそうです。
 
