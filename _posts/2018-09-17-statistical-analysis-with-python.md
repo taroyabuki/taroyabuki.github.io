@@ -37,17 +37,18 @@ Rubyを使ったシリーズになりそうでならなかった[『プログラ
 ```
 P = ProbabilityDistribution[2 x, {x, 0, 1}];(*ルーレットの確率密度*)
 
+n = 10^4;
+ListPlot[
+ With[{A = RandomVariate[P, n], B = RandomVariate[P, n]},
+  Transpose[{A + B, A}]]]
+
 X = A + B;
 Y = A;
 
 f := TransformedDistribution[{X, Y}, {Distributed[A, P], Distributed[B, P]}];(*確率分布*)
 pdf = PDF[f][{x, y}] // FullSimplify(*密度関数の数式*)
 
-ListPlot[Table[
-  With[{A = RandomVariate[P], B = RandomVariate[P]}, {A + B, A}],
-  {10^4}]]
-
-ListPlot[RandomVariate[f, 10^4]]
+ListPlot[RandomVariate[f, n]]
 
 DensityPlot[pdf, {x, 0, 2}, {y, 0, 1}, PlotPoints -> 50]
 ```
@@ -67,15 +68,16 @@ Mathematicaで確認します。
 キャプチャ中のコードは以下の通りです。
 
 ```
+ListPlot[
+ With[{A = RandomVariate[P, n], B = RandomVariate[P, n]},
+  Transpose[{A + B^2, A}]]]
+
 X = A + B^2;
 Y = A;
+
 pdf = PDF[f][{x, y}] // FullSimplify
 
-ListPlot[Table[
-  With[{A = RandomVariate[P], B = RandomVariate[P]}, {A + B^2, A}],
-  {10^4}]]
-
-ListPlot[RandomVariate[f, 10^4]]
+ListPlot[RandomVariate[f, n]]
 
 DensityPlot[pdf, {x, 0, 2}, {y, 0, 1}, PlotPoints -> 50]
 ```
