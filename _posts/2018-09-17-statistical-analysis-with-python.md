@@ -69,7 +69,7 @@ pdf = PDF[f][{x, y}] // FullSimplify
 
 ListPlot[RandomVariate[f, 10^4]]
 
-DensityPlot[pdf, {x, 0, 2}, {y, 0, 1}, PlotPoints -> 100, AspectRatio -> Automatic]
+DensityPlot[pdf, {x, 0, 2}, {y, 0, 1}, PlotPoints -> 50]
 ```
 
 指導対局だと思うとより一層楽しめる一冊です。
