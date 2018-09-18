@@ -28,7 +28,7 @@ Rubyを使ったシリーズになりそうでならなかった[『プログラ
 1. X = A + B，Y = Aとします（A = Y，B = X - A = X - Y）。
 1. このとき，(X, Y)の確率密度f(x, y)は0 ≦ y ≦ 1かつ0 ≦ x - y ≦1のときは 4y(x - y)，それ以外のときは0となります。
 
-私にはSciPyすら大変なので，Mathematicaで確認します。最初に画面キャプチャを，後でコードを掲載します。
+私にはSciPyすら大変なので，Mathematicaで確認します。
 
 ![画面キャプチャ1](/images/2018-09-17-statistical-analysis-with-python-1.png)
 
@@ -42,6 +42,10 @@ Y = A;
 
 f := TransformedDistribution[{X, Y}, {Distributed[A, P], Distributed[B, P]}];(*確率分布*)
 pdf = PDF[f][{x, y}] // FullSimplify(*密度関数の数式*)
+
+ListPlot[Table[
+  With[{A = RandomVariate[P], B = RandomVariate[P]}, {A + B, A}],
+  {10^4}]]
 
 ListPlot[RandomVariate[f, 10^4]]
 
@@ -66,6 +70,10 @@ Mathematicaで確認します。
 X = A + B^2;
 Y = A;
 pdf = PDF[f][{x, y}] // FullSimplify
+
+ListPlot[Table[
+  With[{A = RandomVariate[P], B = RandomVariate[P]}, {A + B^2, A}],
+  {10^4}]]
 
 ListPlot[RandomVariate[f, 10^4]]
 
