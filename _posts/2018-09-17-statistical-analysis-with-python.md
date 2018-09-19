@@ -35,7 +35,7 @@ Rubyを使ったシリーズになりそうでならなかった[『プログラ
 キャプチャ中のコードは以下の通りです。（[クラウド](https://sandbox.open.wolframcloud.com)でも動きます。）
 
 ```
-P = ProbabilityDistribution[2 x, {x, 0, 1}];(*ルーレットの確率密度*)
+P = ProbabilityDistribution[2 x, {x, 0, 1}];(*ルーレットの確率分布*)
 
 n = 10^4;
 ListPlot[
