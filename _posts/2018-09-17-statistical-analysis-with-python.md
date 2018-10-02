@@ -53,6 +53,16 @@ ListPlot[RandomVariate[f, n]]
 DensityPlot[pdf, {x, 0, 2}, {y, 0, 1}, PlotPoints -> 50]
 ```
 
+周辺確率密度関数を求めます。「2変数関数のうち1変数のみで積分するといった関数は実装されていない（p.141）」Pythonでは面倒ですが，Mathematicaでは，式をそのまま書くだけです（ここで扱っている例なら解析的に計算できます。結果は割愛）
+
+```
+tmp = Integrate[pdf, {y, -Infinity, Infinity}];
+Plot[tmp, {x, 0, 2}](*図7.6左*)
+
+tmp = Integrate[pdf, {x, -Infinity, Infinity}];
+Plot[tmp, {y, 0, 1}](*図7.6右*)
+```
+
 ここまでは問題なく進められるのですが，先の手順4を，次のように誤解されるのが心配です。
 
 (X, Y)の確率密度f(x, y)は0 ≦ A = y ≦ 1かつ0 ≦ B = x - y ≦1のときは **f(A)f(B) = f(y)f(x - y) =** 4y(x - y)，それ以外のときは0となります。**（誤解）**
