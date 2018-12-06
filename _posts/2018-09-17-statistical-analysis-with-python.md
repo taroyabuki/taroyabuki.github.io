@@ -32,7 +32,7 @@ Rubyを使ったシリーズになりそうでならなかった[『プログラ
 
 ![画面キャプチャ1](/images/2018-09-17-statistical-analysis-with-python-1.png)
 
-キャプチャ中のコードは以下の通りです。（[クラウド](https://sandbox.open.wolframcloud.com)でも動きます。）
+キャプチャ中のコードは以下の通りです。クラウド（[こちら](https://develop.open.wolframcloud.com/app/view/newNotebook?ext=nb)あるいは[こちら](https://lab.open.wolframcloud.com/app/view/newNotebook?ext=nb)）でも動きます。
 
 ```
 P = ProbabilityDistribution[2 x, {x, 0, 1}];(*ルーレットの確率分布*)
