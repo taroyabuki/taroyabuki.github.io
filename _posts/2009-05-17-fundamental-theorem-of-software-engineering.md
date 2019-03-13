@@ -11,7 +11,7 @@ title: 情報工学のあらゆる問題は別のレベルのインダイレク�
 
 後半を引用するかどうかに大きな違いがあるのかもしれません。私も[C++本](http://blog.unfindable.net/archives/661)で使わせてもらいました。
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4822298930.09.jpg)]
+![表紙](https://images-fe.ssl-images-amazon.com/images/P/4822298930.09.jpg)
 
 [アレクセイ・グルトヴォイほか『C++テンプレートメタプログラミング』（翔泳社, 2010）](https://www.amazon.co.jp/dp/4798120391?tag=inquisitor-22)には次のような記述がありました。
 
