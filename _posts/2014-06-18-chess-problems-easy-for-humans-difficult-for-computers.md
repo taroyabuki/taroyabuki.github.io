@@ -16,7 +16,7 @@ title: 生身の人間には簡単で、コンピュータには難しいチェ�
 
 ![問題1](/images/2014-06-18-chess-problems-easy-for-humans-difficult-for-computers1.png)
 
-ペンローズは、<q>この例は、単なる計算と理解との本質的な違いを説明している（p.166）</q>と書いていますが、私の手元のチェスプログラムは、瞬時に正解を見出しました。
+ペンローズは、<q>この例は、単なる計算と理解との本質的な違いを説明している（p.166）</q>と書いていますが、私の手元のチェスプログラム（Lucas Chess）は、瞬時に正解を見出しました。
 
 ![問題2](/images/2014-06-18-chess-problems-easy-for-humans-difficult-for-computers2.png)
 
