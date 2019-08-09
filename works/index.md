@@ -38,6 +38,7 @@ title: Works
 <h2>Commentary</h2>
 
 <ul>
+    <li><a href="https://www.amazon.co.jp/dp/B06XWF34YQ?tag=inquisitor-22"><img alt="" src="https://images-fe.ssl-images-amazon.com/images/P/B06XWF34YQ.09._SL75.jpg" />機械まかせの数学. 大学への数学, Vol. 61, No. 5, pp. 66&ndash;69, 6月 2017.</li>
     <li><a href="paper/simulation200409.jpg"><img src="paper/simulation200409s.png" alt="雑誌表紙" style="float:left;" /></a> 矢吹太朗, 伊庭斉志. Swarmによる複雑系のシミュレーション. シミュレーション, Vol. 23, No. 3, pp.7&ndash;12, 9月 2004.</li>
     <li style="clear:both;">矢吹太朗, 伊庭斉志. 量子コンピュータってどんなもの？ 映像情報メディア学会誌, Vol.55, No. 8/9, pp. 1113&ndash;1114, 2001.</li>
 </ul>
