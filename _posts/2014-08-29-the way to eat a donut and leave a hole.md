@@ -17,6 +17,8 @@ title: ドーナツを穴だけ残して食べる方法
 
 ![](/images/2019-08-14-donut.gif)
 
+<script src="https://gist.github.com/taroyabuki/98d5e34ea996382adb9d.js"></script>
+
 2019年9月に文庫化。
 
 [![表紙](https://images-fe.ssl-images-amazon.com/images/P/4532199557.09.jpg)](https://www.amazon.co.jp/dp/4532199557?tag=inquisitor-22)
