@@ -7,7 +7,7 @@ title: 僕たちは、今まで、何度、世界を救っただろう？
 
 [もとの動画](https://www.youtube.com/watch?v=m4KW0OBCtz4)は消えてしまったので，別のものを張ります。見えなかったら「みんなのゲーム愛にありがとう。」で検索してください。
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/WpewSBy8g6I" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WpewSBy8g6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 >僕たちは、今まで、何度、世界を救っただろう？
 
