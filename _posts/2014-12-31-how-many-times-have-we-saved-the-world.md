@@ -5,7 +5,7 @@ title: 僕たちは、今まで、何度、世界を救っただろう？
 
 [PlayStation発売20周年特設サイト](https://web.archive.org/web/20151109000021/http://www.jp.playstation.com:80/20th/)で公開されている特別映像、『みんなのゲーム愛にありがとう。』が感動的でした。
 
-[もとの動画](https://www.youtube.com/watch?v=m4KW0OBCtz4)は消えてしまったので，別のものを張ります。見えなかったら「みんなのゲーム愛にありがとう。」で検索してください。
+[もとの動画](https://www.youtube.com/watch?v=m4KW0OBCtz4)は消えてしまったので，[別のもの](https://www.youtube.com/watch?v=WpewSBy8g6I)を張ります。見えなかったら「みんなのゲーム愛にありがとう。」で検索してください。
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WpewSBy8g6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
