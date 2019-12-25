@@ -33,12 +33,11 @@ title: 塗り分けに五色必要な地図
 
 色を1組の真偽値で表し，色が同じでないという条件を連言標準形で記述することで，高速化している。
 
-細かい注意：上の結果は周りが海に囲まれていても大丈夫なように，条件を追加して求めたもので，このコードの結果とはちょっと違うものになっている。
+細かい注意：上の結果は周りが海（別の色）に囲まれていても大丈夫なものになっている。
 
 最後の描画は`Colorize[matrix, ColorRules -> cTable]`でもいいのだが，この関数にはバグがあり，Mathematica 10.4.1では正しく動作しない。（製造元には報告済み。Ver.11で修正された。）
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="en" dir="ltr">Code submitted by <a href="https://twitter.com/yabuki">@yabuki</a> <a href="https://twitter.com/hashtag/wolframlang?src=hash">#wolframlang</a> Source: <a href="https://t.co/1kAhicTjVR">https://t.co/1kAhicTjVR</a> <a href="https://t.co/baH0wwxQqC">pic.twitter.com/baH0wwxQqC</a></p>&mdash; Tweet-a-Program (@wolframtap) <a href="https://twitter.com/wolframtap/status/726864543519895552">2016年5月1日</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-
+参考：[ブルーナカラーのCMYK値、RGB値、Webカラー値](https://0017.org/113.html)
