@@ -27,8 +27,8 @@ Information, Computation, Evolution
 
 <ul>
   <li>2012: Associate Professor (Chiba Institute of Technology)</li>
-  <li>2007: Assistant Professor (Aoyama Gakuin University)</li>
-  <li>2004: Research Associate (Aoyama Gakuin University)</li>
+  <li>2007: Assistant Professor (Department of Integrated Information Technology, College of Science and Engineering, Aoyama Gakuin University)</li>
+  <li>2004: Research Associate (Department of Integrated Information Technology, College of Science and Engineering, Aoyama Gakuin University)</li>
   <li>2004: Ph.D. (Science, Department of Frontier Informatics, Graduate School of Frontier Sciences, The University of Tokyo.)</li>
   <li>2001: Master of Science (The University of Tokyo)</li>
   <li>1999: I dropped out of Department of Astronomy (Institute of Astronomy), Graduate School of Science, The University of Tokyo.</li>
@@ -64,9 +64,9 @@ Information, Computation, Evolution
 <h2>経歴</h2>
 
 <ul>
-  <li>2012（平成24）：千葉工業大学准教授</li>
-  <li>2007（平成19）：青山学院大学助教</li>
-  <li>2004（平成16）：青山学院大学助手</li>
+  <li>2012（平成24）：千葉工業大学 社会システム科学部 プロジェクトマネジメント学科 准教授</li>
+  <li>2007（平成19）：青山学院大学 理工学部 情報テクノロジー学科 助教</li>
+  <li>2004（平成16）：青山学院大学 理工学部 情報テクノロジー学科 助手</li>
   <li>2004.3.25（平成16）：博士（科学, 東京大学大学院 新領域創成科学研究科 基盤情報学専攻）</li>
   <li>2003.1（平成15）：研究拠点形成アシスタント（東京大学工学系研究科）</li>
   <li>2001（平成13）：修士（科学, 東京大学）</li>
