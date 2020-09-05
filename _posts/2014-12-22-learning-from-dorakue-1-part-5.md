@@ -10,5 +10,4 @@ title: ドラクエ1から学ぶこと
 3. 兵隊に囲まれて、![](/images/2014-12-22-learning-from-dorakue-1-part-5-3.png)
 4. 断っても3に戻るだけ（無限ループ）![](/images/2014-12-22-learning-from-dorakue-1-part-5-4.png)
 
-参考：[僕たちは、今まで、何度、世界を救っただろう？](/2014/12/31/how-many-times-have-we-saved-the\
--world/)
+参考：[僕たちは、今まで、何度、世界を救っただろう？](/2014/12/31/how-many-times-have-we-saved-the-world/)
