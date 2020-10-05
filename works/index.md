@@ -6,11 +6,11 @@ title: Works
 
 <ul>
     <li style="clear:both;"><a href="https://github.com/taroyabuki/webbook"><img alt="4822298930" src="https://images-fe.ssl-images-amazon.com/images/P/4781914772.09._SL75.jpg" style="float:left;" />矢吹太朗. Webのしくみ&mdash;Webをいかすための12の道具. サイエンス社, 2020.</a></li>
-    <li style="clear:both;"><a href="https://github.com/taroyabuki/cppbook2"><img alt="4822298930" src="https://images-fe.ssl-images-amazon.com/images/P/4822298930.09._SL75.jpg" style="float:left;" />矢吹太朗. 基礎からしっかり学ぶC++の教科書. 日経BP, 2017.</a></li>
-    <li style="clear:both;"><a href="https://taroyabuki.github.com/webbook2/"><img alt="4627847327" src="https://images-fe.ssl-images-amazon.com/images/P/4627847327.09._SL75.jpg"  style="float:left;" />矢吹太朗. Webアプリケーション構築入門&mdash;実践！Webページ制作からマッシュアップまで. 森北出版, 2011.</a></li>
-    <li style="clear:both;"><img alt="4891006269" src="https://images-fe.ssl-images-amazon.com/images/P/4891006269.09._SL75.jpg" style="float:left;" />矢吹太朗. Microsoft Visual C++入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2009. <a href="https://web.archive.org/web/20100224214732/https://wings.msn.to/index.php/-/A-05/978-4-89100-626-6/">正誤表</a></li>
-    <li style="clear:both;"><img alt="489100584X" src="https://images-fe.ssl-images-amazon.com/images/P/489100584X.09._SL75.jpg" style="float:left;" />矢吹太朗. Microsoft Visual Web Developer 2008 Express Edition入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2008. <a href="https://web.archive.org/web/20081112015032/https://wings.msn.to/index.php/-/A-05/978-4-89100-584-9/">正誤表</a></li>
-    <li style="clear:both;"><img alt="4627847319" src="https://images-fe.ssl-images-amazon.com/images/P/4627847319.09._SL75.jpg" style="float:left;" />矢吹太朗. 初級プログラマのためのWebアプリケーション構築入門&mdash;実践で学ぶJava, XHTML, SQL. 森北出版, 2007. <a href="https://web.archive.org/web/20100311025524/http://www.unfindable.net/web-app-book/wiki/%E6%AD%A3%E8%AA%A4%E8%A1%A8">正誤表</a></li>
+    <li style="clear:both;"><a href="https://github.com/taroyabuki/cppbook2"><img alt="4822298930" src="https://cover.openbd.jp/9784822298937.jpg" style="float:left; height:75px;" />矢吹太朗. 基礎からしっかり学ぶC++の教科書. 日経BP, 2017.</a></li>
+    <li style="clear:both;"><a href="https://taroyabuki.github.com/webbook2/"><img alt="4627847327" src="https://cover.openbd.jp/9784627847323.jpg"  style="float:left; height:75px;" />矢吹太朗. Webアプリケーション構築入門&mdash;実践！Webページ制作からマッシュアップまで. 森北出版, 2011.</a></li>
+    <li style="clear:both;"><img alt="4891006269" src="https://cover.openbd.jp/9784891006266.jpg" style="float:left; height:75px;" />矢吹太朗. Microsoft Visual C++入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2009. <a href="https://web.archive.org/web/20100224214732/https://wings.msn.to/index.php/-/A-05/978-4-89100-626-6/">正誤表</a></li>
+    <li style="clear:both;"><img alt="489100584X" src="https://cover.openbd.jp/9784891005849.jpg" style="float:left; height:75px;" />矢吹太朗. Microsoft Visual Web Developer 2008 Express Edition入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2008. <a href="https://web.archive.org/web/20081112015032/https://wings.msn.to/index.php/-/A-05/978-4-89100-584-9/">正誤表</a></li>
+    <li style="clear:both;"><img alt="4627847319" src="https://cover.openbd.jp/9784627847316.jpg" style="float:left; height:75px;" />矢吹太朗. 初級プログラマのためのWebアプリケーション構築入門&mdash;実践で学ぶJava, XHTML, SQL. 森北出版, 2007. <a href="https://web.archive.org/web/20100311025524/http://www.unfindable.net/web-app-book/wiki/%E6%AD%A3%E8%AA%A4%E8%A1%A8">正誤表</a></li>
 </ul>
 
 <h2 style="clear:both;">Selected Papers</h2>
@@ -18,7 +18,7 @@ title: Works
 <ul>
     <li><a href="https://dbsj.org/journal/dbsj_journal/dbsj_journal_vol_9_no_2_13_18/">矢吹太朗, 佐久田博司. SQLによる数独の解法とクエリオプティマイザの有効性. 日本データベース学会論文誌. Vol.9, No.2, pp.13&ndash;18, 2010.</a></li>
     <li><a href="http://www.jcomputers.us/index.php?m=content&c=index&a=show&catid=85&id=1060">Taro Yabuki and Hiroshi Sakuta. Development of Collaboration Environments for Web-Based Learning. <em>Journal of Computers,</em> Vol. 2, No. 9, pp. 1&ndash;6, Academy Publisher, 2007.</a></li>
-    <li><a href="https://www.amazon.co.jp/exec/obidos/asin/1591403138/inquisitor-22/">Taro Yabuki and Hitoshi Iba. Genetic programming using a Turing complete representation: recurrent network consisting of trees. In Leandro Nunes de Castro and Fernando J. Von Zuben, editors, <em>Recent Developments in Biologically Inspired Computing,</em> chapter 4, pp. 61&ndash;81. Idea Group Inc., 2004.</a></li>
+    <li><a href="https://www.amazon.co.jp/exec/obidos/asin/1591403138/">Taro Yabuki and Hitoshi Iba. Genetic programming using a Turing complete representation: recurrent network consisting of trees. In Leandro Nunes de Castro and Fernando J. Von Zuben, editors, <em>Recent Developments in Biologically Inspired Computing,</em> chapter 4, pp. 61&ndash;81. Idea Group Inc., 2004.</a></li>
     <li>矢吹太朗, 伊庭斉志. 関数の回帰的なネットワークを用いた言語判定装置の生成. 情報処理学会論文誌：数理モデル化と応用, Vol. 45, No.SIG02, pp. 66&ndash;76, 2004.</li>
     <li>Taro Yabuki and Hitoshi Iba. Turing-complete data structure for genetic programming. In <em>Proceedings of 2003 IEEE International Conference on System, Man &amp; Cybernetics (SMC 2003),</em> pp. 3577&ndash;3582, Washington, D.C., USA, October 2003.</li>
     <li>矢吹光佑, 矢吹太朗. 実ネットワークの大局的性質を再現する創発モデル. 情報処理学会研究報告（情処研報）, Vol.2004, No.85, pp. 211&ndash;218. 情報処理学会知能と複雑系研究会，人工知能学会知識ベースシステム研究会共催, 2004. <a href="paper/2004-yabuki-emergent_model.pdf">PDF</a></li>
@@ -39,7 +39,7 @@ title: Works
 <h2>Commentary</h2>
 
 <ul>
-    <li style="clear:both;"><a href="https://www.amazon.co.jp/dp/B06XWF34YQ?tag=inquisitor-22"><img alt="" src="https://images-fe.ssl-images-amazon.com/images/P/B06XWF34YQ.09._SL75.jpg" style="float:left;" /></a>機械まかせの数学. 大学への数学, Vol. 61, No. 5, pp. 66&ndash;69, 6月 2017.</li>
+    <li style="clear:both;"><a href="https://www.amazon.co.jp/dp/B06XWF34YQ"><img alt="" src="https://images-fe.ssl-images-amazon.com/images/P/B06XWF34YQ.09._SL75.jpg" style="float:left;" /></a>機械まかせの数学. 大学への数学, Vol. 61, No. 5, pp. 66&ndash;69, 6月 2017.</li>
     <li style="clear:both;"><a href="paper/simulation200409.jpg"><img src="paper/simulation200409s.png" alt="雑誌表紙" style="float:left;" /></a> 矢吹太朗, 伊庭斉志. Swarmによる複雑系のシミュレーション. シミュレーション, Vol. 23, No. 3, pp.7&ndash;12, 9月 2004.</li>
     <li style="clear:both;">矢吹太朗, 伊庭斉志. 量子コンピュータってどんなもの？ 映像情報メディア学会誌, Vol.55, No. 8/9, pp. 1113&ndash;1114, 2001.</li>
 </ul>
@@ -76,8 +76,8 @@ title: Works
 <h3>Music criticism</h3>
 
 <ul>
-    <li style="clear:both;"><a href="https://www.amazon.co.jp/exec/obidos/asin/4401619765/inquisitor-22/"><img src="https://images-fe.ssl-images-amazon.com/images/P/4401619765.09._SL75.jpg" alt="4401619765" style="float:left;" /> ロックは世界を変えない—1984 UTOPIA ODDITY. 有限会社スローガン（編）, デヴィッド・ボウイ・ファイル, pp. 52–59. シンコーミュージック・エンタテインメント, 2005.</a></li>
-    <li style="clear:both;"><a href="https://www.amazon.co.jp/exec/obidos/asin/4401619137/inquisitor-22/"><img src="https://images-fe.ssl-images-amazon.com/images/P/4401619137.09._SL75.jpg" alt="4401619137" style="float:left;" /> ロックスターがめったに語らないこと—U2と愛と神の恵み. 有限会社スローガン（編）, U2ファイル, pp. 166–171. シンコーミュージック・エンタテインメント, 2005.</a></li>
+    <li style="clear:both;"><a href="https://www.amazon.co.jp/exec/obidos/asin/4401619765/"><img src="https://cover.openbd.jp/9784401619764.jpg" alt="4401619765" style="float:left; height:75px;" /> ロックは世界を変えない—1984 UTOPIA ODDITY. 有限会社スローガン（編）, デヴィッド・ボウイ・ファイル, pp. 52–59. シンコーミュージック・エンタテインメント, 2005.</a></li>
+    <li style="clear:both;"><a href="https://www.amazon.co.jp/exec/obidos/asin/4401619137/"><img src="https://images-fe.ssl-images-amazon.com/images/P/4401619137.09._SL75.jpg" alt="4401619137" style="float:left; height:75px;" /> ロックスターがめったに語らないこと—U2と愛と神の恵み. 有限会社スローガン（編）, U2ファイル, pp. 166–171. シンコーミュージック・エンタテインメント, 2005.</a></li>
 </ul>
 
 <h3 style="clear:both;">Computer Today</h3>
