@@ -5,7 +5,7 @@ title: Works
 <h2>Books</h2>
 
 <ul>
-    <li style="clear:both;"><a href="https://github.com/taroyabuki/webbook"><img alt="4822298930" src="https://images-fe.ssl-images-amazon.com/images/P/4781914772.09._SL75.jpg" style="float:left;" />矢吹太朗. Webのしくみ&mdash;Webをいかすための12の道具. サイエンス社, 2020.</a></li>
+    <li style="clear:both;"><a href="https://github.com/taroyabuki/webbook"><img alt="4822298930" src="https://images-fe.ssl-images-amazon.com/images/P/4781914772.09._SL282.jpg" style="float:left; height:75px;" />矢吹太朗. Webのしくみ&mdash;Webをいかすための12の道具. サイエンス社, 2020.</a></li>
     <li style="clear:both;"><a href="https://github.com/taroyabuki/cppbook2"><img alt="4822298930" src="https://cover.openbd.jp/9784822298937.jpg" style="float:left; height:75px;" />矢吹太朗. 基礎からしっかり学ぶC++の教科書. 日経BP, 2017.</a></li>
     <li style="clear:both;"><a href="https://taroyabuki.github.com/webbook2/"><img alt="4627847327" src="https://cover.openbd.jp/9784627847323.jpg"  style="float:left; height:75px;" />矢吹太朗. Webアプリケーション構築入門&mdash;実践！Webページ制作からマッシュアップまで. 森北出版, 2011.</a></li>
     <li style="clear:both;"><img alt="4891006269" src="https://cover.openbd.jp/9784891006266.jpg" style="float:left; height:75px;" />矢吹太朗. Microsoft Visual C++入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2009. <a href="https://web.archive.org/web/20100224214732/https://wings.msn.to/index.php/-/A-05/978-4-89100-626-6/">正誤表</a></li>
@@ -39,7 +39,7 @@ title: Works
 <h2>Commentary</h2>
 
 <ul>
-    <li style="clear:both;"><a href="https://www.amazon.co.jp/dp/B06XWF34YQ"><img alt="" src="https://images-fe.ssl-images-amazon.com/images/P/B06XWF34YQ.09._SL75.jpg" style="float:left;" /></a>機械まかせの数学. 大学への数学, Vol. 61, No. 5, pp. 66&ndash;69, 6月 2017.</li>
+    <li style="clear:both;"><a href="https://www.amazon.co.jp/dp/B06XWF34YQ"><img alt="" src="https://images-fe.ssl-images-amazon.com/images/P/B06XWF34YQ.09._SL282.jpg" style="float:left; height:75px;" /></a>機械まかせの数学. 大学への数学, Vol. 61, No. 5, pp. 66&ndash;69, 6月 2017.</li>
     <li style="clear:both;"><a href="paper/simulation200409.jpg"><img src="paper/simulation200409s.png" alt="雑誌表紙" style="float:left;" /></a> 矢吹太朗, 伊庭斉志. Swarmによる複雑系のシミュレーション. シミュレーション, Vol. 23, No. 3, pp.7&ndash;12, 9月 2004.</li>
     <li style="clear:both;">矢吹太朗, 伊庭斉志. 量子コンピュータってどんなもの？ 映像情報メディア学会誌, Vol.55, No. 8/9, pp. 1113&ndash;1114, 2001.</li>
 </ul>
@@ -77,7 +77,7 @@ title: Works
 
 <ul>
     <li style="clear:both;"><a href="https://www.amazon.co.jp/exec/obidos/asin/4401619765/"><img src="https://cover.openbd.jp/9784401619764.jpg" alt="4401619765" style="float:left; height:75px;" /> ロックは世界を変えない—1984 UTOPIA ODDITY. 有限会社スローガン（編）, デヴィッド・ボウイ・ファイル, pp. 52–59. シンコーミュージック・エンタテインメント, 2005.</a></li>
-    <li style="clear:both;"><a href="https://www.amazon.co.jp/exec/obidos/asin/4401619137/"><img src="https://images-fe.ssl-images-amazon.com/images/P/4401619137.09._SL75.jpg" alt="4401619137" style="float:left; height:75px;" /> ロックスターがめったに語らないこと—U2と愛と神の恵み. 有限会社スローガン（編）, U2ファイル, pp. 166–171. シンコーミュージック・エンタテインメント, 2005.</a></li>
+    <li style="clear:both;"><a href="https://www.amazon.co.jp/exec/obidos/asin/4401619137/"><img src="https://images-fe.ssl-images-amazon.com/images/P/4401619137.09._SL282.jpg" alt="4401619137" style="float:left; height:75px;" /> ロックスターがめったに語らないこと—U2と愛と神の恵み. 有限会社スローガン（編）, U2ファイル, pp. 166–171. シンコーミュージック・エンタテインメント, 2005.</a></li>
 </ul>
 
 <h3 style="clear:both;">Computer Today</h3>
