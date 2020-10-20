@@ -1,6 +1,6 @@
 lang: ja
-title: YABUKI Taro's Home Page
-author: YABUKI Taro
+title: Yabuki Taro's Home Page
+author: Yabuki Taro
 email: taro.yabuki at unfindable dot net
 description: 2018/08/19 フィードのURLが変わりました。
 github_username: taroyabuki
@@ -19,7 +19,7 @@ defaults:
     scope:
       path: "_posts"
     values:
-      author: YABUKI Taro
+      author: Yabuki Taro
       comments: true
 plugins:
   - jekyll-feed
