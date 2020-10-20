@@ -3,7 +3,7 @@ date: 2009-03-16 14:12:58+00:00
 title: 本を書きました。『Microsoft Visual C++入門』
 ---
 
-<img src="https://www.hanmoto.com/bd/img/9784891006266.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗著, 山田祥寛監修『Microsoft Visual C++入門』（日経BPソフトプレス） 追記：[改訂版](/2017/02/15/my-new-book-about-c++/)があります．
+<img src="https://cover.openbd.jp/9784891006266.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗著, 山田祥寛監修『Microsoft Visual C++入門』（日経BPソフトプレス） 追記：[改訂版](/2017/02/15/my-new-book-about-c++/)があります．
 
 - [honto](https://honto.jp/isbn/978-4891006266)
 - [アマゾン](https://www.amazon.co.jp/dp/4891006269)

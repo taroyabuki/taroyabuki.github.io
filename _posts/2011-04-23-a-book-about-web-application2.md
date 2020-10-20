@@ -3,7 +3,7 @@ date: 2011-04-23 10:37:32+00:00
 title: 本を書きました。『Webアプリケーション構築入門』
 ---
 
-<img src="https://www.hanmoto.com/bd/img/9784627847323.jpg" alt="書影" style="height:150px;" /><br/>『Webアプリケーション構築入門』（森北出版）
+<img src="https://cover.openbd.jp/9784627847323.jpg" alt="書影" style="height:150px;" /><br/>『Webアプリケーション構築入門』（森北出版）
 
 - [honto](https://honto.jp/isbn/978-4627847323)
 - [アマゾン](https://www.amazon.co.jp/dp/4627847327)
@@ -20,7 +20,7 @@ title: 本を書きました。『Webアプリケーション構築入門』
 
 これだけでは説得力に欠けるかもしれないので、最近の興味深い小説から、似たような主張を引用させてもらいましょう。
 
-<img src="https://www.hanmoto.com/bd/img/9784152091994.jpg" alt="書影" style="float:right; height:150px;" />
+<img src="https://cover.openbd.jp/9784152091994.jpg" alt="書影" style="float:right; height:150px;" />
 
 > もしきみがまだコンピュータのプログラムをつくったことがないなら、ぜひ一度つくってみるといい。他に類を見ない体験だからだ。コンピュータのプログラム作成は、コンピュータを君の命令通りに動かすことを意味する。（中略）掛け値なしに感動的な体験になるはずだ。感動で胸がいっぱいになるはずだ。[ドクトロウ『リトル・ブラザー』（早川書房, 2011）](http://www.amazon.co.jp/exec/obidos/ASIN/4152091991/inquisitor-22/)
 
