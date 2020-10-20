@@ -5,12 +5,42 @@ title: Works
 <h2>Books</h2>
 
 <ul>
-    <li style="clear:both;"><a href="https://github.com/taroyabuki/webbook"><img alt="4822298930" src="https://images-fe.ssl-images-amazon.com/images/P/4781914772.09._SL282.jpg" style="float:left; height:75px;" />矢吹太朗. Webのしくみ&mdash;Webをいかすための12の道具. サイエンス社, 2020.</a></li>
-    <li style="clear:both;"><a href="https://github.com/taroyabuki/cppbook2"><img alt="4822298930" src="https://cover.openbd.jp/9784822298937.jpg" style="float:left; height:75px;" />矢吹太朗. 基礎からしっかり学ぶC++の教科書. 日経BP, 2017.</a></li>
-    <li style="clear:both;"><a href="https://taroyabuki.github.com/webbook2/"><img alt="4627847327" src="https://cover.openbd.jp/9784627847323.jpg"  style="float:left; height:75px;" />矢吹太朗. Webアプリケーション構築入門&mdash;実践！Webページ制作からマッシュアップまで. 森北出版, 2011.</a></li>
-    <li style="clear:both;"><img alt="4891006269" src="https://cover.openbd.jp/9784891006266.jpg" style="float:left; height:75px;" />矢吹太朗. Microsoft Visual C++入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2009. <a href="https://web.archive.org/web/20100224214732/https://wings.msn.to/index.php/-/A-05/978-4-89100-626-6/">正誤表</a></li>
-    <li style="clear:both;"><img alt="489100584X" src="https://cover.openbd.jp/9784891005849.jpg" style="float:left; height:75px;" />矢吹太朗. Microsoft Visual Web Developer 2008 Express Edition入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2008. <a href="https://web.archive.org/web/20081112015032/https://wings.msn.to/index.php/-/A-05/978-4-89100-584-9/">正誤表</a></li>
-    <li style="clear:both;"><img alt="4627847319" src="https://cover.openbd.jp/9784627847316.jpg" style="float:left; height:75px;" />矢吹太朗. 初級プログラマのためのWebアプリケーション構築入門&mdash;実践で学ぶJava, XHTML, SQL. 森北出版, 2007. <a href="https://web.archive.org/web/20100311025524/http://www.unfindable.net/web-app-book/wiki/%E6%AD%A3%E8%AA%A4%E8%A1%A8">正誤表</a></li>
+    <li style="clear:both;">
+      <a href="https://github.com/taroyabuki/webbook">
+        <img src="https://raw.githubusercontent.com/taroyabuki/webbook/master/cover.jpg" alt="書影" style="float:left; height:75px;"/>
+        矢吹太朗. Webのしくみ&mdash;Webをいかすための12の道具. サイエンス社, 2020.
+      </a>
+    </li>
+    <li style="clear:both;">
+      <a href="https://github.com/taroyabuki/cppbook2">
+        <img src="https://cover.openbd.jp/9784822298937.jpg" alt="書影" style="float:left; height:75px;"/>
+        矢吹太朗. 基礎からしっかり学ぶC++の教科書. 日経BP, 2017.
+      </a>
+    </li>
+    <li style="clear:both;">
+      <a href="https://github.com/taroyabuki/webbook2">
+        <img src="https://cover.openbd.jp/9784627847323.jpg" alt="書影" style="float:left; height:75px;"/>
+        矢吹太朗. Webアプリケーション構築入門&mdash;実践！Webページ制作からマッシュアップまで. 森北出版, 2011.
+      </a>
+    </li>
+    <li style="clear:both;">
+      <a href="https://taroyabuki.github.io/2009/03/16/first-c++-book/">
+        <img src="https://cover.openbd.jp/9784891006266.jpg" alt="書影" style="float:left; height:75px;"/>
+        矢吹太朗. Microsoft Visual C++入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2009.
+      </a>
+    </li>
+    <li style="clear:both;">
+      <a href="https://taroyabuki.github.io/2008/04/28/a-book-about-vwd/">
+        <img src="https://cover.openbd.jp/9784891005849.jpg" alt="書影" style="float:left; height:75px;"/>
+        矢吹太朗. Microsoft Visual Web Developer 2008 Express Edition入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2008.
+      </a>
+    </li>
+    <li style="clear:both;">
+      <a href="https://taroyabuki.github.io/2007/07/30/a-book-about-web-application/">
+        <img src="https://cover.openbd.jp/9784627847316.jpg" alt="書影" style="float:left; height:75px;"/>
+        矢吹太朗. 初級プログラマのためのWebアプリケーション構築入門&mdash;実践で学ぶJava, XHTML, SQL. 森北出版, 2007.
+      </a>
+    </li>
 </ul>
 
 <h2 style="clear:both;">Selected Papers</h2>
