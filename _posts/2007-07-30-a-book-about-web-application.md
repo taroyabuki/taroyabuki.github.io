@@ -3,7 +3,7 @@ date: 2007-07-30 14:13:12+00:00
 title: 本を書きました。『初級プログラマのためのWebアプリケーション構築入門』
 ---
 
-<img src="https://cover.openbd.jp/9784627847316.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗著, 佐久田博司監修『初級プログラマのためのWeb アプリケーション構築入門』（森北出版） 追記：[改訂版](http://taroyabuki.github.io/webbook2/)があります．
+<img src="https://cover.openbd.jp/9784627847316.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『初級プログラマのためのWeb アプリケーション構築入門』（森北出版, 2007） 追記：[改訂版](http://taroyabuki.github.io/webbook2/)があります．
 
 - [honto](https://honto.jp/isbn/978-4627847316)
 - [アマゾン](https://www.amazon.co.jp/dp/4627847319)
@@ -23,10 +23,10 @@ C言語の基本的な文法を知っている方を対象に、これらを1冊
 
 もちろん、1冊ですべてをカバーするわけにはいきませんが、ふつうの入門書と違って参考文献リストも充実させたので、本格的に学ぶためのよいスタート地点になっていると思います。
 
-詳しいことは[サポートサイト](http://www.unfindable.net/web-app-book/)で読んでください。
-
 小林秀雄の言う「精神の刻印を打たれたある現実の形」になるよう心がけました。
 
 > 文化活動とは、一軒でもいい、確かに家が建つという事だ。木造建築でもいい、思想建築でもいいが、ともかく精神の刻印を打たれたある現実の形が創り出されるという事だ。そういう特殊な物を作り出す勤労である。手仕事である。（[小林秀雄『私の人生観』](http://www.amazon.co.jp/exec/obidos/ASIN/4106435578/inquisitor-22/)）
+
+<a href="https://web.archive.org/web/20100311025524/http://www.unfindable.net/web-app-book/wiki/%E6%AD%A3%E8%AA%A4%E8%A1%A8">正誤表</a>
 
 追記：印税で家を建てたい、という意味ではありません。

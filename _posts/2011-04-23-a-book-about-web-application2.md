@@ -3,7 +3,7 @@ date: 2011-04-23 10:37:32+00:00
 title: 本を書きました。『Webアプリケーション構築入門』
 ---
 
-<img src="https://cover.openbd.jp/9784627847323.jpg" alt="書影" style="height:150px;" /><br/>『Webアプリケーション構築入門』（森北出版）
+<img src="https://cover.openbd.jp/9784627847323.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Webアプリケーション構築入門』（森北出版, 2011）
 
 - [honto](https://honto.jp/isbn/978-4627847323)
 - [アマゾン](https://www.amazon.co.jp/dp/4627847327)

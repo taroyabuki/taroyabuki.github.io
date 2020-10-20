@@ -3,7 +3,7 @@ date: 2008-04-28 14:40:24+00:00
 title: 本を書きました。『Microsoft Visual Web Developer 2008 Express Edition入門』
 ---
 
-<img src="https://cover.openbd.jp/9784891005849.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗著, 山田祥寛監修『Microsoft Visual Web Developer 2008 Express Edition入門』（日経BPソフトプレス）
+<img src="https://cover.openbd.jp/9784891005849.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Microsoft Visual Web Developer 2008 Express Edition入門』（日経BPソフトプレス, 2008）
 
 - [honto](https://honto.jp/isbn/978-4891005849)
 - [アマゾン](https://www.amazon.co.jp/dp/489100584X)
