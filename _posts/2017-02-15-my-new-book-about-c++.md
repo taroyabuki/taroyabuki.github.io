@@ -3,9 +3,10 @@ date: 2017-02-15 15:38:20+00:00
 title: 本を書きました。『C++の教科書』
 ---
 
-C++についての教科書を書きました。
+<img src="https://www.hanmoto.com/bd/img/9784822298937.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗著, 山田祥寛監修『C++の教科書』（日経BP社）
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4822298930.09.jpg)『C++の教科書』（日経BP社）](https://www.amazon.co.jp/dp/4822298930?tag=inquisitor-22)
+- [honto](https://honto.jp/isbn/978-4822298937)
+- [アマゾン](https://www.amazon.co.jp/dp/4822298930)
 
 サンプルコードなどは以下にあります。
 

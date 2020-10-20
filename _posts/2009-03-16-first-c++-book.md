@@ -3,11 +3,10 @@ date: 2009-03-16 14:12:58+00:00
 title: 本を書きました。『Microsoft Visual C++入門』
 ---
 
-追記：[改訂版が出ました。](/2017/02/15/my-new-book-about-c++/)
+<img src="https://www.hanmoto.com/bd/img/9784891006266.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗著, 山田祥寛監修『Microsoft Visual C++入門』（日経BPソフトプレス） 追記：[改訂版](/2017/02/15/my-new-book-about-c++/)があります．
 
-![Microsoft Visual C++入門](https://images-fe.ssl-images-amazon.com/images/P/4891006269.09.jpg)
-
-[矢吹太朗（著）, 山田祥寛（監修）.   Microsoft Visual C++入門. 日経BPソフトプレス, 2009.](https://www.amazon.co.jp/dp/4891006269?tag=inquisitor-22)
+- [honto](https://honto.jp/isbn/978-4891006266)
+- [アマゾン](https://www.amazon.co.jp/dp/4891006269)
 
 「C++の入門書はすでにたくさん出版されているのに何をいまさら」と思うかもしれませんが、本書は以下のような点で類書との差別化を図っています。
 
@@ -29,4 +28,10 @@ C++は歴史のある言語ですが、時代遅れの言語ではありませ�
 * [出版社（日経BP）のサポートページ](https://shop.nikkeibp.co.jp/front/commodity/0000/A06000/)：サンプルコードはここからダウンロードできます。
 * [WINGSプロジェクトのサポートページ](https://wings.msn.to/index.php/-/A-03/978-4-89100-626-6/)：FAQと正誤表はここに掲載される予定です。
 * [一部転載（@IT）](https://www.atmarkit.co.jp/fdotnet/bookpreview/bunpouvcpp_index/index.html)
-* [『Microsoft Visual C++入門』の誤り](/2009/03/17/first-c++-book-errata/)
+
+正誤表
+
+頁|誤|正
+--|--|--
+196|`for (it=vec.begin(); it!=vec.end(); ++it) cout<<it<<' ';`|`for (it=vec.begin(); it!=vec.end(); ++it) cout<<*it<<' ';`
+233|`typedef 引数の型 (*関数ポインタの型名) (関数のパラメータリスト);`|`typedef 戻り値の型 (*関数ポインタの型名) (関数のパラメータリスト);`
