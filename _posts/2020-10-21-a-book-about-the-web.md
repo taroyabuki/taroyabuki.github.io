@@ -3,7 +3,7 @@ date: 2020-10-21 00:00:00+00:00
 title: 本を書きました。『Webのしくみ』
 twitter:
   card: summary_large_image
-  image: /images/2020-10-21-webbook.jpg
+image: /images/2020-10-21-webbook.jpg
 ---
 
 <img src="https://raw.githubusercontent.com/taroyabuki/webbook/master/cover.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Webのしくみ　Webをいかすための12の道具』（サイエンス社, 2020）
