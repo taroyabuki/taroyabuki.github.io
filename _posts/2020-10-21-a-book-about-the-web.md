@@ -1,7 +1,6 @@
 ---
 date: 2020-10-21 00:00:00+00:00
 title: 本を書きました。『Webのしくみ』
-twitter_card: summary_large_image
 image: /images/2020-10-21-webbook.jpg
 ---
 
