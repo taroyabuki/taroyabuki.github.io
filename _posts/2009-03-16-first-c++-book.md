@@ -1,6 +1,9 @@
 ---
 date: 2009-03-16 14:12:58+00:00
 title: 本を書きました。『Microsoft Visual C++入門』
+image: https://cover.openbd.jp/9784891006266.jpg
+twitter:
+  card: summary
 ---
 
 <img src="https://cover.openbd.jp/9784891006266.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Microsoft Visual C++入門』（日経BPソフトプレス, 2009） 追記：[改訂版](/2017/02/15/my-new-book-about-c++/)があります．

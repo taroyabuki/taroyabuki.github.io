@@ -1,6 +1,9 @@
 ---
 date: 2017-02-15 15:38:20+00:00
 title: 本を書きました。『C++の教科書』
+image: https://cover.openbd.jp/9784822298937.jpg
+twitter:
+  card: summary
 ---
 
 <img src="https://cover.openbd.jp/9784822298937.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『C++の教科書』（日経BP社, 2017）
