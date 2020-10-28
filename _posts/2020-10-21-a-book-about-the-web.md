@@ -1,6 +1,6 @@
 ---
 date: 2020-10-21 00:00:00+00:00
-title: 本を書きました。『Webのしくみ』
+title: 新刊のご案内：『Webのしくみ』
 image: https://taroyabuki.github.io/images/2020-10-21-webbook.jpg
 twitter:
   card: summary_large_image

@@ -1,6 +1,6 @@
 ---
 date: 2009-03-16 14:12:58+00:00
-title: 本を書きました。『Microsoft Visual C++入門』
+title: 新刊のご案内：『Microsoft Visual C++入門』
 image: https://cover.openbd.jp/9784891006266.jpg
 twitter:
   card: summary

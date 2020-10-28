@@ -1,6 +1,6 @@
 ---
 date: 2007-07-30 14:13:12+00:00
-title: 本を書きました。『初級プログラマのためのWebアプリケーション構築入門』
+title: 新刊のご案内：『初級プログラマのためのWebアプリケーション構築入門』
 image: https://cover.openbd.jp/9784627847316.jpg
 twitter:
   card: summary

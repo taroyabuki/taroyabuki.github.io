@@ -1,6 +1,6 @@
 ---
 date: 2011-04-23 10:37:32+00:00
-title: 本を書きました。『Webアプリケーション構築入門』
+title: 新刊のご案内：『Webアプリケーション構築入門』
 image: https://cover.openbd.jp/9784627847323.jpg
 twitter:
   card: summary

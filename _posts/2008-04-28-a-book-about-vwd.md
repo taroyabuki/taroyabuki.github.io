@@ -1,6 +1,6 @@
 ---
 date: 2008-04-28 14:40:24+00:00
-title: 本を書きました。『Microsoft Visual Web Developer 2008 Express Edition入門』
+title: 新刊のご案内：『Microsoft Visual Web Developer 2008 Express Edition入門』
 image: https://cover.openbd.jp/9784891005849.jpg
 twitter:
   card: summary
