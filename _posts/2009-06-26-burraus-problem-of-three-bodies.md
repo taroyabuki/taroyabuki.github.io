@@ -3,9 +3,7 @@ date: 2009-06-26 14:54:21+00:00
 title: ピタゴラス三体問題（Burrau’s problem of three bodies）
 ---
 
-追記：[Mathematica 12で追加されたNBodySimulationを試す。](/2019/07/10/3body-simulation-with-nbodysimulation/)
-
-「三体問題」の有名なものに、ピタゴラス三体問題があります。図のような3:4:5の直角三角形の頂点上に静止させた、質量3, 4, 5の質点の運動を調べるというものです。
+「三体問題」の有名なものに、ピタゴラス三体問題があります。図のような3:4:5の直角三角形の頂点上に静止させた、質量3, 4, 5の質点の運動を調べるというものです。追記：[Mathematica 12で追加されたNBodySimulationを試す。](/2019/07/10/3body-simulation-with-nbodysimulation/)
 
 ![初期配置](/images/pythagoras3body.png)
 
