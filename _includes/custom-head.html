@@ -1,4 +1,8 @@
-{% if page.image %}
+{% if page.image and page.twitter.card == 'summary_large_image' %}
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image:src" content="{{ site.url }}{{ page.image }}">
+  <meta name="twitter:image" content="{{ page.image }}">
+{% endif %}
+{% if page.image and page.twitter.card == 'summary' %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="{{ page.image }}">
 {% endif %}
