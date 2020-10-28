@@ -1,11 +1,14 @@
 ---
 date: 2019-08-14 00:00:00+00:00
 title: 斎藤正彦『線型代数入門』（東京大学出版会，1966）の失われた文献リスト
+image: https://cover.openbd.jp/9784130620017.jpg
+twitter:
+  card: summary
 ---
 
 [斎藤正彦『線型代数入門』（東京大学出版会，1966）](https://www.amazon.co.jp/dp/4130620010?tag=inquisitor-22)のあとがきでは，この本の内容に関わる歴史が，文献とともに紹介されていました。
 
-[![4130620010](https://images-fe.ssl-images-amazon.com/images/P/4130620010.09.jpg)](https://www.amazon.co.jp/dp/4130620010?tag=inquisitor-22)
+[![書影](https://cover.openbd.jp/9784130620017.jpg)](https://www.amazon.co.jp/dp/4130620010?tag=inquisitor-22)
 
 このあとがきについて，渡辺公夫さんは[数学セミナー編集部編『数学完全ガイダンス』（日本評論社，1999）](https://www.amazon.co.jp/dp/4535782741?tag=inquisitor-22)で次のように言っています。
 

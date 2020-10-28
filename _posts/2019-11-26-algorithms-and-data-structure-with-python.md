@@ -8,7 +8,7 @@ twitter:
 
 [辻真吾『Pythonで学ぶアルゴリズムとデータ構造』（講談社, 2019）](https://www.amazon.co.jp/dp/4065178037?tag=inquisitor-22)
 
-[![表紙](https://cover.openbd.jp/9784065178034.jpg)](https://www.amazon.co.jp/dp/4065178037?tag=inquisitor-22)
+[![書影](https://cover.openbd.jp/9784065178034.jpg)](https://www.amazon.co.jp/dp/4065178037?tag=inquisitor-22)
 
 査読し，版元から謝礼をもらいました．査読の効果が，謝礼に見合うものであることを願います．
 
