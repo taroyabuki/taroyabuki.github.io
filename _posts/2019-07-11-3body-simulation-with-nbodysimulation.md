@@ -1,7 +1,7 @@
 ---
 date: 2019-07-11 00:00:00+09:00
 title: 三体問題を解く難しさ
-image: https://taroyabuki.github.io/images/pythagoras3body.gif
+image: https://taroyabuki.github.io/images/pythagoras3body.png
 twitter:
   card: summary
 ---
