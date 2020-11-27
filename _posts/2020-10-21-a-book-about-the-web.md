@@ -12,6 +12,7 @@ twitter:
 
 - [honto](https://honto.jp/isbn/978-4-7819-1477-0)
 - [アマゾン](https://www.amazon.co.jp/dp/4781914772)
+- [紀伊國屋 Web Store](https://www.kinokuniya.co.jp/f/dsg-01-9784781914770)
 
 初等教育でITを教える教師や、初等教育を受ける子供の親を想定読者として企画された、[**コンピュータ＆ウェブ・サイエンス・ライブラリ**](https://www.saiensu.co.jp/search/?book_class_id=2&library_id=300)の第6巻、内容は**ウェブ総論**です。
 
