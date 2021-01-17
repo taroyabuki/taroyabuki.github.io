@@ -9,4 +9,7 @@ AIの技術ではなく哲学について考えさせる本です．とはいえ
 
 テクノロジーが関わる，主に芸術的な創造性についての話題を幅広く集めていて，資料的価値も高いです．（ただし索引がないので，電子版が出るならそれも入手したいところです．）
 
+装丁デザインのテーマは，「100年前のAIの本」とのこと．
+そういう時間スケールの仕事をしたいものです．
+
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">徳井直生（<a href="https://twitter.com/naotokui?ref_src=twsrc%5Etfw">@naotokui</a>）『創るためのAI』（BNN, 2021）<br><br>草稿を読ませてもらいました．<br>草稿を読んでいただきました．<br>ご恵贈御礼． <a href="https://t.co/xhVMnqv4GK">pic.twitter.com/xhVMnqv4GK</a></p>&mdash; Taro Yabuki (@yabuki) <a href="https://twitter.com/yabuki/status/1350479258183864320?ref_src=twsrc%5Etfw">January 16, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
