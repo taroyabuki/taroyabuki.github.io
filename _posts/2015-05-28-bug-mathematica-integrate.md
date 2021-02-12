@@ -1,7 +1,9 @@
 ---
 date: 2015-05-28 13:53:23+00:00
-title: MathematicaのIntegrateのバグ
+title: MathematicaのIntegrateのバグ（Ver. 12.0で解決）
 ---
+
+**Ver. 12.0で修正されました。**
 
 Mathematica 10.1から11.3の積分（`Integrate`）には，**仮定の利用**に関して，9.0や10.0には無かったバグがあります。（製造元には報告済みです。）
 
