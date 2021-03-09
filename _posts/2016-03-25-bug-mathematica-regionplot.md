@@ -1,7 +1,9 @@
 ---
 date: 2016-03-25 15:26:40+00:00
-title: MathematicaのRegionPlotのバグ
+title: MathematicaのRegionPlotのバグ（12.0で解決）
 ---
+
+<ins>12.0で解決しました。</ins>
 
 10.3.1ではできたことが，10.4でできなくなってしまいました（11.2, 11.3もダメ）。（報告済み）
 
@@ -10,3 +12,5 @@ title: MathematicaのRegionPlotのバグ
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="en" dir="ltr">(More info: <a href="https://t.co/HBUuaZOB3w">https://t.co/HBUuaZOB3w</a>) <a href="https://twitter.com/hashtag/wolframlang?src=hash&amp;ref_src=twsrc%5Etfw">#wolframlang</a> <a href="https://t.co/5OYMOfE490">pic.twitter.com/5OYMOfE490</a></p>&mdash; Tweet-a-Program (@wolframtap) <a href="https://twitter.com/wolframtap/status/973742604247592962?ref_src=twsrc%5Etfw">2018年3月14日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">(More info: <a href="https://t.co/HBUuaZOB3w">https://t.co/HBUuaZOB3w</a>) <a href="https://twitter.com/hashtag/wolframlang?src=hash&amp;ref_src=twsrc%5Etfw">#wolframlang</a> <a href="https://t.co/DCgOYB1gPm">pic.twitter.com/DCgOYB1gPm</a></p>&mdash; Tweet-a-Program (@wolframtap) <a href="https://twitter.com/wolframtap/status/1118415713268576256?ref_src=twsrc%5Etfw">April 17, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
