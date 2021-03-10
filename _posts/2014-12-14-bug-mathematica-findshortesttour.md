@@ -93,9 +93,7 @@ tour[[2]]
 
 Mathematica 10.0.1 for Windowsでは，`{ {6, 2}, {4, 6}, {3, 4}, {6, 7} }`という4点を通る最短巡回路を求められませんでした．
 
-<blockquote>[@yabuki](https://twitter.com/yabuki) (More info: [http://t.co/HBUub0ForI](http://t.co/HBUub0ForI)) [#wolframlang](https://twitter.com/hashtag/wolframlang?src=hash) [pic.twitter.com/mxTwMsc0Nk](http://t.co/mxTwMsc0Nk)
-> 
-> -- Tweet-a-Program (@wolframtap) [2014, 11月 20](https://twitter.com/wolframtap/status/535256832902975489)</blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/yabuki?ref_src=twsrc%5Etfw">@yabuki</a> (More info: <a href="http://t.co/HBUub0ForI">http://t.co/HBUub0ForI</a>) <a href="https://twitter.com/hashtag/wolframlang?src=hash&amp;ref_src=twsrc%5Etfw">#wolframlang</a> <a href="http://t.co/mxTwMsc0Nk">pic.twitter.com/mxTwMsc0Nk</a></p>&mdash; Tweet-a-Program (@wolframtap) <a href="https://twitter.com/wolframtap/status/535256832902975489?ref_src=twsrc%5Etfw">November 20, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 ### 10.0 for Linux ARM (32-bit) (August 4, 2014)で解決
 
