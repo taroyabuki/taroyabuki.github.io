@@ -6,8 +6,14 @@ title: Works
 
 <ul>
     <li style="clear:both;">
+      <a href="https://github.com/taroyabuki/fromzero">
+        <img src="https://cover.openbd.jp/9784065132326.jpg" alt="書影" style="float:left; height:75px;"/>
+        辻真吾・矢吹太朗. ゼロからはじめるデータサイエンス入門&mdash;R・Python一挙両得. 講談社, 2021.
+      </a>
+    </li>
+    <li style="clear:both;">
       <a href="https://github.com/taroyabuki/webbook">
-        <img src="https://raw.githubusercontent.com/taroyabuki/webbook/master/cover.jpg" alt="書影" style="float:left; height:75px;"/>
+        <img src="https://cover.openbd.jp/9784781914770.jpg" alt="書影" style="float:left; height:75px;"/>
         矢吹太朗. Webのしくみ&mdash;Webをいかすための12の道具. サイエンス社, 2020.
       </a>
     </li>
