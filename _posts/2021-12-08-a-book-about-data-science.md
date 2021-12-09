@@ -26,7 +26,7 @@ twitter:
 
 ↓こういうことです．
 
-<img src="/images/2021-12-08-datascience-book-sample.png" alt="組版サンプル" style="width:800px"/>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">RとPythonの「対訳・対照」とは具体的にどういうことなのか，ご覧に入れましょう． <a href="https://t.co/w2YkUljuKW">https://t.co/w2YkUljuKW</a> <a href="https://t.co/gyJNt87BHO">pic.twitter.com/gyJNt87BHO</a></p>&mdash; Taro Yabuki (@yabuki) <a href="https://twitter.com/yabuki/status/1468215895160135681?ref_src=twsrc%5Etfw">December 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 別の例を使って少し詳しく説明します．有名な「アヤメのデータセット」の，sepal lengthのヒストグラムです（画像でクリックでソースコード表示．ちなみに，全ての例に完全なコードを付けました）．
 
