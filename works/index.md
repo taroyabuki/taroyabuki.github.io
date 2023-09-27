@@ -7,43 +7,43 @@ title: Works
 <ul>
     <li style="clear:both;">
       <a href="https://github.com/taroyabuki/fromzero">
-        <img src="https://cover.openbd.jp/9784065132326.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
+        <img src="https://images-fe.ssl-images-amazon.com/images/P/4065132320.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         辻真吾・矢吹太朗. ゼロからはじめるデータサイエンス入門&mdash;R・Python一挙両得. 講談社, 2021.
       </a>
     </li>
     <li style="clear:both;">
       <a href="https://github.com/taroyabuki/webbook">
-        <img src="https://cover.openbd.jp/9784781914770.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
+        <img src="https://images-fe.ssl-images-amazon.com/images/P/4781914772.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. Webのしくみ&mdash;Webをいかすための12の道具. サイエンス社, 2020.
       </a>
     </li>
     <li style="clear:both;">
       <a href="https://github.com/taroyabuki/cppbook2">
-        <img src="https://cover.openbd.jp/9784822298937.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
+        <img src="https://images-fe.ssl-images-amazon.com/images/P/4822298930.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. 基礎からしっかり学ぶC++の教科書. 日経BP, 2017.
       </a>
     </li>
     <li style="clear:both;">
       <a href="https://github.com/taroyabuki/webbook2">
-        <img src="https://cover.openbd.jp/9784627847323.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
+        <img src="https://images-fe.ssl-images-amazon.com/images/P/4627847327.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. Webアプリケーション構築入門&mdash;実践！Webページ制作からマッシュアップまで. 森北出版, 2011.
       </a>
     </li>
     <li style="clear:both;">
       <a href="https://taroyabuki.github.io/2009/03/16/first-c++-book/">
-        <img src="https://cover.openbd.jp/9784891006266.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
+        <img src="https://images-fe.ssl-images-amazon.com/images/P/4891006269.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. Microsoft Visual C++入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2009.
       </a>
     </li>
     <li style="clear:both;">
       <a href="https://taroyabuki.github.io/2008/04/28/a-book-about-vwd/">
-        <img src="https://cover.openbd.jp/9784891005849.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
+        <img src="https://images-fe.ssl-images-amazon.com/images/P/489100584X.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. Microsoft Visual Web Developer 2008 Express Edition入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2008.
       </a>
     </li>
     <li style="clear:both;">
       <a href="https://taroyabuki.github.io/2007/07/30/a-book-about-web-application/">
-        <img src="https://cover.openbd.jp/9784627847316.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
+        <img src="https://images-fe.ssl-images-amazon.com/images/P/4627847319.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. 初級プログラマのためのWebアプリケーション構築入門&mdash;実践で学ぶJava, XHTML, SQL. 森北出版, 2007.
       </a>
     </li>
@@ -112,7 +112,7 @@ title: Works
 <h3>Music criticism</h3>
 
 <ul>
-    <li style="clear:both;"><a href="https://www.amazon.co.jp/exec/obidos/asin/4401619765/"><img src="https://cover.openbd.jp/9784401619764.jpg" alt="4401619765" style="float:left; height:75px;" /> ロックは世界を変えない—1984 UTOPIA ODDITY. 有限会社スローガン（編）, デヴィッド・ボウイ・ファイル, pp. 52–59. シンコーミュージック・エンタテインメント, 2005.</a></li>
+    <li style="clear:both;"><a href="https://www.amazon.co.jp/exec/obidos/asin/4401619765/"><img src="https://images-fe.ssl-images-amazon.com/images/P/4401619765.09._SL282.jpg" alt="4401619765" style="float:left; height:75px;" /> ロックは世界を変えない—1984 UTOPIA ODDITY. 有限会社スローガン（編）, デヴィッド・ボウイ・ファイル, pp. 52–59. シンコーミュージック・エンタテインメント, 2005.</a></li>
     <li style="clear:both;"><a href="https://www.amazon.co.jp/exec/obidos/asin/4401619137/"><img src="https://images-fe.ssl-images-amazon.com/images/P/4401619137.09._SL282.jpg" alt="4401619137" style="float:left; height:75px;" /> ロックスターがめったに語らないこと—U2と愛と神の恵み. 有限会社スローガン（編）, U2ファイル, pp. 166–171. シンコーミュージック・エンタテインメント, 2005.</a></li>
 </ul>
 
