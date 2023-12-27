@@ -6,7 +6,7 @@ twitter:
   card: summary_large_image
 ---
 
-<img src="https://raw.githubusercontent.com/taroyabuki/fromzero/master/cover.jpg" alt="書影" style="height:150px;" /><br/>辻真吾・矢吹太朗『ゼロからはじめるデータサイエンス入門』（講談社, 2021）
+<img src="https://www.kspub.co.jp/book/detail/images/8e2cee80a3e43a0cbbecef67a945b93613c656b0.jpg" alt="書影" style="height:150px;" /><br/>辻真吾・矢吹太朗『ゼロからはじめるデータサイエンス入門』（講談社, 2021）
 
 [書店へのリンク集（版元ドットコム）](https://www.hanmoto.com/bd/isbn/9784065132326)
 
