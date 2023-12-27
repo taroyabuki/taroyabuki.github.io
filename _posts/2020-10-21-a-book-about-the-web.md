@@ -6,7 +6,7 @@ twitter:
   card: summary_large_image
 ---
 
-<img src="https://raw.githubusercontent.com/taroyabuki/webbook/master/cover.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Webのしくみ　Webをいかすための12の道具』（サイエンス社, 2020）
+<img src="https://www.saiensu.co.jp/bookImages/2020-978-4-7819-1477-0.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Webのしくみ　Webをいかすための12の道具』（サイエンス社, 2020）
 
 [サポートサイト](https://github.com/taroyabuki/webbook)
 
