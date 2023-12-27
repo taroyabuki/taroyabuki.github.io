@@ -6,7 +6,8 @@ twitter:
   card: summary
 ---
 
-<img src="https://cover.openbd.jp/9784822298937.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『C++の教科書』（日経BP社, 2017）
+<img src="https://images-fe.ssl-images-amazon.com/images/P/4822298930.09.jpg
+" alt="書影" style="height:150px;" /><br/>矢吹太朗『C++の教科書』（日経BP社, 2017）
 
 [サポートサイト](https://github.com/taroyabuki/cppbook2)
 
