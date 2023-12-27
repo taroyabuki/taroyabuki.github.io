@@ -23,9 +23,9 @@ COMは[負けないマルバツ](/2008/05/02/neverlose-tictactor/)＋αのつも
 
 Manifold JSで別のプラットフォーム用に変換できます。
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/1594746877.09.jpg)](https://www.amazon.co.jp/dp/1594746877?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/1594746877.09.jpg)](https://www.amazon.co.jp/dp/1594746877/)
 
-[_Tic Tac Tome: The Autonomous Tic Tac Toe Playing Book_](https://www.amazon.co.jp/dp/1594746877?tag=inquisitor-22)は，この記事でやっているのとと同じことを紙で試みているすごい本です（1ページ1局面，一部両面印刷で約700枚！）。残念なことに，先手が人で後手が最善の場合は網羅されているようですが，後手が人の場合は，先手が真ん中を選ぶケースしか扱っていないようです。つまり，上述の「COMが先手」のパターン1と2は扱われていません（上の実装なら，1ページ1局面，一部両面印刷で約230枚程度で足りるはずです）。
+[_Tic Tac Tome: The Autonomous Tic Tac Toe Playing Book_](https://www.amazon.co.jp/dp/1594746877/)は，この記事でやっているのとと同じことを紙で試みているすごい本です（1ページ1局面，一部両面印刷で約700枚！）。残念なことに，先手が人で後手が最善の場合は網羅されているようですが，後手が人の場合は，先手が真ん中を選ぶケースしか扱っていないようです。つまり，上述の「COMが先手」のパターン1と2は扱われていません（上の実装なら，1ページ1局面，一部両面印刷で約230枚程度で足りるはずです）。
 
 この本がマルバツを理解しているかというと，そういうわけではないと思いますが，そういうことを考えるのも楽しいものです。
 

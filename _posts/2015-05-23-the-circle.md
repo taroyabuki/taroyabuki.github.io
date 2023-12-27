@@ -11,10 +11,10 @@ title: ザ・サークル
 >4. 公と私の壁は破られてはならない
 >**5. 我々はすべて姿を消す権利を有しなければならない**
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4152095113.09.jpg)](https://www.amazon.co.jp/dp/4152095113?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4152095113.09.jpg)](https://www.amazon.co.jp/dp/4152095113/)
 
 この権利を望む人がいたときに，サポートできる力を持っていたいものです。
 
 >秘密は嘘，分かち合いは思いやり，プライバシーは盗み(p.323)
 
-追記：[映画化](https://wired.jp/2016/12/08/the-circle/)・[文庫化（2分冊）](https://www.amazon.co.jp/dp/4150414211?tag=inquisitor-22)
+追記：[映画化](https://wired.jp/2016/12/08/the-circle/)・[文庫化（2分冊）](https://www.amazon.co.jp/dp/4150414211/)

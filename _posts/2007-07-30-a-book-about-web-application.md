@@ -1,12 +1,12 @@
 ---
 date: 2007-07-30 14:13:12+00:00
 title: 新刊のご案内：『初級プログラマのためのWebアプリケーション構築入門』
-image: https://cover.openbd.jp/9784627847316.jpg
+image: https://images-fe.ssl-images-amazon.com/images/P/4627847319.09.jpg
 twitter:
   card: summary
 ---
 
-<img src="https://cover.openbd.jp/9784627847316.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『初級プログラマのためのWeb アプリケーション構築入門』（森北出版, 2007） 追記：[改訂版](https://taroyabuki.github.io/2011/04/23/a-book-about-web-application2/)があります．
+<img src="https://images-fe.ssl-images-amazon.com/images/P/4627847319.09.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『初級プログラマのためのWeb アプリケーション構築入門』（森北出版, 2007） 追記：[改訂版](https://taroyabuki.github.io/2011/04/23/a-book-about-web-application2/)があります．
 
 - [honto](https://honto.jp/isbn/978-4627847316)
 - [アマゾン](https://www.amazon.co.jp/dp/4627847319)

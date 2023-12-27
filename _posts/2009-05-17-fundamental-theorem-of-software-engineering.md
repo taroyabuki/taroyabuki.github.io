@@ -13,7 +13,7 @@ title: 情報工学のあらゆる問題は別のレベルのインダイレク�
 
 ![表紙](https://images-fe.ssl-images-amazon.com/images/P/4891006269.09.jpg)
 
-[アレクセイ・グルトヴォイほか『C++テンプレートメタプログラミング』（翔泳社, 2010）](https://www.amazon.co.jp/dp/4798120391?tag=inquisitor-22)には次のような記述がありました。
+[アレクセイ・グルトヴォイほか『C++テンプレートメタプログラミング』（翔泳社, 2010）](https://www.amazon.co.jp/dp/4798120391/)には次のような記述がありました。
 
 > この、Lampsonの考えはプログラミングのいたるところに当てはまるので、Andrew Koenigは好んで「ソフトウェア工学の基本定理（Fundamental Theorem of Software Engineering, FTSE）」と呼んでいる。(p.13）
 

@@ -3,7 +3,7 @@ date: 2014-08-14 00:00:00+00:00
 title: ドーナツを穴だけ残して食べる方法
 ---
 
-[大阪大学ショセキカプロジェクト『ドーナツを穴だけ残して食べる方法』（大阪大学出版会, 2014）](https://www.amazon.co.jp/dp/4872594703?tag=inquisitor-22)（各章に参考文献リストあり・索引なし）
+[大阪大学ショセキカプロジェクト『ドーナツを穴だけ残して食べる方法』（大阪大学出版会, 2014）](https://www.amazon.co.jp/dp/4872594703/)（各章に参考文献リストあり・索引なし）
 
 ![表紙](https://images-fe.ssl-images-amazon.com/images/P/4872594703.09.jpg)
 
@@ -21,6 +21,6 @@ title: ドーナツを穴だけ残して食べる方法
 
 2019年9月に文庫化。
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4532199557.09.jpg)](https://www.amazon.co.jp/dp/4532199557?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4532199557.09.jpg)](https://www.amazon.co.jp/dp/4532199557/)
 
 

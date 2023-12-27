@@ -5,8 +5,8 @@ title: 『プロの数学』・『大学数学への道』
 
 大学入試の数学の問題には，高校の範囲を超えた数学の知識があって初めてその本質を理解できるものがある。そういう問題とその本質を紹介する2冊。
 
-* [![表紙](https://images-fe.ssl-images-amazon.com/images/P/4489022123.09.jpg)松野陽一郎『プロの数学』（東京図書, 2015）](https://www.amazon.co.jp/dp/4489022123?tag=inquisitor-22)
-* [![表紙](https://images-fe.ssl-images-amazon.com/images/P/4768704255.09.jpg)米谷達也・斉藤浩『大学数学への道』（現代数学社, 2013）](https://www.amazon.co.jp/dp/4768704255?tag=inquisitor-22)
+* [![表紙](https://images-fe.ssl-images-amazon.com/images/P/4489022123.09.jpg)松野陽一郎『プロの数学』（東京図書, 2015）](https://www.amazon.co.jp/dp/4489022123/)
+* [![表紙](https://images-fe.ssl-images-amazon.com/images/P/4768704255.09.jpg)米谷達也・斉藤浩『大学数学への道』（現代数学社, 2013）](https://www.amazon.co.jp/dp/4768704255/)
 
 『プロの数学』（プロの定義は不明）は，その大部分が線型代数と解析になっていて，大学の教養の数学にそのままつながりそう。『大学数学への道』はそういうことにこだわらず，興味深い話題をいろいろ紹介してくれる。
 

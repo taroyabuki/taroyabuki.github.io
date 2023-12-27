@@ -1,7 +1,7 @@
 ---
 date: 2017-02-15 15:38:20+00:00
 title: 新刊のご案内：『C++の教科書』
-image: https://cover.openbd.jp/9784822298937.jpg
+image: https://images-fe.ssl-images-amazon.com/images/P/4822298930.09.jpg
 twitter:
   card: summary
 ---
@@ -23,7 +23,7 @@ twitter:
 
 プログラミング言語なんて，Python一択になるんじゃないの？という向きは，[TensorFlowのコード](https://github.com/tensorflow/tensorflow)や，[世界コンピュータ将棋選手権の参加チームの使用言語](http://www2.computer-shogi.org/wcsc27/team.html)をご覧になるといいでしょう。[「どうしてJavaやC++よりも遅いPythonが機械学習で使われているの？」](https://www.quora.com/Knowing-that-Python-is-very-slow-compared-to-Java-and-C%2B%2B-why-do-they-mostly-use-Python-for-fast-algorithmic-procedures-like-machine-learning/answer/Paulina-Jonu%C5%A1ait%C4%97)などという話もあります。
 
-[『文法からはじめるプログラミング言語 MS Visual C++入門（マイクロソフト公式解説書）』（日経BP, 2009）](https://www.amazon.co.jp/dp/4891006269?tag=inquisitor-22)の改訂版という位置付けですが，かなりの部分を書き直しました。
+[『文法からはじめるプログラミング言語 MS Visual C++入門（マイクロソフト公式解説書）』（日経BP, 2009）](https://www.amazon.co.jp/dp/4891006269/)の改訂版という位置付けですが，かなりの部分を書き直しました。
 
 新しい話
 

@@ -1,12 +1,12 @@
 ---
 date: 2011-04-23 10:37:32+00:00
 title: 新刊のご案内：『Webアプリケーション構築入門』
-image: https://cover.openbd.jp/9784627847323.jpg
+image: https://images-fe.ssl-images-amazon.com/images/P/4627847327.09.jpg
 twitter:
   card: summary
 ---
 
-<img src="https://cover.openbd.jp/9784627847323.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Webアプリケーション構築入門』（森北出版, 2011）
+<img src="https://images-fe.ssl-images-amazon.com/images/P/4627847327.09.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Webアプリケーション構築入門』（森北出版, 2011）
 
 [サポートサイト](https://taroyabuki.github.io/webbook2/)
 
@@ -25,9 +25,9 @@ twitter:
 
 これだけでは説得力に欠けるかもしれないので、最近の興味深い小説から、似たような主張を引用させてもらいましょう。
 
-<img src="https://cover.openbd.jp/9784152091994.jpg" alt="書影" style="float:right; height:150px;" />
+<img src="https://images-fe.ssl-images-amazon.com/images/P/4152091991.09.jpg" alt="書影" style="float:right; height:150px;" />
 
-> もしきみがまだコンピュータのプログラムをつくったことがないなら、ぜひ一度つくってみるといい。他に類を見ない体験だからだ。コンピュータのプログラム作成は、コンピュータを君の命令通りに動かすことを意味する。（中略）掛け値なしに感動的な体験になるはずだ。感動で胸がいっぱいになるはずだ。[ドクトロウ『リトル・ブラザー』（早川書房, 2011）](http://www.amazon.co.jp/exec/obidos/ASIN/4152091991/inquisitor-22/)
+> もしきみがまだコンピュータのプログラムをつくったことがないなら、ぜひ一度つくってみるといい。他に類を見ない体験だからだ。コンピュータのプログラム作成は、コンピュータを君の命令通りに動かすことを意味する。（中略）掛け値なしに感動的な体験になるはずだ。感動で胸がいっぱいになるはずだ。[ドクトロウ『リトル・ブラザー』（早川書房, 2011）](http://www.amazon.co.jp/exec/obidos/ASIN/4152091991/)
 
 ほんの少しのプログラムを使って、自分のコンピュータをネットの世界で動かすという体験は、胸いっぱいとはいかなくても、感動的な体験になることは間違いありません。
 

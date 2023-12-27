@@ -1,12 +1,12 @@
 ---
 date: 2008-04-28 14:40:24+00:00
 title: 新刊のご案内：『Microsoft Visual Web Developer 2008 Express Edition入門』
-image: https://cover.openbd.jp/9784891005849.jpg
+image: https://images-fe.ssl-images-amazon.com/images/P/489100584X.09.jpg
 twitter:
   card: summary
 ---
 
-<img src="https://cover.openbd.jp/9784891005849.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Microsoft Visual Web Developer 2008 Express Edition入門』（日経BPソフトプレス, 2008）
+<img src="https://images-fe.ssl-images-amazon.com/images/P/489100584X.09.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Microsoft Visual Web Developer 2008 Express Edition入門』（日経BPソフトプレス, 2008）
 
 - [honto](https://honto.jp/isbn/978-4891005849)
 - [アマゾン](https://www.amazon.co.jp/dp/489100584X)

@@ -6,9 +6,9 @@ twitter:
   card: summary
 ---
 
-三体問題の例として，ピラゴラス三体問題を試します。三体問題を解くのは難しいということを知っていると，小説[『三体』](https://www.amazon.co.jp/dp/4152098708?tag=inquisitor-22)をもっと楽しめるかもしれません。
+三体問題の例として，ピラゴラス三体問題を試します。三体問題を解くのは難しいということを知っていると，小説[『三体』](https://www.amazon.co.jp/dp/4152098708/)をもっと楽しめるかもしれません。
 
-[![三体](https://cover.openbd.jp/9784152098702.jpg)](https://www.amazon.co.jp/dp/4152098708?tag=inquisitor-22)
+[![三体](https://images-fe.ssl-images-amazon.com/images/P/4152098708.09.jpg)](https://www.amazon.co.jp/dp/4152098708/)
 
 ピラゴラス三体問題は，図のように，質量3, 4, 5の質点が，辺の長さが3, 4, 5の三角形の頂点で静止している状態の，その後の変化を調べる問題です。
 

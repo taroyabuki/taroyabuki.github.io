@@ -13,7 +13,7 @@ p.181で紹介されていたアニメーションを作ってみました（[�
 
 <iframe width="480" height="360" src="https://www.youtube.com/embed/tiHp3Qb9zBM" frameborder="0" allowfullscreen></iframe>
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4022736038.09.jpg)竹内 薫『素数はなぜ人を惹きつけるのか』（朝日新聞出版, 2015）](https://www.amazon.co.jp/dp/4022736038?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4022736038.09.jpg)竹内 薫『素数はなぜ人を惹きつけるのか』（朝日新聞出版, 2015）](https://www.amazon.co.jp/dp/4022736038/)
 
 <blockquote class="twitter-tweet" lang="ja"><p><a href="https://twitter.com/7takeuchi7">@7takeuchi7</a> 気付いたことをまとめました。<a href="http://t.co/EuOe1abykl">http://t.co/EuOe1abykl</a></p>&mdash; Taro YABUKI (@yabuki) <a href="https://twitter.com/yabuki/status/568067498752352256">2015, 2月 18</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -3,19 +3,19 @@ date: 2016-01-26 13:10:11+00:00
 title: ミンスキー『計算機の数学的理論』
 ---
 
-私が初めて計算機科学を学んだ[『ファインマン計算機科学』](https://www.amazon.co.jp/dp/4000059416?tag=inquisitor-22)では，ミンスキーの本に掲載されているチューリングマシンを使って計算の理論を解説していました。
+私が初めて計算機科学を学んだ[『ファインマン計算機科学』](https://www.amazon.co.jp/dp/4000059416/)では，ミンスキーの本に掲載されているチューリングマシンを使って計算の理論を解説していました。
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4000059416.09.jpg)](https://www.amazon.co.jp/dp/4000059416?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4000059416.09.jpg)](https://www.amazon.co.jp/dp/4000059416/)
 
 [『ファインマンさんの流儀』](/2014/08/12/quantum-man/)によると，ファインマンは何でも自分で再発明してみるタイプだったそうなので，万能チューリングマシンも自分で構成したかもしれません。しかし，解説に使ったのはミンスキーのものでした。
 
 >われわれの議論は，ミンスキー[1967]の議論を念入りにたどっている。(p.56)
 
-このミンスキー[1967]は [_Computation: Finite and Infinite Machines_](https://www.amazon.co.jp/dp/0131654497?tag=inquisitor-22) のことで，Amazonでは見つけにくいのですが[『計算機の数学的理論』](https://www.amazon.co.jp/dp/B000JA2XEC?tag=inquisitor-22)という翻訳があります。
+このミンスキー[1967]は [_Computation: Finite and Infinite Machines_](https://www.amazon.co.jp/dp/0131654497/) のことで，Amazonでは見つけにくいのですが[『計算機の数学的理論』](https://www.amazon.co.jp/dp/B000JA2XEC/)という翻訳があります。
 
-[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4782800541.09.jpg)](https://www.amazon.co.jp/dp/4782800541?tag=inquisitor-22)
+[![表紙](https://images-fe.ssl-images-amazon.com/images/P/4782800541.09.jpg)](https://www.amazon.co.jp/dp/4782800541/)
 
-ミンスキーと言えば[『心の社会』](https://www.amazon.co.jp/dp/4782800541?tag=inquisitor-22)が有名で，たとえば石田晴久先生は，[『コンピュータの名著・古典100冊』](https://www.amazon.co.jp/dp/4844318284?tag=inquisitor-22)（[新版](https://www.amazon.co.jp/dp/B009NQ7MIA?tag=inquisitor-22)あり）の中で次のように書かれています。
+ミンスキーと言えば[『心の社会』](https://www.amazon.co.jp/dp/4782800541/)が有名で，たとえば石田晴久先生は，[『コンピュータの名著・古典100冊』](https://www.amazon.co.jp/dp/4844318284/)（[新版](https://www.amazon.co.jp/dp/B009NQ7MIA/)あり）の中で次のように書かれています。
 
 >節の数は全部で262もある。（中略）この262節の中には修士論文や博士論文のタネがごろごろしているような感じがする。(p.81)
 
