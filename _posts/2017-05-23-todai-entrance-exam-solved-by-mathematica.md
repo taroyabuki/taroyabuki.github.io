@@ -17,7 +17,11 @@ title: 「大学への数学」2017年6月号掲載の拙稿「機械まかせ�
 
 高3の一年間，この雑誌の学力コンテストで名前を載せ続けたのですが，著者として名前が載ることになるとは思いませんでした。いわゆる，「当時の自分に読ませたい記事」のつもりです。息子に読ませたいかというとちょっと微妙で，ちょうど1歳になる息子が読めるようになる2020年頃には，状況がまったく変わっているかもしれません。
 
-記事中のコードは[Wolfram Cloud](https://www.wolframcloud.com/objects/ccad9319-70c7-458c-8bd7-ccb65ad0a58d)にまとめてあります。Mathematicaは高価なソフトウェアだと思っている人が多いようですが，基本機能はクラウド上で無料で使えます（[こちら](https://develop.open.wolframcloud.com/app/view/newNotebook?ext=nb)あるいは[こちら](https://lab.open.wolframcloud.com/app/view/newNotebook?ext=nb)）。「別の言語でやってみた」という反応も歓迎です。
+[記事中のコード](https://gist.github.com/taroyabuki/c82bace5a5bb1530bc8d217b83ff4ab4)
+
+Mathematicaは高価なソフトウェアだと思っている人が多いようですが，基本機能は[Wolfram Cloud](https://www.wolframcloud.com/)で無料で使えます（要ユーザ登録）。
+
+「別の言語でやってみた」という反応も歓迎です。
 
 電子版はないので，お早めにどうぞ。
 
