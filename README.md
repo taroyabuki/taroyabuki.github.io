@@ -14,5 +14,3 @@
 ## [Works](works/)
 ## [Profile](profile/)
 ## [Blog](blog/)
-
-[https://blog.unfindable.net/](https://blog.unfindable.net/) からの移行作業中です。

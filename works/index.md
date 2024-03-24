@@ -6,6 +6,12 @@ title: Works
 
 <ul>
     <li style="clear:both;">
+      <a href="https://github.com/taroyabuki/comath">
+        <img src="https://images-fe.ssl-images-amazon.com/images/P/4274231798.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
+        矢吹太朗. コンピュータでとく数学&mdash;データサイエンスのための統計・微分積分・線形代数. オーム社, 2024.
+      </a>
+    </li>
+    <li style="clear:both;">
       <a href="https://github.com/taroyabuki/fromzero">
         <img src="https://images-fe.ssl-images-amazon.com/images/P/4065132320.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         辻真吾・矢吹太朗. ゼロからはじめるデータサイエンス入門&mdash;R・Python一挙両得. 講談社, 2021.
