@@ -47,6 +47,7 @@ Information, Computation, Evolution
 <h2>所属</h2>
 
 <ul>
+  <li><a href="https://www.it-chiba.ac.jp">千葉工業大学</a> <a href="https://www.it-chiba.ac.jp/faculty/info-transform/">情報変革科学部</a> <a href="https://www.it-chiba.ac.jp/faculty/info-transform/application/">高度応用情報科学科</a>（2024/4から）</li>
   <li><a href="https://www.it-chiba.ac.jp">千葉工業大学</a> <a href="https://www.it-chiba.ac.jp/faculty/social/">社会システム科学部</a> <a href="https://www.it-chiba.ac.jp/faculty/social/pm/">プロジェクトマネジメント学科</a>（2012/4から）</li>
   <li><a href="https://www.ipsj.or.jp">情報処理学会</a>（1999/6から）</li>
   <li><a href="https://www.ai-gakkai.or.jp">人工知能学会</a>（1999/6から）</li>

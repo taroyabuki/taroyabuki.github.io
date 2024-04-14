@@ -1,7 +1,6 @@
 ---
 date: 2009-06-18 14:54:30+00:00
 title: SimCity、MicropolisからMegalopolisへ
-image: https://taroyabuki.github.io/images/simcity/simcity.png
 ---
 
 追記：Ubuntuでは`sudo apt-get install micropolis`でインストール、`micropolis &`で遊べます。
