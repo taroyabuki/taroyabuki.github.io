@@ -1,6 +1,9 @@
 ---
 date: 2024-04-13 00:00:00+09:00
 title: 円周率は何桁まで覚えておくとよいのか
+image: https://taroyabuki.github.io/images/2024-04-08-comath.png
+twitter:
+  card: summary_large_image
 ---
 
 昭和60年代前半，当時小学生だったタロウ少年は，円周率を**17桁**，**3.1415926535897932**まで覚えました．覚える桁数はそれでよかったのか，という話です．
