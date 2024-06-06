@@ -1,15 +1,8 @@
-<script>
-  (function() {
-    var cx = '015146854052709136786:kz90rgjywng';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:searchbox-only></gcse:searchbox-only>
+<form action="https://duckduckgo.com" method="get">
+<input type="text" name="q" placeholder="Site Search">
+<input type="hidden" name="sites" value="taroyabuki.github.io">
+<input type="submit" value="Search">
+</form>
 
 ## [Works](works/)
 ## [Profile](profile/)
