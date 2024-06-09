@@ -92,6 +92,7 @@ P1とP2は同じ問題のように見えます．実際，後で示すIEEE 754�
 --|--|--|--|--
 昭和|MSX-BASIC|BCD|`10838702/3450066`|約**3.141592653589**81
 現代|C言語|IEEE 754|`245850922/78256779`|約**3.141592653589793**16
+現代|C言語|x87の80ビット拡張形式|`8717442233/2774848045`|約**3.141592653589793238**5
 現代|bwBASIC|IEEE 754|`245850922/78256779`|約**3.141592653589793**16
 昭和|N-BASIC|MBF|`657408909/209259755`|約**3.1415926535897932**2
 現代|PC-BASIC|MBF|`657408909/209259755`|約**3.1415926535897932**2
@@ -172,7 +173,9 @@ Aの1バイト目を`C2`に書き換えます．
 
 > 子供には心の支えになる大人の存在が必要ですから．
 
-実機の10倍速で動くという[MSXのエミュレータ](http://bluemsx.msxblue.com/jindex.htm)で試します（コードは最初のまま．Ctrl-STOPで停止．参考：[プログラムのロード方法](https://bps-basic.blogspot.com/2016/10/windows10msx-basic.html)）．
+実機の10倍速で動くという[MSXのエミュレータ](http://bluemsx.msxblue.com/jindex.htm)で試します（コードは最初のまま．Ctrl-STOPで停止．参考：[プログラムのロード方法](https://bps-basic.blogspot.com/2016/10/windows10msx-basic.html)）[^msx]．
+
+[^msx]: [WebMSX](https://webmsx.org/)（ブラウザで動くエミュレータ）も便利です．
 
 ![MSXで実行している様子](/images/2024-04-pi-msx.png)
 
@@ -200,7 +203,7 @@ cd
 
 #### （現代）C言語
 
-C言語を試します（doubleを使います．long doubleについては割愛）．
+C言語を試します．まずはdoubleの場合．
 
 ```bash
 apt install -y gcc
@@ -210,13 +213,14 @@ cat << "EOF" > pi.c
 #include <math.h>
 
 int main() {
-    double A = 4 * atan(1);
-    double N = 1, D = 1;
+    double A, D, E, L, M, N;
+    A = 4 * atan(1);
+    N = 1, D = 1;
     while (1) {
-        double L = A * N;
-        double M = floor(L);
+        L = A * N;
+        M = floor(L);
         if (M + 1 - L < L - M) M = M + 1;
-        double E = fabs(A - M / N);
+        E = fabs(A - M / N);
         if (E < D) {
             printf("%.0f / %.0f\t %.17f\n", M, N, M / N);
             if (E == 0) break;
@@ -232,6 +236,72 @@ gcc -O3 -Wall pi.c -lm && ./a.out
 ```
 
 プログラムが`245850922 / 78256779     3.14159265358979312`を出力して停止するまでは一瞬です（**πの最良の近似値との差は0**）．
+
+次にUbuntu x86_64上のGCCのlong double（x87の80ビット拡張形式）の場合．
+
+```bash
+cat << "EOF" > pi-longdouble.c
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    long double A, D, E, L, M, N;
+    A = 4 * atanl(1);
+    N = 1, D = 1;
+    while (1) {
+        L = A * N;
+        M = floorl(L);
+        if (M + 1 - L < L - M) M = M + 1;
+        E = fabsl(A - M / N);
+        if (E < D) {
+            printf("%.0Lf / %.0Lf\t%.19Lf\n", M, N, M / N);
+            if (E == 0) break;
+            D = E;
+        }
+        N = N + 1;
+    }
+    return 0;
+}
+EOF
+
+gcc -O3 -Wall pi-longdouble.c -lm && ./a.out
+```
+
+プログラムは`8717442233 / 2774848045 3.1415926535897932385`を出力して停止します（**πの最良の近似値14488038916154245685/4611686018427387904との差は0**）．
+
+4倍精度（メモ）
+
+```bash
+cat << "EOF" > pi-quadmath.c
+#include <stdio.h>
+#include <quadmath.h>
+
+int main() {
+    char b1[128], b2[128], b3[128];
+    __float128 A, D, E, L, M, N;
+    A = 4 * atanq(1);
+    N = 1, D = 1;
+    while (1) {
+        L = A * N;
+        M = floorq(L);
+        if (M + 1 - L < L - M) M = M + 1;
+        E = fabsq(A - M / N);
+        if (E < D) {
+            quadmath_snprintf(b1, sizeof(b1), "%.0Qf", M);
+            quadmath_snprintf(b2, sizeof(b2), "%.0Qf", N);
+            quadmath_snprintf(b3, sizeof(b3), "%.37Qg", M / N);
+            printf("%s / %s\t%s\n", b1, b2, b3);
+            if (E == 0) break;
+            D = E;
+        }
+        N = N + 1;
+    }
+    return 0;
+}
+EOF
+
+gcc -O3 -Wall pi-quadmath.c -lquadmath && ./a.out
+```
 
 #### （現代）bwBASIC
 
@@ -380,5 +450,3 @@ BaseForm[2^56 e + 2^55 s + f, 16]
 > 4つの数が0を含まず，しかもすべて互いに異なっているなら，この4つの数から四則で10をつくることができる．
 
 この本を借りた図書館のOPACを調べると，残念なことに除籍になってしまったようなので，古書で入手しました．やはり，大事な本は買わなければなりません．
-
-<hr>
