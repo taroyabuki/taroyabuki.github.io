@@ -89,7 +89,7 @@ $12f(a)\simeq 12\left(1+\dfrac{a}{3}\right)$という近似の誤差は
 1. $a$が比較的小さかった．
 
 1は**計算尺**があれば簡単にわかる．
-そろばんのほかに，計算尺と大学教養レベルの数学の知識を持っていたら，あるいは，題材が$1729.03$でなかったら，そろばん男はファインマンに勝てたかもしれない．
+そろばんのほかに，計算尺と大学教養レベルの数学の知識（**黄緑本！**）を持っていたら，あるいは，題材が$1729.03$でなかったら，そろばん男はファインマンに勝てたかもしれない．
 しかしその場合，生きた証をかの自伝に残すことはなかっただろう．
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">計算のほぼ全てをコンピュータで行うという『コンピュータでとく数学』（オーム社）の読者で，電気が使えないときが心配なかた向けの装備<br><br>この装備で読破しようとすると，長大な時間がかかるでしょう．<br><br>コンサイスの円形計算尺は，新品が手に入ります（写真は270N）． <a href="https://t.co/RvsPqgt1t4">pic.twitter.com/RvsPqgt1t4</a></p>&mdash; Taro Yabuki (@yabuki) <a href="https://twitter.com/yabuki/status/1797221119092572588?ref_src=twsrc%5Etfw">June 2, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
