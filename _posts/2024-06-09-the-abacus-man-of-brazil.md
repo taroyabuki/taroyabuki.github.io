@@ -6,9 +6,6 @@ title: ファインマンと対決した，ブラジルのそろばん男
 [『ご冗談でしょう，ファインマンさん』](https://calil.jp/book/4006030061)に，ブラジルでそろばんを売り歩く日本人の男がファインマンにやっつけられる話が出てくる．
 異国でそろばんを売り，ファインマンと算術で対決し，ファインマンの自伝に載るのだから，凡庸な人生ではない．
 
-<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
 ただ，自伝での描かれ方は少し不名誉なものである．
 ファインマン曰く
 
@@ -93,3 +90,6 @@ $12f(a)\simeq 12\left(1+\dfrac{a}{3}\right)$という近似の誤差は
 しかしその場合，生きた証をかの自伝に残すことはなかっただろう．
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">計算のほぼ全てをコンピュータで行うという『コンピュータでとく数学』（オーム社）の読者で，電気が使えないときが心配なかた向けの装備<br><br>この装備で読破しようとすると，長大な時間がかかるでしょう．<br><br>コンサイスの円形計算尺は，新品が手に入ります（写真は270N）． <a href="https://t.co/RvsPqgt1t4">pic.twitter.com/RvsPqgt1t4</a></p>&mdash; Taro Yabuki (@yabuki) <a href="https://twitter.com/yabuki/status/1797221119092572588?ref_src=twsrc%5Etfw">June 2, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
