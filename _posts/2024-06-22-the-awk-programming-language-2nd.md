@@ -1,7 +1,7 @@
 ---
 date: 2024-06-22 00:00:00+09:00
 title: AWKのバイブル35年ぶりの改訂！
-image: https://taroyabuki.github.io/images/2024-06-22-awk.png
+image: https://taroyabuki.github.io/images/2024-06-22-awk.jpg
 twitter:
   card: summary
 ---
