@@ -8,8 +8,7 @@ twitter:
 
 <img src="https://images-fe.ssl-images-amazon.com/images/P/4891006269.09.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Microsoft Visual C++入門』（日経BPソフトプレス, 2009） 追記：[改訂版](/2017/02/15/my-new-book-about-c++/)があります．
 
-- [honto](https://honto.jp/isbn/978-4891006266)
-- [アマゾン](https://www.amazon.co.jp/dp/4891006269)
+[国会図書館](https://ndlsearch.ndl.go.jp/books/R100000002-I000010060952)
 
 「C++の入門書はすでにたくさん出版されているのに何をいまさら」と思うかもしれませんが、本書は以下のような点で類書との差別化を図っています。
 
