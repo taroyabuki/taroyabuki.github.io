@@ -8,7 +8,7 @@ twitter:
 
 [『プログラミング言語AWK』](https://www.oreilly.co.jp/books/9784814400706/)35年ぶりの改訂．[第1版](https://ndlsearch.ndl.go.jp/books/R100000002-I000002015299)が初めて買ったIT本なので，感慨深いものがあります．かなり高かった気がしましたが，今見たら3400円でした．第2版は3630円．ノスタルジアマーケティングにやられて買いました．
 
-<a href="https://www.oreilly.co.jp/books/9784814400706/"><img src="https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0070-6.jpeg" style="float:right; height:200px;" alt="書影"></a>
+<a href="https://www.oreilly.co.jp/books/9784814400706/"><img src="https://images-fe.ssl-images-amazon.com/images/P/4814400705.09.LZZZZZZZ" style="float:right; height:200px;" alt="書影"></a>
 
 西暦に和暦が並記されているのも，ノスタルジアマーケティングの一環でしょう．
 
@@ -20,8 +20,7 @@ twitter:
 
 ## AWKとは
 
-<a href="https://www.hanmoto.com/bd/isbn/9784048930574"><img src="https://images-fe.ssl-images-amazon.com/images/P/4048930575.09.LZZZZZZZ
-" style="float:right; height:200px;" alt="書影"></a>
+<a href="https://www.hanmoto.com/bd/isbn/9784048930574"><img src="https://images-fe.ssl-images-amazon.com/images/P/4048930575.09.LZZZZZZZ" style="float:right; height:200px;" alt="書影"></a>
 
 AWKは**プログラム可能なフィルタ**です[^UNIX]．AWKを単独で使うというよりは，sed，grep，sort，uniqなど，他のコマンドと組み合わせた，いわゆるシェルスクリプトで使うことが多いです．シェルスクリプトを学んだことのある人は，AWKを知っているでしょう．
 
@@ -129,8 +128,7 @@ echo -e "one,two,three\nfour,five,six" \
 | awk -F, '{for(i=1;i<=NF;i++){print NR,i,$i}}'
 ```
 
-<a href="https://ndlsearch.ndl.go.jp/books/R100000002-I027689726"><img src="https://images-fe.ssl-images-amazon.com/images/P/4863542097.09.LZZZZZZZ
-" style="float:right; height:200px;" alt="書影"></a>
+<a href="https://ndlsearch.ndl.go.jp/books/R100000002-I027689726"><img src="https://images-fe.ssl-images-amazon.com/images/P/4863542097.09.LZZZZZZZ" style="float:right; height:200px;" alt="書影"></a>
 
 #### 病的な場合
 
