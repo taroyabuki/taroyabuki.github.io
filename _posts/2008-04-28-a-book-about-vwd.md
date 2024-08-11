@@ -8,8 +8,7 @@ twitter:
 
 <img src="https://images-fe.ssl-images-amazon.com/images/P/489100584X.09.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『Microsoft Visual Web Developer 2008 Express Edition入門』（日経BPソフトプレス, 2008）
 
-- [honto](https://honto.jp/isbn/978-4891005849)
-- [アマゾン](https://www.amazon.co.jp/dp/489100584X)
+[国会図書館](https://ndlsearch.ndl.go.jp/books/R100000002-I000009351938)
 
 「プログラミングについて学びたい」とか「プログラマになりたい」とかいう人だけでなく、**「この先の人生でプログラムを書くことはたぶんないけど、プログラミングというのがどういうものなのか、素養として知っておきたい」**という人にもお勧めです（「素養という割には大変じゃん」という印象を持たれる方もいるかもしれませんが、そもそも、そんなに簡単にわかる世界ではないのです）。
 
