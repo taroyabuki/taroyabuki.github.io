@@ -8,8 +8,7 @@ twitter:
 
 <img src="https://images-fe.ssl-images-amazon.com/images/P/4627847319.09.jpg" alt="書影" style="height:150px;" /><br/>矢吹太朗『初級プログラマのためのWeb アプリケーション構築入門』（森北出版, 2007） 追記：[改訂版](https://taroyabuki.github.io/2011/04/23/a-book-about-web-application2/)があります．
 
-- [honto](https://honto.jp/isbn/978-4627847316)
-- [アマゾン](https://www.amazon.co.jp/dp/4627847319)
+[国会図書館](https://ndlsearch.ndl.go.jp/books/R100000002-I000008774530)
 
 タイトルからは「10日でわかる」とか「サルでもわかる」というようなものを連想されるかもしれませんが、そういう本ではありません。ウェブアプリを作るには、
 
