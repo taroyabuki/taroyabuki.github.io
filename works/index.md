@@ -10,48 +10,56 @@ title: Works
         <img src="https://images-fe.ssl-images-amazon.com/images/P/4274231798.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. コンピュータでとく数学&mdash;データサイエンスのための統計・微分積分・線形代数. オーム社, 2024.
       </a>
+      <a href="https://ndlsearch.ndl.go.jp/books/R100000002-I033398783">ISBN: 978-4-274-23179-7【国会図書館】</a>
     </li>
     <li style="clear:both;">
       <a href="https://github.com/taroyabuki/fromzero">
         <img src="https://images-fe.ssl-images-amazon.com/images/P/4065132320.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         辻真吾・矢吹太朗. ゼロからはじめるデータサイエンス入門&mdash;R・Python一挙両得. 講談社, 2021.
       </a>
+      <a href="https://ndlsearch.ndl.go.jp/books/R100000002-I031834151">ISBN: 978-4-06-513232-6【国会図書館】 </a>
     </li>
     <li style="clear:both;">
       <a href="https://github.com/taroyabuki/webbook">
         <img src="https://images-fe.ssl-images-amazon.com/images/P/4781914772.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. Webのしくみ&mdash;Webをいかすための12の道具. サイエンス社, 2020.
       </a>
+      <a href="https://ndlsearch.ndl.go.jp/books/R100000002-I030683705">ISBN: 978-4-7819-1477-0【国会図書館】</a>
     </li>
     <li style="clear:both;">
       <a href="https://github.com/taroyabuki/cppbook2">
         <img src="https://images-fe.ssl-images-amazon.com/images/P/4822298930.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. 基礎からしっかり学ぶC++の教科書. 日経BP, 2017.
       </a>
+      <a href="https://ndlsearch.ndl.go.jp/books/R100000002-I027960076">ISBN: 978-4-8222-9893-7【国会図書館】</a>
     </li>
     <li style="clear:both;">
       <a href="https://github.com/taroyabuki/webbook2">
         <img src="https://images-fe.ssl-images-amazon.com/images/P/4627847327.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. Webアプリケーション構築入門&mdash;実践！Webページ制作からマッシュアップまで. 森北出版, 2011.
       </a>
+      <a href="https://ndlsearch.ndl.go.jp/books/R100000002-I000011175307">ISBN: 978-4-627-84732-3【国会図書館】</a>
     </li>
     <li style="clear:both;">
       <a href="https://taroyabuki.github.io/2009/03/16/first-c++-book/">
         <img src="https://images-fe.ssl-images-amazon.com/images/P/4891006269.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
-        矢吹太朗. Microsoft Visual C++入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2009.
+        矢吹太朗. 文法からはじめるプログラミング言語Microsoft Visual C++入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2009.
       </a>
+      <a href="https://ndlsearch.ndl.go.jp/books/R100000002-I000010060952">ISBN: 978-4-89100-626-6【国会図書館】</a>
     </li>
     <li style="clear:both;">
       <a href="https://taroyabuki.github.io/2008/04/28/a-book-about-vwd/">
         <img src="https://images-fe.ssl-images-amazon.com/images/P/489100584X.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. Microsoft Visual Web Developer 2008 Express Edition入門（マイクロソフト公式解説書）. 日経BPソフトプレス, 2008.
       </a>
+      <a href="https://ndlsearch.ndl.go.jp/books/R100000002-I000009351938">ISBN: 978-4-89100-584-9【国会図書館】</a>
     </li>
     <li style="clear:both;">
       <a href="https://taroyabuki.github.io/2007/07/30/a-book-about-web-application/">
         <img src="https://images-fe.ssl-images-amazon.com/images/P/4627847319.09.jpg" alt="書影" style="float:left; margin-right:0.5em; width: 60px;"/>
         矢吹太朗. 初級プログラマのためのWebアプリケーション構築入門&mdash;実践で学ぶJava, XHTML, SQL. 森北出版, 2007.
       </a>
+      <a href="https://ndlsearch.ndl.go.jp/books/R100000002-I000008774530">ISBN: 978-4-627-84731-6【国会図書館】</a>
     </li>
 </ul>
 
