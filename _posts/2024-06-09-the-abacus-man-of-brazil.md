@@ -3,8 +3,10 @@ date: 2024-06-09 00:00:00+09:00
 title: ファインマンと対決した，ブラジルのそろばん男
 ---
 
-[『ご冗談でしょう，ファインマンさん』](https://calil.jp/book/4006030061)に，ブラジルでそろばんを売り歩く日本人の男がファインマンにやっつけられる話が出てくる．
+[『ご冗談でしょう，ファインマンさん』](https://www.hanmoto.com/bd/isbn/9784006030063)に，ブラジルでそろばんを売り歩く日本人の男がファインマンにやっつけられる話が出てくる．
 異国でそろばんを売り，ファインマンと算術で対決し，ファインマンの自伝に載るのだから，凡庸な人生ではない．
+
+<a href="https://www.hanmoto.com/bd/isbn/9784006030063"><img src="https://images-fe.ssl-images-amazon.com/images/P/4006030061.09.LZZZZZZZ" style="float:right; height:200px" alt="書影"></a>
 
 ただ，自伝での描かれ方は少し不名誉なものである．
 ファインマン曰く
@@ -12,6 +14,8 @@ title: ファインマンと対決した，ブラジルのそろばん男
 > 彼は数というものの内容を理解はしていないのである．
 
 「理解」とは何かはここでは問わない．
+
+<a href="https://www.hanmoto.com/bd/isbn/9784274231797"><img src="https://images-fe.ssl-images-amazon.com/images/P/4274231798.09.LZZZZZZZ" style="float:right; height:200px" alt="書影"></a>
 
 そろばん男の名誉挽回のための道具として，**[黄緑本『コンピュータでとく数学』](https://www.hanmoto.com/bd/isbn/9784274231797)**と**計算尺**を贈れたらと思う．
 
