@@ -15,6 +15,7 @@ permalink: /profile/
 <h2>Affiliation</h2>
 
 <ul>
+  <li><a href="https://www.it-chiba.ac.jp/english/undergraduate/info/applied-informatics/">Department of Applied Informatics</a>, <a href="https://www.it-chiba.ac.jp/english/undergraduate/info/">Faculty of Social Systems Science</a>, <a href="https://www.it-chiba.ac.jp/english/">Chiba Institute of Technology</a> (since 2024/4)</li>
   <li><a href="https://www.it-chiba.ac.jp/english/undergraduate/social/project/">Department of Project Management</a>, <a href="https://www.it-chiba.ac.jp/english/undergraduate/social/">Faculty of Social Systems Science</a>, <a href="https://www.it-chiba.ac.jp/english/">Chiba Institute of Technology</a> (since 2012/4)</li>
   <li><a href="https://www.acm.org/">Association for Computing Machinery</a> (since 2016/6)</li>
 </ul>
@@ -65,7 +66,7 @@ Information, Computation, Evolution
 <h2>経歴</h2>
 
 <ul>
-  <li>2012（平成24）：千葉工業大学 社会システム科学部 プロジェクトマネジメント学科 准教授</li>
+  <li>2012（平成24）：千葉工業大学 准教授</li>
   <li>2007（平成19）：青山学院大学 理工学部 情報テクノロジー学科 助教</li>
   <li>2004（平成16）：青山学院大学 理工学部 情報テクノロジー学科 助手</li>
   <li>2004.3.25（平成16）：博士（科学, 東京大学大学院 新領域創成科学研究科 基盤情報学専攻）</li>
