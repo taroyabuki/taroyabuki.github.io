@@ -56,7 +56,7 @@ Information, Computation, Evolution
   <li><a href="https://dbsj.org/">日本データベース学会</a>（2010/7から）</li>
   <li><a href="https://spm-hq.jp">プロジェクトマネジメント学会</a>（2012/5から）</li>
   <li><a href="https://www.acm.org/">Association for Computing Machinery</a>（2016/6から）</li>
-  <li><a href="https://www.jitec.ipa.go.jp/1_12sosiki/iinkai_kousei.html">情報処理技術者試験委員会</a>（2019/3から）</li>
+  <li><a href="https://www.ipa.go.jp/shiken/about/iinkai_kousei.html">情報処理技術者試験委員会</a>（2019/3から）</li>
 </ul>
 
 <h2>専門</h2>
