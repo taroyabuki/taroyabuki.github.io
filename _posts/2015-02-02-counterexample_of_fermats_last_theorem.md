@@ -241,7 +241,7 @@ OK
 
 参考：[電卓の話](https://nyaruru.hatenablog.com/entry/20091004/p1)
 
-追記：[電卓に求められるコト](http://blog.unfindable.net/archives/735)
+追記：[電卓に求められるコト](https://taroyabuki.github.io/2009/10/19/requirements-for-a-good-calculator/)
 
 ### Excel
 

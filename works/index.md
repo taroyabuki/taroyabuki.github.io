@@ -101,12 +101,13 @@ title: Works
 <h2>Others</h2>
 
 <ul>
+    <li>森本容介，伊藤一成『Webのしくみと応用』（放送大学教育振興会, 三訂版, 2025） 第7, 8, 9, 10章</li>
     <li><a href="https://taroyabuki.github.io/OneMaps/">One Maps—One Map with multiple web browserS</a></li>
     <li>ウェブコミュニケーションの未来—便利さとプライバシーのトレードオフ？—. NEWS SOKEN, Vol.10-2, pp. 8–9, 青山学院大学総合研究所, 2011. <a href="https://web.archive.org/web/20160827064912/http://www.ri.aoyama.ac.jp/shihan1/nsoken10-2.pdf">PDF</a></li>
-    <li><a href="http://blog.unfindable.net/archives/804">3次元版Twitearth この星のつぶやき</a></li>
+    <li><a href="https://web.archive.org/web/20240303075631/http://blog.unfindable.net/archives/804">3次元版Twitearth この星のつぶやき</a></li>
     <li><a href="https://web.archive.org/web/20080430221304/http://codezine.jp:80/a/article/aid/1910.aspx">PCとスパコンの無理矢理な比較. <em>CodeZine,</em> 2007.</a></li>
     <li><a href="https://github.com/taroyabuki/penrose_utm">ペンローズ『皇帝の新しい心』の万能テューリング機械</a></li>
-    <li><a href="http://blog.unfindable.net/archives/268">バベルのコンピューター</a></li>
+    <li><a href="https://web.archive.org/web/20240303095603/http://blog.unfindable.net/archives/268">バベルのコンピューター</a></li>
     <li><a href="no_free_lunch.pdf">No Free Lunch Theorem—理想の＊＊の探し方</a></li>
     <li><a href="why_lisp/">なぜ Lisp なのか</a></li>
     <li><a href="self/">自分のコードを出力するプログラム</a></li>

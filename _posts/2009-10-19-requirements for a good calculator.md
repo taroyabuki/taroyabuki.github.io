@@ -5,7 +5,7 @@ title: 電卓に求められるコト
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ファインマンがギャフンとなったという「10の100乗のタンジェント」。Windows 7, 8のcalc.exeでは計算できたが，Windows 10の電卓ではできない。Androidの電卓はOK。OS XとiOSの計算機は当然ながらNG。</p>&mdash; Taro Yabuki (@yabuki) <a href="https://twitter.com/yabuki/status/721341400382504961?ref_src=twsrc%5Etfw">April 16, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-使っているのは整数の加算と乗算だけで、オーバーフローしているわけでもないのに正しく計算できない例を先日紹介しました（[フェルマーの最終定理の「反例」（電卓編）](http://www.unfindable.net/~yabuki/blog/2009/10/post_356.html)）。
+関連：[フェルマーの最終定理の「反例」](https://taroyabuki.github.io/2015/02/01/counterexample_of_fermats_last_theorem/)。
 
 文明が発達しすぎた果てに電卓を作れなくなってしまうというのはSFでよくありそうな話ですが、時代の先を行っているというAppleの主張は確かに正しいのかもしれません。（参考：[ロストテクノロジー(Wikipedia)](http://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B9%E3%83%88%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC)）
 
@@ -27,7 +27,7 @@ Windows 7では、電卓のUIが変更され機能も大幅に拡張されると
 
 > Windows 95以来、スタートメニューのアクセサリには、電卓が含まれていた。その機能はVistaまでほとんど変わることなく続いてきた。（[Windows 7ソフトウェアレビュー － 大きく進化した電卓編](https://web.archive.org/web/20110907042551/http://journal.mycom.co.jp:80/articles/2009/10/02/windows7soft/index.html)）
 
-これは大間違いです。まあ、見た目がほとんど変わっていないので、そう思われるのもしかたがないのですが。私が試した限りでは、Windowsの電卓は、1995年に発売されたWindows 95と1999年に発売されたWindows 98SEの間では、その機能が大きく変わっています。計算の精度を高めることによって、[フェルマーの最終定理の「反例」（電卓編）](http://www.unfindable.net/~yabuki/blog/2009/10/post_356.html)のような問題が起こらなくなったのです（参考：[When you change the insides, nobody notices](http://blogs.msdn.com/oldnewthing/archive/2004/05/25/141253.aspx)）。
+これは大間違いです。まあ、見た目がほとんど変わっていないので、そう思われるのもしかたがないのですが。私が試した限りでは、Windowsの電卓は、1995年に発売されたWindows 95と1999年に発売されたWindows 98SEの間では、その機能が大きく変わっています。計算の精度を高めることによって、[フェルマーの最終定理の「反例」](https://taroyabuki.github.io/2015/02/01/counterexample_of_fermats_last_theorem/)のような問題が起こらなくなったのです（参考：[When you change the insides, nobody notices](http://blogs.msdn.com/oldnewthing/archive/2004/05/25/141253.aspx)）。
 
 一方Macはと言えば、1996年に発売されたMac OS 7.5.5の電卓は、下のような感じでした。1992年のWindows 3.1にかなり後れを取っている感じです。
 
@@ -49,7 +49,7 @@ Mac OS Xの電卓は、下のような基本・科学計算・プログラマの
 
 「正しく計算できること」を完璧に実現するのはもちろん不可能です。どのあたりで妥協するかが重要なわけですが、フリーソフトウェアの[GNU bc](http://www.gnu.org/software/bc/manual/bc.html)の、「メモリが許す限りの桁数を確保する」というのは一つの目安になるでしょう。
 
-やってはいけないのは、「整数はいわゆるintで計算し、その範囲を超えたり1未満の数が必要になったらいわゆるdoubleを使う」というような実装です。こういうことをしてしまうと、[フェルマーの最終定理の「反例」（Perl, awk, JavaScript, PHP編）](http://www.unfindable.net/~yabuki/blog/2008/09/perl_awk_javascript_php.html)も発生してしまいます。
+やってはいけないのは、「整数はいわゆるintで計算し、その範囲を超えたり1未満の数が必要になったらいわゆるdoubleを使う」というような実装です。こういうことをしてしまうと、[フェルマーの最終定理の「反例」](https://taroyabuki.github.io/2015/02/01/counterexample_of_fermats_last_theorem/)も発生してしまいます。
 
 もっとも、電卓をちゃんと作るのは以外と難しいようで、2008年にはGoogleも計算ミスをしていました（参考：[グーグルの電卓機能が計算ミス](http://japan.cnet.com/news/media/story/0,2000056023,20379457,00.htm)）。そのときには次のような解説がありましたが、その筆者が考える電卓の実装は、先に述べた「やってはいけないこと」そのままのようです。
 

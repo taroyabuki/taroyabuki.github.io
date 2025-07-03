@@ -6,7 +6,7 @@ permalink: /profile/
 <h2>Address</h2>
 
 <dl>
-  <dt>Email</dt><dd>taro.yabuki at unfindable dot net</dd>
+  <dt>Email</dt><dd>taro.yabuki at gmail dot com</dd>
   <dt>Address</dt><dd>Chiba Institute of Technology, Room 908, No. 1 Building, 2-17-1, Tsudanuma, Narashino, Chiba 275-0016, Japan</dd>
   <dt>Tel</dt><dd>+81-47-478-****</dd>
   <dt>Cellular</dt><dd>+81-90-9376-****</dd>
@@ -15,8 +15,14 @@ permalink: /profile/
 <h2>Affiliation</h2>
 
 <ul>
-  <li><a href="https://www.it-chiba.ac.jp/english/undergraduate/info/applied-informatics/">Department of Applied Informatics</a>, <a href="https://www.it-chiba.ac.jp/english/undergraduate/info/">Faculty of Social Systems Science</a>, <a href="https://www.it-chiba.ac.jp/english/">Chiba Institute of Technology</a> (since 2024/4)</li>
-  <li><a href="https://www.it-chiba.ac.jp/english/undergraduate/social/project/">Department of Project Management</a>, <a href="https://www.it-chiba.ac.jp/english/undergraduate/social/">Faculty of Social Systems Science</a>, <a href="https://www.it-chiba.ac.jp/english/">Chiba Institute of Technology</a> (since 2012/4)</li>
+  <li>
+    <a href="https://chibatech.jp/english/faculty/info-transform/application.html">Department of Applied Informatics</a>,
+    <a href="https://chibatech.jp/english/faculty/#list4">Faculty of Innovative Information Science</a>,
+    <a href="https://chibatech.jp/english/">Chiba Institute of Technology</a> (since 2024/4)</li>
+  <li>
+    <a href="https://chibatech.jp/english/faculty/social/pm.html">Department of Project Management</a>,
+    <a href="https://chibatech.jp/english/faculty/#list7">Faculty of Social Systems Science</a>,
+    <a href="https://chibatech.jp/english/">Chiba Institute of Technology</a> (since 2012/4)</li>
   <li><a href="https://www.acm.org/">Association for Computing Machinery</a> (since 2016/6)</li>
 </ul>
 
@@ -39,7 +45,7 @@ Information, Computation, Evolution
 <h2>連絡先</h2>
 
 <dl>
-  <dt>メール</dt><dd>taro.yabuki at unfindable dot net</dd>
+  <dt>メール</dt><dd>taro.yabuki at gmail dot com</dd>
   <dt>オフィス</dt><dd>〒275-0016 千葉県習志野市津田沼2-17-1 千葉工業大学 1号館908号室</dd>
   <dt>電話</dt><dd>047-478-****</dd>
   <dt>携帯電話</dt><dd>090-9376-****</dd>
@@ -48,8 +54,14 @@ Information, Computation, Evolution
 <h2>所属</h2>
 
 <ul>
-  <li><a href="https://www.it-chiba.ac.jp">千葉工業大学</a> <a href="https://www.it-chiba.ac.jp/faculty/info-transform/">情報変革科学部</a> <a href="https://www.it-chiba.ac.jp/faculty/info-transform/application/">高度応用情報科学科</a>（2024/4から）</li>
-  <li><a href="https://www.it-chiba.ac.jp">千葉工業大学</a> <a href="https://www.it-chiba.ac.jp/faculty/social/">社会システム科学部</a> <a href="https://www.it-chiba.ac.jp/faculty/social/pm/">プロジェクトマネジメント学科</a>（2012/4から）</li>
+  <li>
+    <a href="https://chibatech.jp/">千葉工業大学</a><a
+    href="https://chibatech.jp/faculty/#list4">情報変革科学部</a> <a
+    href="https://chibatech.jp/faculty/info-transform/application.html">高度応用情報科学科</a>（2024/4から）</li>
+  <li>
+    <a href="https://chibatech.jp/">千葉工業大学</a> <a
+    href="https://chibatech.jp/faculty/#list7">社会システム科学部</a> <a
+    href="https://chibatech.jp/faculty/social/pm.html">プロジェクトマネジメント学科</a>（2012/4から）</li>
   <li><a href="https://www.ipsj.or.jp">情報処理学会</a>（1999/6から）</li>
   <li><a href="https://www.ai-gakkai.or.jp">人工知能学会</a>（1999/6から）</li>
   <li><a href="https://www.ieice.org">電子情報通信学会</a>（2010/4から）</li>

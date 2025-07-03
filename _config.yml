@@ -1,7 +1,7 @@
 lang: ja
 title: Yabuki Taro's Home Page
 author: Yabuki Taro
-email: taro.yabuki at unfindable dot net
+email: taro.yabuki at gmail dot com
 description: 2024/03 更新
 github_username: taroyabuki
 twitter_username: yabuki
@@ -12,8 +12,8 @@ theme: minima
 paginate: 10
 paginate_path: "/blog/page:num/"
 permalink: /:year/:month/:day/:title/
-disqus:
-  shortname: taroyabuki
+#disqus:
+#  shortname: taroyabuki
 defaults:
   -
     scope:

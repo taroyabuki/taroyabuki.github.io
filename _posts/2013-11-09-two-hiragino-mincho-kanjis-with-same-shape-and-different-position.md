@@ -27,6 +27,6 @@ Adobe-Japan1において、文字「帰」（U+5E30）に対応するグリフ�
 
 他にもあったら教えてください。
 
-関連：[小塚明朝では区別され、ヒラギノ明朝では区別されない漢字のペア231組](http://blog.unfindable.net/archives/6655)
+関連：[小塚明朝では区別され、ヒラギノ明朝では区別されない漢字のペア231組](https://web.archive.org/web/20231001130536/http://blog.unfindable.net/archives/6655)
 
 補足：CIDで文字を指定する方法「[安岡孝一. Adobe-Japan1-6とUnicode--異体字処理と文字コードの現実. 情報管理. Vol. 48, No. 5, pp. 487-495, 2005.](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/publications/JST2005-11.pdf)」を参照してください。
